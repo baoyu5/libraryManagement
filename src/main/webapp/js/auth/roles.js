@@ -1,10 +1,7 @@
-/**
- * User: Roland
- */
 var rolesApi = new sysCommon.api('roles', {
-        'createUri': 'api/role_add',
-        'deleteUri': 'api/role_delete',
-        'editUri': 'api/role_edit',
+        'createUri': 'role/add',
+        'deleteUri': 'role/delete',
+        'editUri': 'role/edit',
         'recordIdName': 'id'
     }
 );
@@ -12,53 +9,47 @@ $(document).ready(
     function() {
         var toolbarAll = [{
             text: '添加角色',
-            //iconCls: 'icon-add',
             handler: function () {
                 rolesApi.create('添加角色');
             }
         }, {
             text: '修改角色',
-            //iconCls: 'icon-add',
             handler: function () {
                 rolesApi.edit('修改角色');
             }
         }, {
             text: '修改资源',
-            //iconCls: 'icon-edit',
             handler: function () {
                 editResources();
             }
         }, {
             text: '删除角色',
-            //iconCls: 'icon-add',
             handler: function () {
                 rolesApi.delete('确认要删除该角色吗?');
             }
         }];
 
-        var urls = ['/api/role_add', '/api/role_edit', '/api/role_resources_add', '/api/role_delete'];
+        var urls = ['/role/add', '/role/edit', '/role/role_resources_add', '/role/delete'];
 
         $('#dg4roles').datagrid({
             title: '角色列表',
             collapsible: false,//是否可折叠的
             fit: true,//自动大小
-            url: 'api/roles',
+            url: 'role/roles',
             remoteSort: false,
             idField: 'ID',
             singleSelect: true,//是否单选
             pagination: true,//分页控件
             rownumbers: true,//行号
             cache: false,
-            pageSize:50,
-            pageList: [50, 100, 150, 200],
+            pageSize:15,
+            pageList: [15, 30, 50, 100],
             loadFilter: sysCommon.loadFilter,
             toolbar: getToolbar(toolbarAll, urls),
             onLoadError: function() {
                 accessDenied();
             },
             onLoadSuccess: function() {
-                $('#dg4roles').datagrid('selectRow',0);//选中第一条数据
-                noRecord($(this),data,'id',3);//无记录
                 rolesApi.onReloadSuccess();
             }
         });
@@ -87,7 +78,7 @@ function saveRole(){
 }
 
 function editResources() {
-    url = "api/role_resources_add";
+    url = "role/role_resources_add";
     var row = $('#dg4roles').datagrid('getSelected');
     if (row) {
         $("#dlg4roles_resources_tips").html('');
@@ -96,11 +87,11 @@ function editResources() {
             $('#dlg4roles_resources').dialog('open').dialog('center').dialog('setTitle','修改资源');
 
             $('#resourcesTree').tree({
-                url: "api/resources",
+                url: "resource/resources",
                 checkbox: true,
                 onLoadSuccess: function(node, data) {
                     $.ajax({
-                        url: "api/role_resources?roleId=" + row["id"],
+                        url: "resource/role_resources?roleId=" + row["id"],
                         type: "post",
                         success: function (response) {
                             var data = response["data"];

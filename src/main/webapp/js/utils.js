@@ -9,26 +9,26 @@ function showMessage(message) {
     $.messager.alert('提示信息', message);
 }
 
-// function form2Json(fm, except) {
-//     var param = {};
-//     if(!$.isArray(except)) except = [];
-//     $.each(fm.serializeArray(), function (i, field) {
-//         if(!$.inArray(field.name, except)) return;
-//         param[field.name] = field.value;
-//     });
-//     // 特殊处理 checkbox
-//     var chks = $(fm).find('input[type=checkbox]');
-//     $.each(chks, function(i, checkbox){
-//         var name = $(checkbox).attr('name');
-//         if(param[name]){
-//             param[name] = true;
-//         }else{
-//             param[name] = false;
-//         }
-//     });
-//
-//     return param;
-// }
+function form2Json(fm, except) {
+    var param = {};
+    if(!$.isArray(except)) except = [];
+    $.each(fm.serializeArray(), function (i, field) {
+        if(!$.inArray(field.name, except)) return;
+        param[field.name] = field.value;
+    });
+    // 特殊处理 checkbox
+    var chks = $(fm).find('input[type=checkbox]');
+    $.each(chks, function(i, checkbox){
+        var name = $(checkbox).attr('name');
+        if(param[name]){
+            param[name] = true;
+        }else{
+            param[name] = false;
+        }
+    });
+
+    return param;
+}
 
 function showError(target, text) {
     target.html('<div class="alert alert-danger" role="alert">' + text + '</div>');

@@ -31,7 +31,7 @@ $(document).ready(
             }
         }];
 
-        var urls = ['/api/resource_add', '/api/resource_edit', '/api/resource_delete'];
+        var urls = ['/resource/add', '/resource/edit', '/resource/delete'];
 
         var toolbar = getToolbar(resourceToolbarAll, urls);
 
@@ -39,7 +39,7 @@ $(document).ready(
             title: '资源列表',
             collapsible: false,//是否可折叠的
             fit: true,//自动大小
-            url: 'api/resources_load',
+            url: 'resource/get_resources',
             method: 'post',
             remoteSort: false,
             idField: 'ID',
@@ -47,23 +47,14 @@ $(document).ready(
             pagination: true,//分页控件
             rownumbers: true,//行号
             cache: false,
-            pageSize:50,
-            pageList: [50, 100, 150, 200],
-            loadFilter: function (data) {
-                console.info(data);
-                if (data.status === 0) {
-                    return data.data;
-                } else {
-                    throw 'Markets data error.';
-                }
-            },
+            pageSize:15,
+            pageList: [15, 30, 50, 100],
+            loadFilter: sysCommon.loadFilter,
             toolbar: toolbar,
             onLoadError: function () {
                 accessDenied();
             },
             onLoadSuccess: function(data){
-                $('#dg4resources').datagrid('selectRow');//默认不选中数据
-                noRecord($(this),data,'name',5);
             }
         });
 
@@ -87,7 +78,7 @@ function loadMenu(level, value) {
         var row = $('#dg4resources').datagrid('getSelected');
         $("#parentIdComboBox").combobox({
             disabled: false,
-            url: 'api/menu_by_level?level=' + level,
+            url: 'resource/menu_by_level?level=' + level,
             method: 'post',
             valueField: 'id',
             textField: 'name',
@@ -114,11 +105,11 @@ function newResource() {
         value: "",
         disabled: true
     })
-    url = 'api/resource_add';
+    url = 'resource/add';
 }
 
 function editResource() {
-    url = 'api/resource_edit';
+    url = 'resource/edit';
     $("#dlg4resources_tips").html('');
     var row = $('#dg4resources').datagrid('getSelected');
     if (row) {
@@ -171,7 +162,7 @@ function deleteResource() {
         $.messager.confirm('操作确认', '确定要删除该资源吗？', function (r) {
             if (r) {
                 $.ajax({
-                    url: "api/resource_delete?id=" + row['id'],
+                    url: "resource/delete?id=" + row['id'],
                     type: "post",
                     success: function () {
                         $("#dg4resources").datagrid('deleteRow', $("#dg4resources").datagrid('getRowIndex', row));
@@ -191,11 +182,11 @@ function deleteResource() {
 }
 
 function showTypeName(val, row) {
-    if (val == 0) {
+    if (val == 1) {
         return "一级菜单";
-    } else if (val == 1) {
-        return "二级菜单";
     } else if (val == 2) {
+        return "二级菜单";
+    } else if (val == 3) {
         return "普通资源";
     } else {
         return "unknown";
@@ -215,7 +206,7 @@ function resourcesQuery() {
         return showMessage('不能包含特殊字符（下划线、连接符除外）！');
     }else{
         $('#dg4resources').datagrid({
-            'url': 'api/resources_load?' + $.param(params),
+            'url': 'resource/get_resources?' + $.param(params),
             pageNumber: 1
         });
         paginationConfig($('#dg4resources').datagrid('getPager'));
@@ -227,9 +218,10 @@ function resourcesReset() {
     $('#resource_name').textbox('clear');
     $('#resource_details_type').combobox('select', -1);
 
-    $('#dg4resources').datagrid({
-        'url': 'api/resources_load',
-        pageNumber: 1
-    });
+    // $('#dg4resources').datagrid({
+    //     'url': 'resource/resources_load',
+    //     pageNumber: 1
+    // });
+
     paginationConfig($('#dg4resources').datagrid('getPager'));
 }

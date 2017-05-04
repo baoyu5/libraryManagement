@@ -1,5 +1,6 @@
 package com.sj.library.management.security;
 
+import com.sj.library.management.common.constant.AdminConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,9 +18,6 @@ import java.util.Iterator;
 public class ResourceBasedVoter implements AccessDecisionVoter<Object> {
 
     private static Logger LOG = LoggerFactory.getLogger(ResourceBasedVoter.class);
-
-    @Value("${sys.admin}")
-    public static String sysAdmin;
 
     public boolean supports(ConfigAttribute attribute) {
         return true;
@@ -71,7 +69,7 @@ public class ResourceBasedVoter implements AccessDecisionVoter<Object> {
 
     private boolean isSysadmin(final Authentication authentication) {
         UserDetails userDetails = ((UserDetails)authentication.getPrincipal());
-        return userDetails.getUsername().equals(sysAdmin);
+        return userDetails.getUsername().equals(AdminConstants.LOGIN_NAME);
     }
 
     private boolean isAnonymous(final Authentication authentication) {

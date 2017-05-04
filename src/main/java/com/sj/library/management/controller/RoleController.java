@@ -27,7 +27,7 @@ public class RoleController extends BaseController {
         return success();
     }
 
-    @RequestMapping(value = "/load")
+    @RequestMapping(value = "/roles")
     @ResponseBody
     public ResponseTO getRoles(@RequestParam int rows, @RequestParam int page) {
         return success(roleService.getRole(PageRequest.newRequest(rows, page)));

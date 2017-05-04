@@ -40,7 +40,7 @@ public class UserDaoImpl extends GenericDaoImpl<User, Long> implements UserDao {
     public List<UserTO> getUsers(Map<String, Object> params, PageRequest pr) {
         StringBuilder sql = new StringBuilder("select id, login_name, real_name, phone_no, " +
                 "email, type " +
-                "from t_user where is_delete = false ");
+                "from t_user where is_deleted = false ");
         List paramList = new ArrayList();
         if (params.get("loginName") != null) {
             sql.append("and login_name like ? ");

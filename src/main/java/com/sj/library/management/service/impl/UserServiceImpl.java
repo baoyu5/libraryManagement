@@ -1,5 +1,6 @@
 package com.sj.library.management.service.impl;
 
+import com.sj.library.management.common.exception.UserExistsException;
 import com.sj.library.management.common.pagination.PageRequest;
 import com.sj.library.management.dao.UserDao;
 import com.sj.library.management.entity.User;
@@ -23,6 +24,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public long addUser(UserTO to) {
+
+        if (userDao.loadUserBy(to.getLoginName()) != null) {
+            throw new UserExistsException();
+        }
+
         User user = new User();
 
         user.setLoginName(to.getLoginName());

@@ -18,11 +18,20 @@ public class UserTO {
     @Length(min = 6, max = 12, message = "密码长度6-12")
     private String password;
 
+    private String passwordConfirm;
     private String phoneNo;
     private String Email;
 
     private int type;
     private String typeDesc;
+
+    public String getPasswordConfirm() {
+        return passwordConfirm;
+    }
+
+    public void setPasswordConfirm(String passwordConfirm) {
+        this.passwordConfirm = passwordConfirm;
+    }
 
     public String getTypeDesc() {
         return typeDesc;

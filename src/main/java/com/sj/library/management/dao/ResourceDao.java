@@ -1,5 +1,6 @@
 package com.sj.library.management.dao;
 
+import com.sj.library.management.common.pagination.PageRequest;
 import com.sj.library.management.entity.Resource;
 import com.sj.library.management.to.ResourceTO;
 
@@ -10,11 +11,11 @@ public interface ResourceDao extends GenericDao<Resource, Long> {
 
     List<ResourceTO> getByLevel(int level);
 
-    // List<ResourceTO> getRoleResources(Integer type, String resourceName, PageRequest pr);
+     List<ResourceTO> getRoleResources(Integer type, String resourceName, PageRequest pr);
 
     List<ResourceTO> getRoleResources(long roleId);
 
-    // long getResourcesCount(Integer type, String resourceName);
+     long getResourcesCount(Integer type, String resourceName);
 
     // Resource loadResourceByUrl(String url);
 

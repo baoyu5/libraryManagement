@@ -1,5 +1,6 @@
 package com.sj.library.management.dao.impl;
 
+import com.sj.library.management.common.pagination.PageRequest;
 import com.sj.library.management.dao.ResourceDao;
 import com.sj.library.management.dao.impl.mapper.ResourceRowMapper;
 import com.sj.library.management.entity.Resource;
@@ -45,47 +46,47 @@ public class ResourceDaoImpl extends GenericDaoImpl<Resource, Long> implements R
         );
     }
 
-    // @Override
-    // public List<ResourceTO> getRoleResources(Integer type, String resourceName, PageRequest pr) {
-    //     StringBuilder sql = new StringBuilder("select r.*, r2.resource_name as parentName, r2.id as parentId from t_resource r left join t_resource_mapping rm on r.id = rm.child_id left join t_resource r2 on rm.parent_id = r2.id where r.is_deleted = false ");
-    //     List params = new ArrayList();
-    //     if (type != null && type != -1) {
-    //         sql.append("and r.level = ? ");
-    //         params.add(type);
-    //     }
-    //
-    //     if (resourceName != null && !resourceName.equals("")) {
-    //         sql.append("and r.resource_name like ? ");
-    //         params.add("%" + resourceName + "%");
-    //     }
-    //
-    //     sql.append("order by parentName ");
-    //
-    //     sql.append("limit ?, ?");
-    //
-    //     params.add((pr.getPageNumber() - 1) * pr.getPageRows());
-    //     params.add(pr.getPageRows());
-    //     return jdbcTemplate.query(sql.toString(), params.toArray(), new ResourceRowMapper());
-    // }
+     @Override
+     public List<ResourceTO> getRoleResources(Integer type, String resourceName, PageRequest pr) {
+         StringBuilder sql = new StringBuilder("select r.*, r2.resource_name as parentName, r2.id as parentId from t_resource r left join t_resource_mapping rm on r.id = rm.child_id left join t_resource r2 on rm.parent_id = r2.id where r.is_deleted = false ");
+         List params = new ArrayList();
+         if (type != null && type != -1) {
+             sql.append("and r.level = ? ");
+             params.add(type);
+         }
 
-    // @Override
-    // public long getResourcesCount(Integer type, String resourceName) {
-    //     StringBuilder sql = new StringBuilder();
-    //     List params = new ArrayList();
-    //     sql.append("select count(1) from t_resource where is_deleted = false ");
-    //
-    //     if (type != null && type != -1) {
-    //         sql.append("and  level = ? ");
-    //         params.add(type);
-    //     }
-    //
-    //     if (resourceName != null && !resourceName.equals("")) {
-    //         sql.append("and resource_name like ? ");
-    //         params.add("%" + resourceName + "%");
-    //     }
-    //
-    //     return jdbcTemplate.queryForObject(sql.toString(), params.toArray(), Long.class);
-    // }
+         if (resourceName != null && !resourceName.equals("")) {
+             sql.append("and r.resource_name like ? ");
+             params.add("%" + resourceName + "%");
+         }
+
+         sql.append("order by parentName ");
+
+         sql.append("limit ?, ?");
+
+         params.add((pr.getPageNumber() - 1) * pr.getPageRows());
+         params.add(pr.getPageRows());
+         return jdbcTemplate.query(sql.toString(), params.toArray(), new ResourceRowMapper());
+     }
+
+     @Override
+     public long getResourcesCount(Integer type, String resourceName) {
+         StringBuilder sql = new StringBuilder();
+         List params = new ArrayList();
+         sql.append("select count(1) from t_resource where is_deleted = false ");
+
+         if (type != null && type != -1) {
+             sql.append("and  level = ? ");
+             params.add(type);
+         }
+
+         if (resourceName != null && !resourceName.equals("")) {
+             sql.append("and resource_name like ? ");
+             params.add("%" + resourceName + "%");
+         }
+
+         return jdbcTemplate.queryForObject(sql.toString(), params.toArray(), Long.class);
+     }
 
     @Override
     public List<ResourceTO> getRoleResources(long roleId) {

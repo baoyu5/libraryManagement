@@ -1175,3 +1175,1258 @@ java.lang.NullPointerException
 2017-05-04 15:28:21,767 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/tabs_icons.png"
 2017-05-04 15:28:21,828 [INFO] RequestTimingFilter - Duration: 3ms for "/js/sprintf.min.js.map"
 2017-05-04 15:28:21,830 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-05-04 20:05:29,593 [INFO] RequestTimingFilter - Duration: 28ms for "/"
+2017-05-04 20:05:29,737 [INFO] RequestTimingFilter - Duration: 115ms for "/login.html"
+2017-05-04 20:05:29,764 [INFO] RequestTimingFilter - Duration: 4ms for "/css/app.css"
+2017-05-04 20:05:29,831 [INFO] RequestTimingFilter - Duration: 81ms for "/css/bootstrap.min.css"
+2017-05-04 20:05:29,832 [INFO] RequestTimingFilter - Duration: 80ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:05:29,834 [INFO] RequestTimingFilter - Duration: 77ms for "/css/sticky.footer.css"
+2017-05-04 20:05:29,835 [INFO] RequestTimingFilter - Duration: 73ms for "/css/easyui/color.css"
+2017-05-04 20:05:29,842 [INFO] RequestTimingFilter - Duration: 80ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:05:29,916 [INFO] RequestTimingFilter - Duration: 51ms for "/js/utils.js"
+2017-05-04 20:05:30,095 [INFO] RequestTimingFilter - Duration: 325ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:05:30,403 [INFO] RequestTimingFilter - Duration: 4ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-05-04 20:05:30,541 [INFO] RequestTimingFilter - Duration: 487ms for "/api/verification_code_generation"
+2017-05-04 20:05:30,593 [INFO] RequestTimingFilter - Duration: 5ms for "/favicon.ico"
+2017-05-04 20:05:37,165 [INFO] RequestTimingFilter - Duration: 10ms for "/api/verification_code_generation"
+2017-05-04 20:05:42,081 [INFO] RequestTimingFilter - Duration: 41ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-05-04 20:05:42,405 [INFO] RequestTimingFilter - Duration: 366ms for "/api/login"
+2017-05-04 20:05:43,448 [INFO] RequestTimingFilter - Duration: 1035ms for "/"
+2017-05-04 20:05:49,014 [INFO] RequestTimingFilter - Duration: 20ms for "/"
+2017-05-04 20:05:49,025 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:05:49,027 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-05-04 20:05:49,028 [INFO] RequestTimingFilter - Duration: 5ms for "/css/bootstrap.min.css"
+2017-05-04 20:05:49,029 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/color.css"
+2017-05-04 20:05:49,031 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:05:49,039 [INFO] RequestTimingFilter - Duration: 0ms for "/css/app.css"
+2017-05-04 20:05:49,047 [INFO] RequestTimingFilter - Duration: 2ms for "/js/utils.js"
+2017-05-04 20:05:49,049 [INFO] RequestTimingFilter - Duration: 18ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:05:49,063 [INFO] RequestTimingFilter - Duration: 30ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-04 20:05:49,104 [INFO] RequestTimingFilter - Duration: 55ms for "/js/sprintf.min.js"
+2017-05-04 20:05:49,104 [INFO] RequestTimingFilter - Duration: 64ms for "/js/main.js"
+2017-05-04 20:05:49,105 [INFO] RequestTimingFilter - Duration: 79ms for "/css/easyui/icon.css"
+2017-05-04 20:05:49,106 [INFO] RequestTimingFilter - Duration: 57ms for "/js/index.js"
+2017-05-04 20:05:49,363 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-05-04 20:05:49,363 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-05-04 20:05:49,390 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-05-04 20:05:49,463 [INFO] RequestTimingFilter - Duration: 6ms for "/resource/granted_authorities"
+2017-05-04 20:05:49,578 [INFO] RequestTimingFilter - Duration: 122ms for "/resource/menu"
+2017-05-04 20:05:49,625 [INFO] RequestTimingFilter - Duration: 23ms for "/css/easyui/bootstrap/images/tree_icons.png"
+2017-05-04 20:05:56,130 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js.map"
+2017-05-04 20:07:30,110 [INFO] RequestTimingFilter - Duration: 0ms for "/"
+2017-05-04 20:07:30,136 [INFO] RequestTimingFilter - Duration: 1ms for "/css/bootstrap.min.css"
+2017-05-04 20:07:30,138 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:07:30,140 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/icon.css"
+2017-05-04 20:07:30,143 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/color.css"
+2017-05-04 20:07:30,145 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-05-04 20:07:30,162 [INFO] RequestTimingFilter - Duration: 1ms for "/css/app.css"
+2017-05-04 20:07:30,167 [INFO] RequestTimingFilter - Duration: 4ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:07:30,172 [INFO] RequestTimingFilter - Duration: 4ms for "/js/utils.js"
+2017-05-04 20:07:30,174 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:07:30,175 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-04 20:07:30,177 [INFO] RequestTimingFilter - Duration: 2ms for "/js/sprintf.min.js"
+2017-05-04 20:07:30,179 [INFO] RequestTimingFilter - Duration: 1ms for "/js/index.js"
+2017-05-04 20:07:30,180 [INFO] RequestTimingFilter - Duration: 6ms for "/js/main.js"
+2017-05-04 20:07:30,521 [INFO] RequestTimingFilter - Duration: 6ms for "/js/sprintf.min.js.map"
+2017-05-04 20:07:30,535 [INFO] RequestTimingFilter - Duration: 41ms for "/user/granted_authorities"
+2017-05-04 20:07:30,598 [INFO] RequestTimingFilter - Duration: 108ms for "/resource/menu"
+2017-05-04 20:07:38,615 [INFO] RequestTimingFilter - Duration: 130ms for "/pages/auth/roles.jsp"
+2017-05-04 20:07:38,631 [INFO] RequestTimingFilter - Duration: 0ms for "/js/utils.js"
+2017-05-04 20:07:38,647 [INFO] RequestTimingFilter - Duration: 16ms for "/js/auth/roles.js"
+2017-05-04 20:07:38,753 [INFO] RequestTimingFilter - Duration: 22ms for "/css/easyui/bootstrap/images/pagination_icons.png"
+2017-05-04 20:07:38,795 [INFO] RequestTimingFilter - Duration: 2ms for "/api/roles"
+2017-05-04 20:14:30,292 [INFO] RequestTimingFilter - Duration: 18ms for "/"
+2017-05-04 20:14:30,392 [INFO] RequestTimingFilter - Duration: 99ms for "/login.html"
+2017-05-04 20:14:30,423 [INFO] RequestTimingFilter - Duration: 3ms for "/css/bootstrap.min.css"
+2017-05-04 20:14:30,427 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:14:30,432 [INFO] RequestTimingFilter - Duration: 2ms for "/css/sticky.footer.css"
+2017-05-04 20:14:30,438 [INFO] RequestTimingFilter - Duration: 5ms for "/css/easyui/color.css"
+2017-05-04 20:14:30,442 [INFO] RequestTimingFilter - Duration: 3ms for "/css/app.css"
+2017-05-04 20:14:30,449 [INFO] RequestTimingFilter - Duration: 5ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:14:30,452 [INFO] RequestTimingFilter - Duration: 2ms for "/js/utils.js"
+2017-05-04 20:14:30,455 [INFO] RequestTimingFilter - Duration: 8ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:14:30,626 [INFO] RequestTimingFilter - Duration: 173ms for "/api/verification_code_generation"
+2017-05-04 20:14:36,435 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-05-04 20:14:41,829 [INFO] RequestTimingFilter - Duration: 333ms for "/api/login"
+2017-05-04 20:14:42,767 [INFO] RequestTimingFilter - Duration: 928ms for "/"
+2017-05-04 20:14:51,505 [INFO] RequestTimingFilter - Duration: 16ms for "/"
+2017-05-04 20:14:51,526 [INFO] RequestTimingFilter - Duration: 2ms for "/css/bootstrap.min.css"
+2017-05-04 20:14:51,528 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:14:51,532 [INFO] RequestTimingFilter - Duration: 3ms for "/css/sticky.footer.css"
+2017-05-04 20:14:51,536 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/color.css"
+2017-05-04 20:14:51,542 [INFO] RequestTimingFilter - Duration: 6ms for "/css/easyui/icon.css"
+2017-05-04 20:14:51,545 [INFO] RequestTimingFilter - Duration: 5ms for "/css/app.css"
+2017-05-04 20:14:51,553 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:14:51,571 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:14:51,574 [INFO] RequestTimingFilter - Duration: 8ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-04 20:14:51,582 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js"
+2017-05-04 20:14:51,585 [INFO] RequestTimingFilter - Duration: 1ms for "/js/main.js"
+2017-05-04 20:14:51,585 [INFO] RequestTimingFilter - Duration: 1ms for "/js/index.js"
+2017-05-04 20:14:51,588 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-05-04 20:14:51,902 [INFO] RequestTimingFilter - Duration: 2ms for "/js/sprintf.min.js.map"
+2017-05-04 20:14:51,921 [INFO] RequestTimingFilter - Duration: 43ms for "/user/granted_authorities"
+2017-05-04 20:14:51,981 [INFO] RequestTimingFilter - Duration: 109ms for "/resource/menu"
+2017-05-04 20:14:53,582 [INFO] RequestTimingFilter - Duration: 133ms for "/pages/auth/roles.jsp"
+2017-05-04 20:14:53,603 [INFO] RequestTimingFilter - Duration: 4ms for "/js/utils.js"
+2017-05-04 20:14:53,611 [INFO] RequestTimingFilter - Duration: 2ms for "/js/auth/roles.js"
+2017-05-04 20:14:53,756 [INFO] RequestTimingFilter - Duration: 43ms for "/role/roles"
+2017-05-04 20:15:02,511 [INFO] RequestTimingFilter - Duration: 114ms for "/pages/auth/admin.jsp"
+2017-05-04 20:15:02,526 [INFO] RequestTimingFilter - Duration: 0ms for "/js/auth/admin.js"
+2017-05-04 20:15:02,651 [INFO] BaseController - errorLog{}
+org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'loginName' is not present
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:255)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:95)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:79)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:157)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:124)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.doFilterInternal(OpenEntityManagerInViewFilter.java:177)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:316)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:122)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:169)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:48)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:205)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:213)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.sj.library.management.common.filter.RequestTimingFilter.doFilterInternal(RequestTimingFilter.java:23)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:620)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:540)
+	at java.lang.Thread.run(Thread.java:745)
+2017-05-04 20:15:02,660 [INFO] RequestTimingFilter - Duration: 15ms for "/admin/admins"
+2017-05-04 20:15:02,677 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/icons/search.png"
+2017-05-04 20:17:17,987 [INFO] RequestTimingFilter - Duration: 23ms for "/"
+2017-05-04 20:17:18,110 [INFO] RequestTimingFilter - Duration: 121ms for "/login.html"
+2017-05-04 20:17:18,141 [INFO] RequestTimingFilter - Duration: 3ms for "/css/sticky.footer.css"
+2017-05-04 20:17:18,152 [INFO] RequestTimingFilter - Duration: 3ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:17:18,158 [INFO] RequestTimingFilter - Duration: 4ms for "/css/app.css"
+2017-05-04 20:17:18,166 [INFO] RequestTimingFilter - Duration: 3ms for "/js/utils.js"
+2017-05-04 20:17:18,160 [INFO] RequestTimingFilter - Duration: 22ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:17:18,161 [INFO] RequestTimingFilter - Duration: 21ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:17:18,161 [INFO] RequestTimingFilter - Duration: 21ms for "/css/easyui/color.css"
+2017-05-04 20:17:18,158 [INFO] RequestTimingFilter - Duration: 19ms for "/css/bootstrap.min.css"
+2017-05-04 20:17:18,295 [INFO] RequestTimingFilter - Duration: 127ms for "/api/verification_code_generation"
+2017-05-04 20:17:23,913 [INFO] RequestTimingFilter - Duration: 10ms for "/api/verification_code_generation"
+2017-05-04 20:17:25,245 [INFO] RequestTimingFilter - Duration: 5ms for "/api/verification_code_generation"
+2017-05-04 20:17:29,995 [INFO] RequestTimingFilter - Duration: 292ms for "/api/login"
+2017-05-04 20:17:30,830 [INFO] RequestTimingFilter - Duration: 819ms for "/"
+2017-05-04 20:18:03,864 [INFO] RequestTimingFilter - Duration: 7ms for "/"
+2017-05-04 20:18:03,903 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:18:03,911 [INFO] RequestTimingFilter - Duration: 2ms for "/css/sticky.footer.css"
+2017-05-04 20:18:03,916 [INFO] RequestTimingFilter - Duration: 4ms for "/css/easyui/color.css"
+2017-05-04 20:18:03,916 [INFO] RequestTimingFilter - Duration: 4ms for "/css/easyui/icon.css"
+2017-05-04 20:18:03,931 [INFO] RequestTimingFilter - Duration: 2ms for "/css/app.css"
+2017-05-04 20:18:03,945 [INFO] RequestTimingFilter - Duration: 9ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:18:03,947 [INFO] RequestTimingFilter - Duration: 1ms for "/js/index.js"
+2017-05-04 20:18:03,948 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-05-04 20:18:03,950 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js"
+2017-05-04 20:18:03,951 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-04 20:18:03,953 [INFO] RequestTimingFilter - Duration: 1ms for "/js/main.js"
+2017-05-04 20:18:03,964 [INFO] RequestTimingFilter - Duration: 63ms for "/css/bootstrap.min.css"
+2017-05-04 20:18:03,965 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:18:04,264 [INFO] RequestTimingFilter - Duration: 3ms for "/js/sprintf.min.js.map"
+2017-05-04 20:18:04,313 [INFO] RequestTimingFilter - Duration: 66ms for "/user/granted_authorities"
+2017-05-04 20:18:04,374 [INFO] RequestTimingFilter - Duration: 129ms for "/resource/menu"
+2017-05-04 20:18:15,952 [INFO] RequestTimingFilter - Duration: 115ms for "/pages/auth/roles.jsp"
+2017-05-04 20:18:15,967 [INFO] RequestTimingFilter - Duration: 0ms for "/js/utils.js"
+2017-05-04 20:18:15,983 [INFO] RequestTimingFilter - Duration: 0ms for "/js/auth/roles.js"
+2017-05-04 20:18:16,156 [INFO] RequestTimingFilter - Duration: 48ms for "/role/roles"
+2017-05-04 20:18:18,240 [INFO] RequestTimingFilter - Duration: 148ms for "/pages/auth/admin.jsp"
+2017-05-04 20:18:18,255 [INFO] RequestTimingFilter - Duration: 2ms for "/js/auth/admin.js"
+2017-05-04 20:18:22,083 [INFO] BaseController - errorLog{}
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [select id, login_name, real_name, phone_no, email, type from t_user where is_delete = false order by create_time desc limit ?, ? ]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'is_delete' in 'where clause'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:660)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:695)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:727)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:737)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:787)
+	at com.sj.library.management.dao.impl.UserDaoImpl.getUsers(UserDaoImpl.java:66)
+	at com.sj.library.management.service.impl.UserServiceImpl.getUsers(UserServiceImpl.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy51.getUsers(Unknown Source)
+	at com.sj.library.management.controller.AdminController.getAdmins(AdminController.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.doFilterInternal(OpenEntityManagerInViewFilter.java:177)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:316)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:122)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:169)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:48)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:205)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:213)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.sj.library.management.common.filter.RequestTimingFilter.doFilterInternal(RequestTimingFilter.java:23)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:620)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:540)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'is_delete' in 'where clause'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.Util.getInstance(Util.java:360)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3887)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3823)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2530)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1907)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2030)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:76)
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:703)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:644)
+	... 101 more
+2017-05-04 20:18:22,120 [INFO] RequestTimingFilter - Duration: 3734ms for "/admin/admins"
+2017-05-04 20:20:01,256 [INFO] RequestTimingFilter - Duration: 22ms for "/"
+2017-05-04 20:20:01,368 [INFO] RequestTimingFilter - Duration: 110ms for "/login.html"
+2017-05-04 20:20:01,404 [INFO] RequestTimingFilter - Duration: 9ms for "/css/bootstrap.min.css"
+2017-05-04 20:20:01,441 [INFO] RequestTimingFilter - Duration: 9ms for "/css/app.css"
+2017-05-04 20:20:01,444 [INFO] RequestTimingFilter - Duration: 3ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:20:01,441 [INFO] RequestTimingFilter - Duration: 24ms for "/css/sticky.footer.css"
+2017-05-04 20:20:01,435 [INFO] RequestTimingFilter - Duration: 18ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:20:01,427 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:20:01,421 [INFO] RequestTimingFilter - Duration: 4ms for "/css/easyui/color.css"
+2017-05-04 20:20:01,457 [INFO] RequestTimingFilter - Duration: 6ms for "/js/utils.js"
+2017-05-04 20:20:01,612 [INFO] RequestTimingFilter - Duration: 164ms for "/api/verification_code_generation"
+2017-05-04 20:20:13,082 [INFO] RequestTimingFilter - Duration: 353ms for "/api/login"
+2017-05-04 20:20:14,139 [INFO] RequestTimingFilter - Duration: 1042ms for "/"
+2017-05-04 20:20:26,035 [INFO] RequestTimingFilter - Duration: 6ms for "/"
+2017-05-04 20:20:26,069 [INFO] RequestTimingFilter - Duration: 4ms for "/css/bootstrap.min.css"
+2017-05-04 20:20:26,074 [INFO] RequestTimingFilter - Duration: 2ms for "/css/sticky.footer.css"
+2017-05-04 20:20:26,079 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/icon.css"
+2017-05-04 20:20:26,090 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:20:26,093 [INFO] RequestTimingFilter - Duration: 2ms for "/js/main.js"
+2017-05-04 20:20:26,094 [INFO] RequestTimingFilter - Duration: 2ms for "/js/utils.js"
+2017-05-04 20:20:26,100 [INFO] RequestTimingFilter - Duration: 20ms for "/css/easyui/color.css"
+2017-05-04 20:20:26,102 [INFO] RequestTimingFilter - Duration: 3ms for "/css/app.css"
+2017-05-04 20:20:26,103 [INFO] RequestTimingFilter - Duration: 30ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:20:26,103 [INFO] RequestTimingFilter - Duration: 1ms for "/js/index.js"
+2017-05-04 20:20:26,106 [INFO] RequestTimingFilter - Duration: 3ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-04 20:20:26,107 [INFO] RequestTimingFilter - Duration: 8ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:20:26,107 [INFO] RequestTimingFilter - Duration: 12ms for "/js/sprintf.min.js"
+2017-05-04 20:20:26,524 [INFO] RequestTimingFilter - Duration: 11ms for "/js/sprintf.min.js.map"
+2017-05-04 20:20:26,551 [INFO] RequestTimingFilter - Duration: 75ms for "/user/granted_authorities"
+2017-05-04 20:20:26,612 [INFO] RequestTimingFilter - Duration: 137ms for "/resource/menu"
+2017-05-04 20:22:15,025 [INFO] RequestTimingFilter - Duration: 133ms for "/pages/auth/admin.jsp"
+2017-05-04 20:22:15,044 [INFO] RequestTimingFilter - Duration: 4ms for "/js/auth/admin.js"
+2017-05-04 20:22:15,249 [INFO] RequestTimingFilter - Duration: 47ms for "/admin/admins"
+2017-05-04 20:22:23,115 [INFO] RequestTimingFilter - Duration: 86ms for "/pages/auth/resources.jsp"
+2017-05-04 20:22:23,130 [INFO] RequestTimingFilter - Duration: 0ms for "/js/utils.js"
+2017-05-04 20:22:23,130 [INFO] RequestTimingFilter - Duration: 0ms for "/js/auth/resources.js"
+2017-05-04 20:22:23,270 [INFO] RequestTimingFilter - Duration: 3ms for "/api/resources_load"
+2017-05-04 20:22:23,300 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/images/combo_arrow.png"
+2017-05-04 20:33:19,187 [INFO] RequestTimingFilter - Duration: 18ms for "/"
+2017-05-04 20:33:19,284 [INFO] RequestTimingFilter - Duration: 95ms for "/login.html"
+2017-05-04 20:33:19,308 [INFO] RequestTimingFilter - Duration: 4ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:33:19,321 [INFO] RequestTimingFilter - Duration: 8ms for "/css/sticky.footer.css"
+2017-05-04 20:33:19,325 [INFO] RequestTimingFilter - Duration: 3ms for "/css/app.css"
+2017-05-04 20:33:19,327 [INFO] RequestTimingFilter - Duration: 24ms for "/css/bootstrap.min.css"
+2017-05-04 20:33:19,331 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/color.css"
+2017-05-04 20:33:19,333 [INFO] RequestTimingFilter - Duration: 5ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:33:19,351 [INFO] RequestTimingFilter - Duration: 10ms for "/js/utils.js"
+2017-05-04 20:33:19,365 [INFO] RequestTimingFilter - Duration: 12ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:33:19,499 [INFO] RequestTimingFilter - Duration: 173ms for "/api/verification_code_generation"
+2017-05-04 20:33:30,275 [INFO] RequestTimingFilter - Duration: 345ms for "/api/login"
+2017-05-04 20:33:31,159 [INFO] RequestTimingFilter - Duration: 884ms for "/"
+2017-05-04 20:33:39,189 [INFO] RequestTimingFilter - Duration: 0ms for "/"
+2017-05-04 20:33:39,236 [INFO] RequestTimingFilter - Duration: 3ms for "/css/bootstrap.min.css"
+2017-05-04 20:33:39,238 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-05-04 20:33:39,245 [INFO] RequestTimingFilter - Duration: 8ms for "/css/easyui/icon.css"
+2017-05-04 20:33:39,247 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:33:39,248 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:33:39,252 [INFO] RequestTimingFilter - Duration: 8ms for "/css/easyui/color.css"
+2017-05-04 20:33:39,255 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-04 20:33:39,257 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-05-04 20:33:39,261 [INFO] RequestTimingFilter - Duration: 3ms for "/js/index.js"
+2017-05-04 20:33:39,264 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js"
+2017-05-04 20:33:39,270 [INFO] RequestTimingFilter - Duration: 27ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:33:39,272 [INFO] RequestTimingFilter - Duration: 29ms for "/css/app.css"
+2017-05-04 20:33:39,273 [INFO] RequestTimingFilter - Duration: 1ms for "/js/main.js"
+2017-05-04 20:33:39,603 [INFO] RequestTimingFilter - Duration: 4ms for "/js/sprintf.min.js.map"
+2017-05-04 20:33:39,670 [INFO] RequestTimingFilter - Duration: 80ms for "/user/granted_authorities"
+2017-05-04 20:33:39,719 [INFO] RequestTimingFilter - Duration: 132ms for "/resource/menu"
+2017-05-04 20:33:41,672 [INFO] RequestTimingFilter - Duration: 89ms for "/pages/auth/resources.jsp"
+2017-05-04 20:33:41,691 [INFO] RequestTimingFilter - Duration: 3ms for "/js/utils.js"
+2017-05-04 20:33:41,698 [INFO] RequestTimingFilter - Duration: 2ms for "/js/auth/resources.js"
+2017-05-04 20:33:41,895 [INFO] RequestTimingFilter - Duration: 73ms for "/resource/resources"
+2017-05-04 20:34:03,075 [INFO] RequestTimingFilter - Duration: 55ms for "/resource/resources"
+2017-05-04 20:34:04,462 [INFO] RequestTimingFilter - Duration: 56ms for "/resource/resources"
+2017-05-04 20:35:10,815 [INFO] RequestTimingFilter - Duration: 9ms for "/"
+2017-05-04 20:35:10,835 [INFO] RequestTimingFilter - Duration: 1ms for "/css/bootstrap.min.css"
+2017-05-04 20:35:10,841 [INFO] RequestTimingFilter - Duration: 4ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:35:10,848 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-05-04 20:35:10,850 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/icon.css"
+2017-05-04 20:35:10,851 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/color.css"
+2017-05-04 20:35:10,852 [INFO] RequestTimingFilter - Duration: 0ms for "/css/app.css"
+2017-05-04 20:35:10,854 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:35:10,855 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:35:10,883 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-04 20:35:10,885 [INFO] RequestTimingFilter - Duration: 2ms for "/js/main.js"
+2017-05-04 20:35:10,887 [INFO] RequestTimingFilter - Duration: 2ms for "/js/utils.js"
+2017-05-04 20:35:10,889 [INFO] RequestTimingFilter - Duration: 2ms for "/js/index.js"
+2017-05-04 20:35:10,891 [INFO] RequestTimingFilter - Duration: 6ms for "/js/sprintf.min.js"
+2017-05-04 20:35:11,226 [INFO] RequestTimingFilter - Duration: 2ms for "/user/granted_authorities"
+2017-05-04 20:35:11,244 [INFO] RequestTimingFilter - Duration: 3ms for "/js/sprintf.min.js.map"
+2017-05-04 20:35:11,306 [INFO] RequestTimingFilter - Duration: 84ms for "/resource/menu"
+2017-05-04 20:35:12,528 [INFO] RequestTimingFilter - Duration: 1ms for "/pages/auth/resources.jsp"
+2017-05-04 20:35:12,543 [INFO] RequestTimingFilter - Duration: 3ms for "/js/utils.js"
+2017-05-04 20:35:12,559 [INFO] RequestTimingFilter - Duration: 4ms for "/js/auth/resources.js"
+2017-05-04 20:35:12,740 [INFO] RequestTimingFilter - Duration: 63ms for "/resource/get_resources"
+2017-05-04 20:35:41,423 [INFO] RequestTimingFilter - Duration: 16ms for "/"
+2017-05-04 20:35:41,462 [INFO] RequestTimingFilter - Duration: 1ms for "/css/bootstrap.min.css"
+2017-05-04 20:35:41,463 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-05-04 20:35:41,464 [INFO] RequestTimingFilter - Duration: 0ms for "/css/easyui/icon.css"
+2017-05-04 20:35:41,468 [INFO] RequestTimingFilter - Duration: 8ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:35:41,468 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/color.css"
+2017-05-04 20:35:41,469 [INFO] RequestTimingFilter - Duration: 1ms for "/css/app.css"
+2017-05-04 20:35:41,470 [INFO] RequestTimingFilter - Duration: 0ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:35:41,472 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:35:41,479 [INFO] RequestTimingFilter - Duration: 3ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-04 20:35:41,481 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-05-04 20:35:41,512 [INFO] RequestTimingFilter - Duration: 1ms for "/js/main.js"
+2017-05-04 20:35:41,514 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js"
+2017-05-04 20:35:41,516 [INFO] RequestTimingFilter - Duration: 1ms for "/js/index.js"
+2017-05-04 20:35:41,625 [INFO] RequestTimingFilter - Duration: 3ms for "/js/sprintf.min.js.map"
+2017-05-04 20:35:41,827 [INFO] RequestTimingFilter - Duration: 4ms for "/user/granted_authorities"
+2017-05-04 20:35:41,909 [INFO] RequestTimingFilter - Duration: 88ms for "/resource/menu"
+2017-05-04 20:35:45,787 [INFO] RequestTimingFilter - Duration: 0ms for "/pages/auth/resources.jsp"
+2017-05-04 20:35:45,809 [INFO] RequestTimingFilter - Duration: 3ms for "/js/utils.js"
+2017-05-04 20:35:45,818 [INFO] RequestTimingFilter - Duration: 3ms for "/js/auth/resources.js"
+2017-05-04 20:35:45,954 [INFO] RequestTimingFilter - Duration: 10ms for "/resource/get_resources"
+2017-05-04 20:36:06,332 [INFO] RequestTimingFilter - Duration: 3ms for "/index.jsp"
+2017-05-04 20:36:09,008 [INFO] RequestTimingFilter - Duration: 16ms for "/"
+2017-05-04 20:36:09,288 [INFO] RequestTimingFilter - Duration: 2ms for "/user/granted_authorities"
+2017-05-04 20:36:09,356 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js.map"
+2017-05-04 20:36:09,396 [INFO] RequestTimingFilter - Duration: 111ms for "/resource/menu"
+2017-05-04 20:36:11,650 [INFO] RequestTimingFilter - Duration: 0ms for "/pages/auth/resources.jsp"
+2017-05-04 20:36:11,665 [INFO] RequestTimingFilter - Duration: 0ms for "/js/utils.js"
+2017-05-04 20:36:11,709 [INFO] RequestTimingFilter - Duration: 6ms for "/js/auth/resources.js"
+2017-05-04 20:36:11,820 [INFO] RequestTimingFilter - Duration: 5ms for "/resource/get_resources"
+2017-05-04 20:36:15,933 [INFO] RequestTimingFilter - Duration: 5ms for "/resource/menu_by_level"
+2017-05-04 20:36:15,944 [INFO] RequestTimingFilter - Duration: 3ms for "/resource/menu_by_level"
+2017-05-04 20:36:25,882 [INFO] RequestTimingFilter - Duration: 0ms for "/resource/menu_by_level"
+2017-05-04 20:36:25,909 [INFO] RequestTimingFilter - Duration: 10ms for "/resource/menu_by_level"
+2017-05-04 20:36:42,310 [INFO] RequestTimingFilter - Duration: 76ms for "/pages/auth/roles.jsp"
+2017-05-04 20:36:42,341 [INFO] RequestTimingFilter - Duration: 2ms for "/js/utils.js"
+2017-05-04 20:36:42,355 [INFO] RequestTimingFilter - Duration: 2ms for "/js/auth/roles.js"
+2017-05-04 20:36:42,479 [INFO] RequestTimingFilter - Duration: 22ms for "/role/roles"
+2017-05-04 20:37:41,288 [INFO] RequestTimingFilter - Duration: 200ms for "/pages/auth/admin.jsp"
+2017-05-04 20:37:41,299 [INFO] RequestTimingFilter - Duration: 2ms for "/js/auth/admin.js"
+2017-05-04 20:37:41,385 [INFO] RequestTimingFilter - Duration: 8ms for "/admin/admins"
+2017-05-04 20:39:23,617 [INFO] RequestTimingFilter - Duration: 0ms for "/"
+2017-05-04 20:39:23,657 [INFO] RequestTimingFilter - Duration: 5ms for "/css/bootstrap.min.css"
+2017-05-04 20:39:23,659 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:39:23,660 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-05-04 20:39:23,661 [INFO] RequestTimingFilter - Duration: 0ms for "/css/easyui/icon.css"
+2017-05-04 20:39:23,663 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/color.css"
+2017-05-04 20:39:23,665 [INFO] RequestTimingFilter - Duration: 1ms for "/css/app.css"
+2017-05-04 20:39:23,675 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:39:23,676 [INFO] RequestTimingFilter - Duration: 1ms for "/js/index.js"
+2017-05-04 20:39:23,696 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:39:23,699 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-04 20:39:23,704 [INFO] RequestTimingFilter - Duration: 4ms for "/js/main.js"
+2017-05-04 20:39:23,712 [INFO] RequestTimingFilter - Duration: 6ms for "/js/utils.js"
+2017-05-04 20:39:23,715 [INFO] RequestTimingFilter - Duration: 2ms for "/js/sprintf.min.js"
+2017-05-04 20:39:24,158 [INFO] RequestTimingFilter - Duration: 5ms for "/user/granted_authorities"
+2017-05-04 20:39:24,166 [INFO] RequestTimingFilter - Duration: 2ms for "/js/sprintf.min.js.map"
+2017-05-04 20:39:24,250 [INFO] RequestTimingFilter - Duration: 103ms for "/resource/menu"
+2017-05-04 20:39:26,357 [INFO] RequestTimingFilter - Duration: 0ms for "/pages/auth/admin.jsp"
+2017-05-04 20:39:26,357 [INFO] RequestTimingFilter - Duration: 0ms for "/js/auth/admin.js"
+2017-05-04 20:39:26,472 [INFO] RequestTimingFilter - Duration: 5ms for "/admin/admins"
+2017-05-04 20:39:59,813 [INFO] BaseController - errorLog{}
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument at index 0 in method: public void com.sj.library.management.controller.AdminController.addAdmin(com.sj.library.management.to.UserTO), with 1 error(s): [Field error in object 'userTO' on field 'password': rejected value [null]; codes [NotEmpty.userTO.password,NotEmpty.password,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userTO.password,password]; arguments []; default message [password]]; default message [密码不能为空]] 
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.validate(RequestResponseBodyMethodProcessor.java:122)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:104)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:79)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:157)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:124)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:863)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.doFilterInternal(OpenEntityManagerInViewFilter.java:177)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:316)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:122)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:169)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:48)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:205)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:213)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.sj.library.management.common.filter.RequestTimingFilter.doFilterInternal(RequestTimingFilter.java:23)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:620)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:540)
+	at java.lang.Thread.run(Thread.java:745)
+2017-05-04 20:39:59,828 [INFO] RequestTimingFilter - Duration: 197ms for "/admin/add"
+2017-05-04 20:42:26,700 [INFO] RequestTimingFilter - Duration: 16ms for "/"
+2017-05-04 20:42:26,730 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:42:26,731 [INFO] RequestTimingFilter - Duration: 0ms for "/css/sticky.footer.css"
+2017-05-04 20:42:26,732 [INFO] RequestTimingFilter - Duration: 0ms for "/css/easyui/icon.css"
+2017-05-04 20:42:26,733 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/color.css"
+2017-05-04 20:42:26,735 [INFO] RequestTimingFilter - Duration: 0ms for "/css/app.css"
+2017-05-04 20:42:26,747 [INFO] RequestTimingFilter - Duration: 9ms for "/css/bootstrap.min.css"
+2017-05-04 20:42:26,748 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:42:26,750 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:42:26,751 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-04 20:42:26,753 [INFO] RequestTimingFilter - Duration: 1ms for "/js/main.js"
+2017-05-04 20:42:26,756 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-05-04 20:42:26,765 [INFO] RequestTimingFilter - Duration: 0ms for "/js/sprintf.min.js"
+2017-05-04 20:42:26,768 [INFO] RequestTimingFilter - Duration: 2ms for "/js/index.js"
+2017-05-04 20:42:26,911 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js.map"
+2017-05-04 20:42:27,082 [INFO] RequestTimingFilter - Duration: 5ms for "/user/granted_authorities"
+2017-05-04 20:42:27,124 [INFO] RequestTimingFilter - Duration: 50ms for "/resource/menu"
+2017-05-04 20:42:29,011 [INFO] RequestTimingFilter - Duration: 86ms for "/pages/auth/admin.jsp"
+2017-05-04 20:42:29,027 [INFO] RequestTimingFilter - Duration: 0ms for "/js/auth/admin.js"
+2017-05-04 20:42:29,185 [INFO] RequestTimingFilter - Duration: 6ms for "/admin/admins"
+2017-05-04 20:43:00,617 [INFO] RequestTimingFilter - Duration: 129ms for "/admin/add"
+2017-05-04 20:43:25,581 [INFO] BaseController - errorLog{}
+org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [UK_ohf23nmpxnef00bgt227kqmuj]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:189)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:155)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:519)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:757)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:726)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:478)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:272)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy51.addUser(Unknown Source)
+	at com.sj.library.management.controller.AdminController.addAdmin(AdminController.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:863)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.doFilterInternal(OpenEntityManagerInViewFilter.java:177)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:316)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:122)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:169)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:48)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:205)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:213)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.sj.library.management.common.filter.RequestTimingFilter.doFilterInternal(RequestTimingFilter.java:23)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:620)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:540)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:207)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2921)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3421)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:560)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:434)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:337)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1295)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:468)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3135)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2352)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:147)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:231)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:61)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:515)
+	... 90 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'admin' for key 'UK_ohf23nmpxnef00bgt227kqmuj'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.Util.getInstance(Util.java:360)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:971)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3887)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3823)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2530)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1907)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2141)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2077)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2062)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:105)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
+	... 109 more
+2017-05-04 20:43:25,612 [INFO] RequestTimingFilter - Duration: 138ms for "/admin/add"
+2017-05-04 20:44:52,990 [INFO] BaseController - errorLog{}
+org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [UK_ohf23nmpxnef00bgt227kqmuj]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:189)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:155)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:519)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:757)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:726)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:478)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:272)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy51.addUser(Unknown Source)
+	at com.sj.library.management.controller.AdminController.addAdmin(AdminController.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:863)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.doFilterInternal(OpenEntityManagerInViewFilter.java:177)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:316)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:122)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:169)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:48)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:205)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:213)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.sj.library.management.common.filter.RequestTimingFilter.doFilterInternal(RequestTimingFilter.java:23)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:620)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:540)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:207)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2921)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3421)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:560)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:434)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:337)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1295)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:468)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3135)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2352)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:147)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:231)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:61)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:515)
+	... 90 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'admin' for key 'UK_ohf23nmpxnef00bgt227kqmuj'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.Util.getInstance(Util.java:360)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:971)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3887)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3823)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2530)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1907)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2141)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2077)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2062)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:105)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
+	... 109 more
+2017-05-04 20:44:53,022 [INFO] RequestTimingFilter - Duration: 58572ms for "/admin/add"
+2017-05-04 20:52:51,235 [INFO] RequestTimingFilter - Duration: 18ms for "/"
+2017-05-04 20:52:51,367 [INFO] RequestTimingFilter - Duration: 130ms for "/login.html"
+2017-05-04 20:52:51,412 [INFO] RequestTimingFilter - Duration: 4ms for "/css/bootstrap.min.css"
+2017-05-04 20:52:51,441 [INFO] RequestTimingFilter - Duration: 3ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:52:51,435 [INFO] RequestTimingFilter - Duration: 2ms for "/css/app.css"
+2017-05-04 20:52:51,433 [INFO] RequestTimingFilter - Duration: 3ms for "/css/sticky.footer.css"
+2017-05-04 20:52:51,450 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/color.css"
+2017-05-04 20:52:51,453 [INFO] RequestTimingFilter - Duration: 6ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:52:51,463 [INFO] RequestTimingFilter - Duration: 4ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:52:51,471 [INFO] RequestTimingFilter - Duration: 7ms for "/js/utils.js"
+2017-05-04 20:52:51,651 [INFO] RequestTimingFilter - Duration: 186ms for "/api/verification_code_generation"
+2017-05-04 20:53:01,875 [INFO] RequestTimingFilter - Duration: 280ms for "/api/login"
+2017-05-04 20:53:02,574 [INFO] RequestTimingFilter - Duration: 683ms for "/"
+2017-05-04 20:53:02,595 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/icon.css"
+2017-05-04 20:53:02,599 [INFO] RequestTimingFilter - Duration: 3ms for "/js/main.js"
+2017-05-04 20:53:02,601 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js"
+2017-05-04 20:53:02,604 [INFO] RequestTimingFilter - Duration: 2ms for "/js/index.js"
+2017-05-04 20:53:02,607 [INFO] RequestTimingFilter - Duration: 3ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-04 20:53:02,917 [INFO] RequestTimingFilter - Duration: 5ms for "/js/sprintf.min.js.map"
+2017-05-04 20:53:02,935 [INFO] RequestTimingFilter - Duration: 63ms for "/user/granted_authorities"
+2017-05-04 20:53:02,973 [INFO] RequestTimingFilter - Duration: 103ms for "/resource/menu"
+2017-05-04 20:53:04,831 [INFO] RequestTimingFilter - Duration: 117ms for "/pages/auth/admin.jsp"
+2017-05-04 20:53:04,847 [INFO] RequestTimingFilter - Duration: 0ms for "/js/auth/admin.js"
+2017-05-04 20:53:07,456 [INFO] RequestTimingFilter - Duration: 2447ms for "/admin/admins"
+2017-05-04 20:53:56,333 [INFO] BaseController - errorLog{}
+org.springframework.http.converter.HttpMessageNotReadableException: Could not read JSON: Unrecognized field "passwordConfirm" (class com.sj.library.management.to.UserTO), not marked as ignorable (8 known properties: "loginName", "realName", "type", "id", "email", "phoneNo", "password", "typeDesc"])
+ at [Source: HttpInputOverHTTP@34ff0711; line: 1, column: 126] (through reference chain: com.sj.library.management.to.UserTO["passwordConfirm"]); nested exception is com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "passwordConfirm" (class com.sj.library.management.to.UserTO), not marked as ignorable (8 known properties: "loginName", "realName", "type", "id", "email", "phoneNo", "password", "typeDesc"])
+ at [Source: HttpInputOverHTTP@34ff0711; line: 1, column: 126] (through reference chain: com.sj.library.management.to.UserTO["passwordConfirm"])
+	at org.springframework.http.converter.json.MappingJackson2HttpMessageConverter.readJavaType(MappingJackson2HttpMessageConverter.java:228)
+	at org.springframework.http.converter.json.MappingJackson2HttpMessageConverter.read(MappingJackson2HttpMessageConverter.java:220)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:183)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:98)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:79)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:157)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:124)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:863)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.doFilterInternal(OpenEntityManagerInViewFilter.java:177)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:316)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:122)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:169)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:48)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:205)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:213)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.sj.library.management.common.filter.RequestTimingFilter.doFilterInternal(RequestTimingFilter.java:23)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:620)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:540)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "passwordConfirm" (class com.sj.library.management.to.UserTO), not marked as ignorable (8 known properties: "loginName", "realName", "type", "id", "email", "phoneNo", "password", "typeDesc"])
+ at [Source: HttpInputOverHTTP@34ff0711; line: 1, column: 126] (through reference chain: com.sj.library.management.to.UserTO["passwordConfirm"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:62)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:834)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1096)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1469)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1447)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:282)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:140)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3789)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2913)
+	at org.springframework.http.converter.json.MappingJackson2HttpMessageConverter.readJavaType(MappingJackson2HttpMessageConverter.java:225)
+	... 82 more
+2017-05-04 20:53:56,364 [INFO] RequestTimingFilter - Duration: 233ms for "/admin/add"
+2017-05-04 20:55:21,133 [INFO] RequestTimingFilter - Duration: 23ms for "/"
+2017-05-04 20:55:21,252 [INFO] RequestTimingFilter - Duration: 109ms for "/login.html"
+2017-05-04 20:55:21,274 [INFO] RequestTimingFilter - Duration: 5ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:55:21,275 [INFO] RequestTimingFilter - Duration: 11ms for "/css/bootstrap.min.css"
+2017-05-04 20:55:21,283 [INFO] RequestTimingFilter - Duration: 4ms for "/css/sticky.footer.css"
+2017-05-04 20:55:21,289 [INFO] RequestTimingFilter - Duration: 8ms for "/js/utils.js"
+2017-05-04 20:55:21,292 [INFO] RequestTimingFilter - Duration: 6ms for "/css/app.css"
+2017-05-04 20:55:21,294 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/color.css"
+2017-05-04 20:55:21,306 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:55:21,306 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:55:21,439 [INFO] RequestTimingFilter - Duration: 130ms for "/api/verification_code_generation"
+2017-05-04 20:55:31,046 [INFO] RequestTimingFilter - Duration: 338ms for "/api/login"
+2017-05-04 20:55:31,975 [INFO] RequestTimingFilter - Duration: 919ms for "/"
+2017-05-04 20:55:36,971 [INFO] RequestTimingFilter - Duration: 0ms for "/"
+2017-05-04 20:55:36,987 [INFO] RequestTimingFilter - Duration: 0ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:55:36,987 [INFO] RequestTimingFilter - Duration: 0ms for "/css/sticky.footer.css"
+2017-05-04 20:55:37,003 [INFO] RequestTimingFilter - Duration: 16ms for "/css/bootstrap.min.css"
+2017-05-04 20:55:37,026 [INFO] RequestTimingFilter - Duration: 5ms for "/css/app.css"
+2017-05-04 20:55:37,030 [INFO] RequestTimingFilter - Duration: 3ms for "/js/main.js"
+2017-05-04 20:55:37,031 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-05-04 20:55:37,033 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/icon.css"
+2017-05-04 20:55:37,048 [INFO] RequestTimingFilter - Duration: 20ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-04 20:55:37,049 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js"
+2017-05-04 20:55:37,063 [INFO] RequestTimingFilter - Duration: 36ms for "/css/easyui/color.css"
+2017-05-04 20:55:37,070 [INFO] RequestTimingFilter - Duration: 2ms for "/js/index.js"
+2017-05-04 20:55:37,071 [INFO] RequestTimingFilter - Duration: 29ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:55:37,071 [INFO] RequestTimingFilter - Duration: 6ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:55:37,356 [INFO] RequestTimingFilter - Duration: 32ms for "/user/granted_authorities"
+2017-05-04 20:55:37,388 [INFO] RequestTimingFilter - Duration: 5ms for "/js/sprintf.min.js.map"
+2017-05-04 20:55:37,474 [INFO] RequestTimingFilter - Duration: 154ms for "/resource/menu"
+2017-05-04 20:55:42,264 [INFO] RequestTimingFilter - Duration: 95ms for "/pages/auth/resources.jsp"
+2017-05-04 20:55:42,287 [INFO] RequestTimingFilter - Duration: 2ms for "/js/utils.js"
+2017-05-04 20:55:42,304 [INFO] RequestTimingFilter - Duration: 4ms for "/js/auth/resources.js"
+2017-05-04 20:55:42,463 [INFO] RequestTimingFilter - Duration: 51ms for "/resource/get_resources"
+2017-05-04 20:55:44,926 [INFO] RequestTimingFilter - Duration: 134ms for "/pages/auth/admin.jsp"
+2017-05-04 20:55:44,941 [INFO] RequestTimingFilter - Duration: 0ms for "/js/auth/admin.js"
+2017-05-04 20:55:47,035 [INFO] RequestTimingFilter - Duration: 1996ms for "/admin/admins"
+2017-05-04 20:56:16,635 [INFO] RequestTimingFilter - Duration: 0ms for "/"
+2017-05-04 20:56:16,685 [INFO] RequestTimingFilter - Duration: 2ms for "/css/bootstrap.min.css"
+2017-05-04 20:56:16,689 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-05-04 20:56:16,691 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/icon.css"
+2017-05-04 20:56:16,701 [INFO] RequestTimingFilter - Duration: 15ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:56:16,706 [INFO] RequestTimingFilter - Duration: 5ms for "/css/app.css"
+2017-05-04 20:56:16,708 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/color.css"
+2017-05-04 20:56:16,710 [INFO] RequestTimingFilter - Duration: 1ms for "/js/main.js"
+2017-05-04 20:56:16,711 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:56:16,712 [INFO] RequestTimingFilter - Duration: 0ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-04 20:56:16,714 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:56:16,715 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-05-04 20:56:16,716 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js"
+2017-05-04 20:56:16,724 [INFO] RequestTimingFilter - Duration: 2ms for "/js/index.js"
+2017-05-04 20:56:16,840 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js.map"
+2017-05-04 20:56:17,008 [INFO] RequestTimingFilter - Duration: 4ms for "/user/granted_authorities"
+2017-05-04 20:56:17,082 [INFO] RequestTimingFilter - Duration: 82ms for "/resource/menu"
+2017-05-04 20:56:18,581 [INFO] RequestTimingFilter - Duration: 69ms for "/pages/auth/admin.jsp"
+2017-05-04 20:56:18,612 [INFO] RequestTimingFilter - Duration: 0ms for "/js/auth/admin.js"
+2017-05-04 20:56:20,673 [INFO] RequestTimingFilter - Duration: 1951ms for "/admin/admins"
+2017-05-04 20:57:03,440 [INFO] BaseController - errorLog{}
+com.sj.library.management.common.exception.UserExistsException: 用户名已存在
+	at com.sj.library.management.service.impl.UserServiceImpl.addUser(UserServiceImpl.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy51.addUser(Unknown Source)
+	at com.sj.library.management.controller.AdminController.addAdmin(AdminController.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:863)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.doFilterInternal(OpenEntityManagerInViewFilter.java:177)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:316)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:122)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:169)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:48)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:205)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:213)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.sj.library.management.common.filter.RequestTimingFilter.doFilterInternal(RequestTimingFilter.java:23)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:620)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:540)
+	at java.lang.Thread.run(Thread.java:745)
+2017-05-04 20:57:03,456 [INFO] RequestTimingFilter - Duration: 2575ms for "/admin/add"
+2017-05-04 20:57:21,718 [INFO] RequestTimingFilter - Duration: 8272ms for "/admin/add"
+2017-05-04 20:59:38,146 [INFO] RequestTimingFilter - Duration: 22ms for "/"
+2017-05-04 20:59:38,276 [INFO] RequestTimingFilter - Duration: 127ms for "/login.html"
+2017-05-04 20:59:38,295 [INFO] RequestTimingFilter - Duration: 6ms for "/css/bootstrap.min.css"
+2017-05-04 20:59:38,303 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:59:38,307 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/color.css"
+2017-05-04 20:59:38,310 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:59:38,313 [INFO] RequestTimingFilter - Duration: 2ms for "/css/sticky.footer.css"
+2017-05-04 20:59:38,317 [INFO] RequestTimingFilter - Duration: 2ms for "/css/app.css"
+2017-05-04 20:59:38,332 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:59:38,343 [INFO] RequestTimingFilter - Duration: 6ms for "/js/utils.js"
+2017-05-04 20:59:38,503 [INFO] RequestTimingFilter - Duration: 161ms for "/api/verification_code_generation"
+2017-05-04 20:59:52,690 [INFO] RequestTimingFilter - Duration: 422ms for "/api/login"
+2017-05-04 20:59:53,596 [INFO] RequestTimingFilter - Duration: 906ms for "/"
+2017-05-04 20:59:56,622 [INFO] RequestTimingFilter - Duration: 0ms for "/"
+2017-05-04 20:59:56,662 [INFO] RequestTimingFilter - Duration: 7ms for "/css/bootstrap.min.css"
+2017-05-04 20:59:56,662 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 20:59:56,671 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/color.css"
+2017-05-04 20:59:56,679 [INFO] RequestTimingFilter - Duration: 3ms for "/js/easyui/jquery.min.js"
+2017-05-04 20:59:56,687 [INFO] RequestTimingFilter - Duration: 3ms for "/css/sticky.footer.css"
+2017-05-04 20:59:56,689 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 20:59:56,689 [INFO] RequestTimingFilter - Duration: 14ms for "/css/app.css"
+2017-05-04 20:59:56,691 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-04 20:59:56,691 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-05-04 20:59:56,702 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/icon.css"
+2017-05-04 20:59:56,706 [INFO] RequestTimingFilter - Duration: 3ms for "/js/index.js"
+2017-05-04 20:59:56,711 [INFO] RequestTimingFilter - Duration: 3ms for "/js/main.js"
+2017-05-04 20:59:56,713 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js"
+2017-05-04 20:59:57,106 [INFO] RequestTimingFilter - Duration: 2ms for "/js/sprintf.min.js.map"
+2017-05-04 20:59:57,156 [INFO] RequestTimingFilter - Duration: 84ms for "/user/granted_authorities"
+2017-05-04 20:59:57,208 [INFO] RequestTimingFilter - Duration: 139ms for "/resource/menu"
+2017-05-04 21:00:21,918 [INFO] RequestTimingFilter - Duration: 129ms for "/pages/auth/admin.jsp"
+2017-05-04 21:00:21,939 [INFO] RequestTimingFilter - Duration: 4ms for "/js/auth/admin.js"
+2017-05-04 21:00:25,126 [INFO] RequestTimingFilter - Duration: 3035ms for "/admin/admins"
+2017-05-04 21:00:54,924 [INFO] RequestTimingFilter - Duration: 307ms for "/admin/add"
+2017-05-04 21:00:54,924 [INFO] RequestTimingFilter - Duration: 0ms for "/admin/admins"
+2017-05-04 21:01:16,803 [INFO] RequestTimingFilter - Duration: 1ms for "/admin/roles"
+2017-05-04 21:03:47,649 [INFO] RequestTimingFilter - Duration: 28ms for "/"
+2017-05-04 21:03:47,771 [INFO] RequestTimingFilter - Duration: 118ms for "/login.html"
+2017-05-04 21:03:47,803 [INFO] RequestTimingFilter - Duration: 18ms for "/css/bootstrap.min.css"
+2017-05-04 21:03:47,805 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 21:03:47,811 [INFO] RequestTimingFilter - Duration: 4ms for "/css/easyui/color.css"
+2017-05-04 21:03:47,816 [INFO] RequestTimingFilter - Duration: 2ms for "/css/app.css"
+2017-05-04 21:03:47,820 [INFO] RequestTimingFilter - Duration: 7ms for "/css/sticky.footer.css"
+2017-05-04 21:03:47,824 [INFO] RequestTimingFilter - Duration: 3ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 21:03:47,829 [INFO] RequestTimingFilter - Duration: 4ms for "/js/utils.js"
+2017-05-04 21:03:47,839 [INFO] RequestTimingFilter - Duration: 6ms for "/js/easyui/jquery.min.js"
+2017-05-04 21:03:47,992 [INFO] RequestTimingFilter - Duration: 159ms for "/api/verification_code_generation"
+2017-05-04 21:03:53,904 [INFO] RequestTimingFilter - Duration: 17ms for "/api/verification_code_generation"
+2017-05-04 21:03:58,507 [INFO] RequestTimingFilter - Duration: 378ms for "/api/login"
+2017-05-04 21:03:59,406 [INFO] RequestTimingFilter - Duration: 861ms for "/"
+2017-05-04 21:04:01,129 [INFO] RequestTimingFilter - Duration: 0ms for "/"
+2017-05-04 21:04:01,159 [INFO] RequestTimingFilter - Duration: 2ms for "/css/bootstrap.min.css"
+2017-05-04 21:04:01,162 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/jquery.min.js"
+2017-05-04 21:04:01,172 [INFO] RequestTimingFilter - Duration: 9ms for "/css/easyui/icon.css"
+2017-05-04 21:04:01,174 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-04 21:04:01,178 [INFO] RequestTimingFilter - Duration: 3ms for "/css/sticky.footer.css"
+2017-05-04 21:04:01,180 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-04 21:04:01,183 [INFO] RequestTimingFilter - Duration: 2ms for "/js/main.js"
+2017-05-04 21:04:01,185 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-05-04 21:04:01,198 [INFO] RequestTimingFilter - Duration: 2ms for "/js/sprintf.min.js"
+2017-05-04 21:04:01,200 [INFO] RequestTimingFilter - Duration: 1ms for "/js/index.js"
+2017-05-04 21:04:01,203 [INFO] RequestTimingFilter - Duration: 2ms for "/css/app.css"
+2017-05-04 21:04:01,204 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/color.css"
+2017-05-04 21:04:01,206 [INFO] RequestTimingFilter - Duration: 6ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-04 21:04:01,530 [INFO] RequestTimingFilter - Duration: 34ms for "/user/granted_authorities"
+2017-05-04 21:04:01,540 [INFO] RequestTimingFilter - Duration: 9ms for "/js/sprintf.min.js.map"
+2017-05-04 21:04:01,586 [INFO] RequestTimingFilter - Duration: 104ms for "/resource/menu"
+2017-05-04 21:04:06,162 [INFO] RequestTimingFilter - Duration: 116ms for "/pages/auth/roles.jsp"
+2017-05-04 21:04:06,177 [INFO] RequestTimingFilter - Duration: 0ms for "/js/utils.js"
+2017-05-04 21:04:06,193 [INFO] RequestTimingFilter - Duration: 0ms for "/js/auth/roles.js"
+2017-05-04 21:04:06,339 [INFO] RequestTimingFilter - Duration: 40ms for "/role/roles"
+2017-05-04 21:04:08,487 [INFO] RequestTimingFilter - Duration: 104ms for "/pages/auth/admin.jsp"
+2017-05-04 21:04:08,487 [INFO] RequestTimingFilter - Duration: 0ms for "/js/auth/admin.js"
+2017-05-04 21:04:11,964 [INFO] RequestTimingFilter - Duration: 3357ms for "/admin/admins"
+2017-05-04 21:04:13,991 [INFO] RequestTimingFilter - Duration: 76ms for "/pages/auth/resources.jsp"
+2017-05-04 21:04:14,008 [INFO] RequestTimingFilter - Duration: 3ms for "/js/utils.js"
+2017-05-04 21:04:14,063 [INFO] RequestTimingFilter - Duration: 3ms for "/js/auth/resources.js"
+2017-05-04 21:04:14,171 [INFO] RequestTimingFilter - Duration: 14ms for "/resource/get_resources"
+2017-05-04 21:04:20,326 [INFO] RequestTimingFilter - Duration: 4ms for "/admin/roles"
+2017-05-04 21:06:41,541 [INFO] RequestTimingFilter - Duration: 16ms for "/resource/get_resources"
+2017-05-04 21:06:53,346 [INFO] RequestTimingFilter - Duration: 46ms for "/resource/menu_by_level"
+2017-05-04 21:06:53,391 [INFO] RequestTimingFilter - Duration: 54ms for "/resource/menu_by_level"
+2017-05-04 21:06:58,476 [INFO] RequestTimingFilter - Duration: 300ms for "/resource/edit"
+2017-05-04 21:06:58,491 [INFO] RequestTimingFilter - Duration: 15ms for "/resource/get_resources"

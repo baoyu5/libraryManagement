@@ -2,11 +2,6 @@ package com.sj.library.management.common.pagination;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-/**
- * User: Rolandz
- * Date: 7/12/16
- * Time: 8:40 AM
- */
 public class PageRequest {
     @JsonProperty("rows")
     private int pageRows;

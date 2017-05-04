@@ -21,27 +21,30 @@ public class AdminController extends BaseController {
     private UserService userService;
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
+    @ResponseBody
     public void addAdmin(@Valid @RequestBody UserTO to) {
         to.setType(UserType.ADMIN);
         userService.addUser(to);
     }
 
     @RequestMapping(value = "/delete", method = RequestMethod.POST)
+    @ResponseBody
     public void deleteAdmin(long id) {
         userService.deleteUser(id);
     }
 
     @RequestMapping(value = "/edit", method = RequestMethod.POST)
+    @ResponseBody
     public void editAdmin(UserTO to) {
         userService.editUser(to);
     }
 
     @RequestMapping(value = "/admins", method = RequestMethod.GET)
     @ResponseBody
-    public ResponseTO getAdmins(@RequestParam String loginName,
-                                @RequestParam String realName,
-                                @RequestParam String startTime,
-                                @RequestParam String endTime,
+    public ResponseTO getAdmins(@RequestParam(required = false) String loginName,
+                                @RequestParam(required = false) String realName,
+                                @RequestParam(required = false) String startTime,
+                                @RequestParam(required = false) String endTime,
                                 @RequestParam int rows,
                                 @RequestParam int page) {
         long startLongTime = -1, endLongTime = -1;

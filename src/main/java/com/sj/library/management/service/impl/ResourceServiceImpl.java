@@ -2,6 +2,8 @@ package com.sj.library.management.service.impl;
 
 import com.sj.library.management.common.exception.ResourceNotExistsException;
 import com.sj.library.management.common.exception.UpdateException;
+import com.sj.library.management.common.pagination.PageRequest;
+import com.sj.library.management.common.pagination.PaginationResult;
 import com.sj.library.management.dao.ResourceDao;
 import com.sj.library.management.dao.UserDao;
 import com.sj.library.management.entity.Resource;
@@ -87,16 +89,16 @@ public class ResourceServiceImpl implements ResourceService {
         }
     }
 
-    // @Override
-    // public PaginationResult getRoleResources(Integer type, String resourceName, PageRequest pr) {
-    //
-    //     PaginationResult result = new PaginationResult();
-    //
-    //     result.setRows(resourceDao.getRoleResources(type, resourceName, pr));
-    //     result.setTotal(resourceDao.getResourcesCount(type, resourceName));
-    //
-    //     return result;
-    // }
+     @Override
+     public PaginationResult getResources(Integer type, String resourceName, PageRequest pr) {
+
+         PaginationResult result = new PaginationResult();
+
+         result.setRows(resourceDao.getRoleResources(type, resourceName, pr));
+         result.setTotal(resourceDao.getResourcesCount(type, resourceName));
+
+         return result;
+     }
 
     @Override
     public long addResource(ResourceTO to) {

@@ -1,6 +1,7 @@
 package com.sj.library.management.controller;
 
 import com.sj.library.management.common.constant.AdminConstants;
+import com.sj.library.management.common.pagination.PageRequest;
 import com.sj.library.management.entity.Resource;
 import com.sj.library.management.security.UserDetailsImpl;
 import com.sj.library.management.service.ResourceService;
@@ -17,8 +18,6 @@ import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.sj.library.management.security.ResourceBasedVoter.sysAdmin;
-
 @Controller
 @RequestMapping(value = "/resource")
 public class ResourceController extends BaseController {
@@ -26,14 +25,14 @@ public class ResourceController extends BaseController {
     @Autowired
     private ResourceService resourceService;
 
-    // @RequestMapping(value = "/load")
-    // @ResponseBody
-    // public ResponseTO loadResources(@RequestParam(required = false) Integer type,
-    //                                 @RequestParam(required = false) String resourceName,
-    //                                 @RequestParam int rows,
-    //                                 @RequestParam int page) {
-    //     return success(resourceService.getRoleResources(type, resourceName, PageRequest.newRequest(rows, page)));
-    // }
+     @RequestMapping(value = "/get_resources")
+     @ResponseBody
+     public ResponseTO getResources(@RequestParam(required = false) Integer type,
+                                     @RequestParam(required = false) String resourceName,
+                                     @RequestParam int rows,
+                                     @RequestParam int page) {
+         return success(resourceService.getResources(type, resourceName, PageRequest.newRequest(rows, page)));
+     }
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseBody
@@ -110,14 +109,13 @@ public class ResourceController extends BaseController {
         return resourceService.loadMenu();
     }
 
-    // /**
-    //  * 按照 level 加载资源，扁平结构
-    //  */
-    // @RequestMapping(value = "/menu_by_level")
-    // @ResponseBody
-    // public List<ResourceTO> loadMenuByLevel(@RequestParam int level) {
-    //     List<ResourceTO> resources = resourceService.getMenuByLevel(level);
-    //
-    //     return resources;
-    // }
+     /**
+      * 按照 level 加载资源，扁平结构
+      */
+     @RequestMapping(value = "/menu_by_level")
+     @ResponseBody
+     public List<ResourceTO> loadMenuByLevel(@RequestParam int level) {
+         List<ResourceTO> resources = resourceService.getMenuByLevel(level);
+         return resources;
+     }
 }

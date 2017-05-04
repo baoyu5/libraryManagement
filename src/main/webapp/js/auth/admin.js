@@ -85,6 +85,15 @@ function saveNewAdmin(){
     if (!$.isEmptyObject(tip4)) {
         tips[count++] = count + tip4;
     }
+    var tip5 = checkPassword($('#newAdminPassword'));
+    if (!$.isEmptyObject(tip5)) {
+        tips[count++] = count + tip5;
+    }
+    var tip6 = checkPasswordConfirm($('#newAdminPassword'), $('#newAdminPasswordConfirm'));
+    if (!$.isEmptyObject(tip6)) {
+        tips[count++] = count + tip6;
+    }
+
     if (tips.length != 0) {
         showTips(tips, $('#dlg4_new_admin_tips'));
         return;

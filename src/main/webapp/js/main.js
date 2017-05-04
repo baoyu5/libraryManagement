@@ -89,7 +89,7 @@ function load() {
 
     // 加载资源、权限
     $.ajax({
-        url: "resource/granted_authorities",
+        url: "user/granted_authorities",
         type: "post",
         dataType: "json",
         success: function (response) {
