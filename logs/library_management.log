@@ -1,0 +1,1110 @@
+2017-04-18 10:53:53,329 [INFO] RequestTimingFilter - Duration: 15ms for "/"
+2017-04-18 10:53:53,407 [INFO] RequestTimingFilter - Duration: 77ms for "/login.html"
+2017-04-18 10:53:53,425 [INFO] RequestTimingFilter - Duration: 3ms for "/css/bootstrap.min.css"
+2017-04-18 10:53:53,428 [INFO] RequestTimingFilter - Duration: 5ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-18 10:53:53,428 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/color.css"
+2017-04-18 10:53:53,430 [INFO] RequestTimingFilter - Duration: 4ms for "/js/easyui/jquery.min.js"
+2017-04-18 10:53:53,431 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-04-18 10:53:53,431 [INFO] RequestTimingFilter - Duration: 1ms for "/css/app.css"
+2017-04-18 10:53:53,440 [INFO] RequestTimingFilter - Duration: 2ms for "/js/utils.js"
+2017-04-18 10:53:53,450 [INFO] RequestTimingFilter - Duration: 13ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-18 10:53:53,452 [INFO] RequestTimingFilter - Duration: 5ms for "/api/verification_code_generation"
+2017-04-18 10:53:53,518 [INFO] RequestTimingFilter - Duration: 2ms for "/api/verification_code_generation"
+2017-04-18 10:53:53,609 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-18 10:53:53,639 [INFO] RequestTimingFilter - Duration: 1ms for "/favicon.ico"
+2017-04-18 11:08:53,803 [INFO] RequestTimingFilter - Duration: 2ms for "/api/verification_code_generation"
+2017-04-18 11:23:53,828 [INFO] RequestTimingFilter - Duration: 3ms for "/api/verification_code_generation"
+2017-04-18 11:38:53,853 [INFO] RequestTimingFilter - Duration: 3ms for "/api/verification_code_generation"
+2017-04-18 11:53:53,875 [INFO] RequestTimingFilter - Duration: 2ms for "/api/verification_code_generation"
+2017-04-18 14:14:19,947 [INFO] RequestTimingFilter - Duration: 78ms for "/api/verification_code_generation"
+2017-04-18 14:29:20,140 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-18 14:44:20,160 [INFO] RequestTimingFilter - Duration: 2ms for "/api/verification_code_generation"
+2017-04-18 14:59:20,186 [INFO] RequestTimingFilter - Duration: 2ms for "/api/verification_code_generation"
+2017-04-18 15:14:20,230 [INFO] RequestTimingFilter - Duration: 11ms for "/api/verification_code_generation"
+2017-04-18 15:29:20,239 [INFO] RequestTimingFilter - Duration: 4ms for "/api/verification_code_generation"
+2017-04-18 15:44:20,263 [INFO] RequestTimingFilter - Duration: 3ms for "/api/verification_code_generation"
+2017-04-18 15:59:20,286 [INFO] RequestTimingFilter - Duration: 3ms for "/api/verification_code_generation"
+2017-04-18 16:14:20,308 [INFO] RequestTimingFilter - Duration: 2ms for "/api/verification_code_generation"
+2017-04-18 16:29:20,333 [INFO] RequestTimingFilter - Duration: 2ms for "/api/verification_code_generation"
+2017-04-18 16:44:20,362 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-18 16:59:20,384 [INFO] RequestTimingFilter - Duration: 2ms for "/api/verification_code_generation"
+2017-04-18 17:14:20,410 [INFO] RequestTimingFilter - Duration: 1ms for "/api/verification_code_generation"
+2017-04-18 17:29:20,434 [INFO] RequestTimingFilter - Duration: 2ms for "/api/verification_code_generation"
+2017-04-18 17:44:20,459 [INFO] RequestTimingFilter - Duration: 2ms for "/api/verification_code_generation"
+2017-04-18 17:59:20,510 [INFO] RequestTimingFilter - Duration: 5ms for "/api/verification_code_generation"
+2017-04-18 18:05:52,453 [INFO] RequestTimingFilter - Duration: 100ms for "/login.html"
+2017-04-18 18:05:52,473 [INFO] RequestTimingFilter - Duration: 3ms for "/js/utils.js"
+2017-04-18 18:05:52,477 [INFO] RequestTimingFilter - Duration: 4ms for "/api/verification_code_generation"
+2017-04-18 18:05:52,554 [INFO] RequestTimingFilter - Duration: 1ms for "/api/verification_code_generation"
+2017-04-18 18:06:02,457 [INFO] RequestTimingFilter - Duration: 5ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-04-18 18:06:02,504 [INFO] RequestTimingFilter - Duration: 52ms for "/api/login"
+2017-04-18 18:06:02,510 [INFO] RequestTimingFilter - Duration: 1ms for "/api/verification_code_generation"
+2017-04-18 18:08:03,336 [INFO] RequestTimingFilter - Duration: 159ms for "/api/login"
+2017-04-18 18:08:04,038 [INFO] RequestTimingFilter - Duration: 692ms for "/"
+2017-04-18 18:08:04,051 [INFO] RequestTimingFilter - Duration: 2ms for "/js/index.js"
+2017-04-18 18:08:04,054 [INFO] RequestTimingFilter - Duration: 6ms for "/js/sprintf.min.js"
+2017-04-18 18:08:04,054 [INFO] RequestTimingFilter - Duration: 6ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-04-18 18:08:04,054 [INFO] RequestTimingFilter - Duration: 7ms for "/css/easyui/icon.css"
+2017-04-18 18:08:04,091 [INFO] RequestTimingFilter - Duration: 0ms for "/js/index.js"
+2017-04-18 18:08:04,169 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-04-18 18:08:04,169 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-04-18 18:08:04,193 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-04-19 14:07:13,699 [INFO] RequestTimingFilter - Duration: 16ms for "/"
+2017-04-19 14:07:13,776 [INFO] RequestTimingFilter - Duration: 76ms for "/login.html"
+2017-04-19 14:07:13,793 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-04-19 14:07:13,810 [INFO] RequestTimingFilter - Duration: 4ms for "/api/verification_code_generation"
+2017-04-19 14:07:13,983 [INFO] RequestTimingFilter - Duration: 2ms for "/favicon.ico"
+2017-04-19 14:16:06,389 [INFO] RequestTimingFilter - Duration: 88ms for "/login.html"
+2017-04-19 14:16:06,406 [INFO] RequestTimingFilter - Duration: 4ms for "/css/sticky.footer.css"
+2017-04-19 14:16:06,427 [INFO] RequestTimingFilter - Duration: 8ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-19 14:16:06,412 [INFO] RequestTimingFilter - Duration: 8ms for "/css/app.css"
+2017-04-19 14:16:06,409 [INFO] RequestTimingFilter - Duration: 5ms for "/js/easyui/jquery.min.js"
+2017-04-19 14:16:06,407 [INFO] RequestTimingFilter - Duration: 7ms for "/css/bootstrap.min.css"
+2017-04-19 14:16:06,408 [INFO] RequestTimingFilter - Duration: 5ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-19 14:16:06,408 [INFO] RequestTimingFilter - Duration: 4ms for "/css/easyui/color.css"
+2017-04-19 14:16:06,433 [INFO] RequestTimingFilter - Duration: 2ms for "/js/utils.js"
+2017-04-19 14:16:06,628 [INFO] RequestTimingFilter - Duration: 193ms for "/api/verification_code_generation"
+2017-04-19 14:16:06,640 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-19 14:16:09,816 [INFO] RequestTimingFilter - Duration: 12ms for "/api/verification_code_generation"
+2017-04-19 14:16:11,044 [INFO] RequestTimingFilter - Duration: 10ms for "/api/verification_code_generation"
+2017-04-19 14:16:11,674 [INFO] RequestTimingFilter - Duration: 9ms for "/api/verification_code_generation"
+2017-04-19 14:16:12,170 [INFO] RequestTimingFilter - Duration: 8ms for "/api/verification_code_generation"
+2017-04-19 14:16:12,666 [INFO] RequestTimingFilter - Duration: 8ms for "/api/verification_code_generation"
+2017-04-19 14:16:13,859 [INFO] RequestTimingFilter - Duration: 9ms for "/api/verification_code_generation"
+2017-04-19 14:16:14,778 [INFO] RequestTimingFilter - Duration: 8ms for "/api/verification_code_generation"
+2017-04-19 14:17:51,940 [INFO] RequestTimingFilter - Duration: 86ms for "/login.html"
+2017-04-19 14:17:51,961 [INFO] RequestTimingFilter - Duration: 9ms for "/css/app.css"
+2017-04-19 14:17:51,978 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-19 14:17:51,978 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/jquery.min.js"
+2017-04-19 14:17:51,977 [INFO] RequestTimingFilter - Duration: 21ms for "/css/easyui/color.css"
+2017-04-19 14:17:51,956 [INFO] RequestTimingFilter - Duration: 3ms for "/css/sticky.footer.css"
+2017-04-19 14:17:51,956 [INFO] RequestTimingFilter - Duration: 7ms for "/css/bootstrap.min.css"
+2017-04-19 14:17:51,990 [INFO] RequestTimingFilter - Duration: 2ms for "/js/utils.js"
+2017-04-19 14:17:52,003 [INFO] RequestTimingFilter - Duration: 18ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-19 14:17:52,124 [INFO] RequestTimingFilter - Duration: 120ms for "/api/verification_code_generation"
+2017-04-19 14:17:52,184 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-19 14:17:53,243 [INFO] RequestTimingFilter - Duration: 11ms for "/api/verification_code_generation"
+2017-04-19 14:17:53,874 [INFO] RequestTimingFilter - Duration: 10ms for "/api/verification_code_generation"
+2017-04-19 14:17:54,714 [INFO] RequestTimingFilter - Duration: 9ms for "/api/verification_code_generation"
+2017-04-19 14:17:55,466 [INFO] RequestTimingFilter - Duration: 10ms for "/api/verification_code_generation"
+2017-04-19 14:17:56,339 [INFO] RequestTimingFilter - Duration: 11ms for "/api/verification_code_generation"
+2017-04-19 14:17:57,379 [INFO] RequestTimingFilter - Duration: 11ms for "/api/verification_code_generation"
+2017-04-19 14:17:58,363 [INFO] RequestTimingFilter - Duration: 9ms for "/api/verification_code_generation"
+2017-04-19 14:17:59,392 [INFO] RequestTimingFilter - Duration: 7ms for "/api/verification_code_generation"
+2017-04-19 14:18:01,912 [INFO] RequestTimingFilter - Duration: 8ms for "/api/verification_code_generation"
+2017-04-19 14:18:03,262 [INFO] RequestTimingFilter - Duration: 7ms for "/api/verification_code_generation"
+2017-04-19 14:18:04,590 [INFO] RequestTimingFilter - Duration: 7ms for "/api/verification_code_generation"
+2017-04-19 14:18:05,551 [INFO] RequestTimingFilter - Duration: 7ms for "/api/verification_code_generation"
+2017-04-19 14:18:06,649 [INFO] RequestTimingFilter - Duration: 9ms for "/api/verification_code_generation"
+2017-04-19 14:18:07,254 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-19 14:18:07,807 [INFO] RequestTimingFilter - Duration: 8ms for "/api/verification_code_generation"
+2017-04-19 14:18:08,416 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-19 14:18:10,799 [INFO] RequestTimingFilter - Duration: 7ms for "/api/verification_code_generation"
+2017-04-19 14:18:12,415 [INFO] RequestTimingFilter - Duration: 8ms for "/api/verification_code_generation"
+2017-04-19 14:18:13,343 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-19 14:18:14,023 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-19 14:18:15,367 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-19 14:18:16,591 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-19 14:18:17,776 [INFO] RequestTimingFilter - Duration: 8ms for "/api/verification_code_generation"
+2017-04-19 14:18:18,198 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-19 14:18:18,800 [INFO] RequestTimingFilter - Duration: 7ms for "/api/verification_code_generation"
+2017-04-19 14:18:19,352 [INFO] RequestTimingFilter - Duration: 32ms for "/api/verification_code_generation"
+2017-04-19 14:18:19,844 [INFO] RequestTimingFilter - Duration: 9ms for "/api/verification_code_generation"
+2017-04-19 14:18:20,367 [INFO] RequestTimingFilter - Duration: 8ms for "/api/verification_code_generation"
+2017-04-19 14:18:20,766 [INFO] RequestTimingFilter - Duration: 7ms for "/api/verification_code_generation"
+2017-04-19 14:18:21,198 [INFO] RequestTimingFilter - Duration: 5ms for "/api/verification_code_generation"
+2017-04-19 14:18:21,599 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-19 14:18:21,862 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-19 14:18:22,094 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-19 14:18:22,350 [INFO] RequestTimingFilter - Duration: 5ms for "/api/verification_code_generation"
+2017-04-19 14:18:22,591 [INFO] RequestTimingFilter - Duration: 7ms for "/api/verification_code_generation"
+2017-04-19 14:18:22,836 [INFO] RequestTimingFilter - Duration: 5ms for "/api/verification_code_generation"
+2017-04-19 14:18:23,100 [INFO] RequestTimingFilter - Duration: 5ms for "/api/verification_code_generation"
+2017-04-19 14:18:23,365 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-19 14:18:23,773 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-19 14:18:24,005 [INFO] RequestTimingFilter - Duration: 4ms for "/api/verification_code_generation"
+2017-04-19 14:18:24,413 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-19 14:18:25,070 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-19 14:18:25,799 [INFO] RequestTimingFilter - Duration: 7ms for "/api/verification_code_generation"
+2017-04-19 14:18:26,373 [INFO] RequestTimingFilter - Duration: 5ms for "/api/verification_code_generation"
+2017-04-19 14:18:26,973 [INFO] RequestTimingFilter - Duration: 5ms for "/api/verification_code_generation"
+2017-04-19 14:18:27,596 [INFO] RequestTimingFilter - Duration: 5ms for "/api/verification_code_generation"
+2017-04-19 14:18:58,370 [INFO] RequestTimingFilter - Duration: 7ms for "/api/verification_code_generation"
+2017-04-19 14:18:58,965 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-19 14:18:59,349 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-19 14:19:46,179 [INFO] RequestTimingFilter - Duration: 110ms for "/login.html"
+2017-04-19 14:19:46,185 [INFO] RequestTimingFilter - Duration: 2ms for "/css/bootstrap.min.css"
+2017-04-19 14:19:46,192 [INFO] RequestTimingFilter - Duration: 2ms for "/css/app.css"
+2017-04-19 14:19:46,202 [INFO] RequestTimingFilter - Duration: 3ms for "/js/utils.js"
+2017-04-19 14:19:46,206 [INFO] RequestTimingFilter - Duration: 14ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-19 14:19:46,208 [INFO] RequestTimingFilter - Duration: 21ms for "/css/sticky.footer.css"
+2017-04-19 14:19:46,204 [INFO] RequestTimingFilter - Duration: 15ms for "/js/easyui/jquery.min.js"
+2017-04-19 14:19:46,207 [INFO] RequestTimingFilter - Duration: 8ms for "/css/easyui/color.css"
+2017-04-19 14:19:46,213 [INFO] RequestTimingFilter - Duration: 13ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-19 14:19:46,340 [INFO] RequestTimingFilter - Duration: 125ms for "/api/verification_code_generation"
+2017-04-19 14:19:46,423 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-19 14:19:47,436 [INFO] RequestTimingFilter - Duration: 12ms for "/api/verification_code_generation"
+2017-04-19 14:19:47,944 [INFO] RequestTimingFilter - Duration: 9ms for "/api/verification_code_generation"
+2017-04-19 14:19:48,195 [INFO] RequestTimingFilter - Duration: 10ms for "/api/verification_code_generation"
+2017-04-19 14:19:48,402 [INFO] RequestTimingFilter - Duration: 9ms for "/api/verification_code_generation"
+2017-04-19 14:19:48,608 [INFO] RequestTimingFilter - Duration: 9ms for "/api/verification_code_generation"
+2017-04-19 14:19:48,815 [INFO] RequestTimingFilter - Duration: 7ms for "/api/verification_code_generation"
+2017-04-19 14:19:49,071 [INFO] RequestTimingFilter - Duration: 8ms for "/api/verification_code_generation"
+2017-04-19 14:19:49,255 [INFO] RequestTimingFilter - Duration: 7ms for "/api/verification_code_generation"
+2017-04-19 14:19:49,462 [INFO] RequestTimingFilter - Duration: 7ms for "/api/verification_code_generation"
+2017-04-19 14:19:49,679 [INFO] RequestTimingFilter - Duration: 7ms for "/api/verification_code_generation"
+2017-04-19 14:19:49,919 [INFO] RequestTimingFilter - Duration: 7ms for "/api/verification_code_generation"
+2017-04-19 14:19:50,127 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-19 14:19:50,734 [INFO] RequestTimingFilter - Duration: 7ms for "/api/verification_code_generation"
+2017-04-19 14:19:51,318 [INFO] RequestTimingFilter - Duration: 7ms for "/api/verification_code_generation"
+2017-04-19 14:23:58,440 [INFO] RequestTimingFilter - Duration: 82ms for "/login.html"
+2017-04-19 14:23:58,453 [INFO] RequestTimingFilter - Duration: 3ms for "/js/easyui/jquery.min.js"
+2017-04-19 14:23:58,455 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/color.css"
+2017-04-19 14:23:58,459 [INFO] RequestTimingFilter - Duration: 8ms for "/css/app.css"
+2017-04-19 14:23:58,456 [INFO] RequestTimingFilter - Duration: 7ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-19 14:23:58,465 [INFO] RequestTimingFilter - Duration: 17ms for "/css/sticky.footer.css"
+2017-04-19 14:23:58,474 [INFO] RequestTimingFilter - Duration: 26ms for "/css/bootstrap.min.css"
+2017-04-19 14:23:58,475 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-04-19 14:23:58,472 [INFO] RequestTimingFilter - Duration: 10ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-19 14:23:58,611 [INFO] RequestTimingFilter - Duration: 132ms for "/api/verification_code_generation"
+2017-04-19 14:23:58,679 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-19 14:24:07,698 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-04-19 14:24:08,985 [INFO] RequestTimingFilter - Duration: 1292ms for "/api/login"
+2017-04-19 14:24:09,586 [INFO] RequestTimingFilter - Duration: 593ms for "/"
+2017-04-19 14:24:20,511 [INFO] RequestTimingFilter - Duration: 8ms for "/"
+2017-04-19 14:24:20,537 [INFO] RequestTimingFilter - Duration: 1ms for "/css/bootstrap.min.css"
+2017-04-19 14:24:20,540 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/icon.css"
+2017-04-19 14:24:20,543 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/color.css"
+2017-04-19 14:24:20,545 [INFO] RequestTimingFilter - Duration: 7ms for "/css/sticky.footer.css"
+2017-04-19 14:24:20,550 [INFO] RequestTimingFilter - Duration: 8ms for "/css/app.css"
+2017-04-19 14:24:20,551 [INFO] RequestTimingFilter - Duration: 14ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-19 14:24:20,554 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-04-19 14:24:20,555 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.min.js"
+2017-04-19 14:24:20,557 [INFO] RequestTimingFilter - Duration: 2ms for "/js/index.js"
+2017-04-19 14:24:20,565 [INFO] RequestTimingFilter - Duration: 2ms for "/js/utils.js"
+2017-04-19 14:24:20,567 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js"
+2017-04-19 14:24:20,569 [INFO] RequestTimingFilter - Duration: 15ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-19 14:24:20,664 [INFO] RequestTimingFilter - Duration: 3ms for "/js/sprintf.min.js.map"
+2017-04-19 14:24:20,751 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-19 14:24:20,753 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-04-19 14:24:20,755 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-04-19 14:24:20,779 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-04-19 14:24:25,170 [INFO] RequestTimingFilter - Duration: 1ms for "/login.html"
+2017-04-19 14:24:25,191 [INFO] RequestTimingFilter - Duration: 2ms for "/css/bootstrap.min.css"
+2017-04-19 14:24:25,197 [INFO] RequestTimingFilter - Duration: 3ms for "/js/easyui/jquery.min.js"
+2017-04-19 14:24:25,199 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-19 14:24:25,200 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/color.css"
+2017-04-19 14:24:25,200 [INFO] RequestTimingFilter - Duration: 11ms for "/css/sticky.footer.css"
+2017-04-19 14:24:25,202 [INFO] RequestTimingFilter - Duration: 2ms for "/css/app.css"
+2017-04-19 14:24:25,210 [INFO] RequestTimingFilter - Duration: 3ms for "/js/utils.js"
+2017-04-19 14:24:25,220 [INFO] RequestTimingFilter - Duration: 20ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-19 14:24:25,229 [INFO] RequestTimingFilter - Duration: 9ms for "/api/verification_code_generation"
+2017-04-19 14:24:25,419 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-19 14:24:34,513 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-04-19 14:24:34,535 [INFO] RequestTimingFilter - Duration: 25ms for "/api/login"
+2017-04-19 14:24:34,547 [INFO] RequestTimingFilter - Duration: 2ms for "/"
+2017-04-19 14:24:34,555 [INFO] RequestTimingFilter - Duration: 1ms for "/css/bootstrap.min.css"
+2017-04-19 14:24:34,561 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-19 14:24:34,564 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-04-19 14:24:34,565 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/color.css"
+2017-04-19 14:24:34,570 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/icon.css"
+2017-04-19 14:24:34,573 [INFO] RequestTimingFilter - Duration: 3ms for "/js/utils.js"
+2017-04-19 14:24:34,576 [INFO] RequestTimingFilter - Duration: 3ms for "/js/sprintf.min.js"
+2017-04-19 14:24:34,578 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.min.js"
+2017-04-19 14:24:34,579 [INFO] RequestTimingFilter - Duration: 2ms for "/css/app.css"
+2017-04-19 14:24:34,582 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-04-19 14:24:34,584 [INFO] RequestTimingFilter - Duration: 2ms for "/js/index.js"
+2017-04-19 14:24:34,588 [INFO] RequestTimingFilter - Duration: 6ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-19 14:24:34,688 [INFO] RequestTimingFilter - Duration: 3ms for "/js/sprintf.min.js.map"
+2017-04-19 14:24:34,754 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-19 14:24:34,754 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-04-19 14:24:34,759 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-04-19 14:24:34,787 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-04-19 14:25:45,212 [INFO] RequestTimingFilter - Duration: 91ms for "/"
+2017-04-19 14:25:45,233 [INFO] RequestTimingFilter - Duration: 2ms for "/css/bootstrap.min.css"
+2017-04-19 14:25:45,237 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-04-19 14:25:45,247 [INFO] RequestTimingFilter - Duration: 9ms for "/css/easyui/color.css"
+2017-04-19 14:25:45,258 [INFO] RequestTimingFilter - Duration: 11ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-19 14:25:45,259 [INFO] RequestTimingFilter - Duration: 1ms for "/js/index.js"
+2017-04-19 14:25:45,263 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-04-19 14:25:45,272 [INFO] RequestTimingFilter - Duration: 25ms for "/js/easyui/jquery.min.js"
+2017-04-19 14:25:45,281 [INFO] RequestTimingFilter - Duration: 5ms for "/css/app.css"
+2017-04-19 14:25:45,281 [INFO] RequestTimingFilter - Duration: 8ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-19 14:25:45,282 [INFO] RequestTimingFilter - Duration: 0ms for "/css/easyui/icon.css"
+2017-04-19 14:25:45,285 [INFO] RequestTimingFilter - Duration: 2ms for "/js/utils.js"
+2017-04-19 14:25:45,287 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js"
+2017-04-19 14:25:45,410 [INFO] RequestTimingFilter - Duration: 2ms for "/js/sprintf.min.js.map"
+2017-04-19 14:25:45,486 [INFO] RequestTimingFilter - Duration: 10ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-19 14:25:45,494 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-04-19 14:25:45,500 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-04-19 14:25:45,518 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-04-19 14:26:06,509 [INFO] RequestTimingFilter - Duration: 88ms for "/"
+2017-04-19 14:26:06,533 [INFO] RequestTimingFilter - Duration: 2ms for "/css/sticky.footer.css"
+2017-04-19 14:26:06,535 [INFO] RequestTimingFilter - Duration: 1ms for "/css/app.css"
+2017-04-19 14:26:06,533 [INFO] RequestTimingFilter - Duration: 5ms for "/css/bootstrap.min.css"
+2017-04-19 14:26:06,536 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/color.css"
+2017-04-19 14:26:06,541 [INFO] RequestTimingFilter - Duration: 6ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-19 14:26:06,542 [INFO] RequestTimingFilter - Duration: 6ms for "/css/easyui/icon.css"
+2017-04-19 14:26:06,544 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-04-19 14:26:06,562 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.min.js"
+2017-04-19 14:26:06,564 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js"
+2017-04-19 14:26:06,566 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-04-19 14:26:06,567 [INFO] RequestTimingFilter - Duration: 2ms for "/js/index.js"
+2017-04-19 14:26:06,582 [INFO] RequestTimingFilter - Duration: 17ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-19 14:26:06,674 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js.map"
+2017-04-19 14:26:06,754 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-04-19 14:26:06,755 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-19 14:26:06,760 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-04-19 14:26:06,787 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-04-19 14:30:59,299 [INFO] RequestTimingFilter - Duration: 69ms for "/"
+2017-04-19 14:30:59,326 [INFO] RequestTimingFilter - Duration: 1ms for "/css/bootstrap.min.css"
+2017-04-19 14:30:59,347 [INFO] RequestTimingFilter - Duration: 4ms for "/js/easyui/jquery.min.js"
+2017-04-19 14:30:59,347 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-04-19 14:30:59,348 [INFO] RequestTimingFilter - Duration: 0ms for "/css/app.css"
+2017-04-19 14:30:59,348 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-19 14:30:59,349 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/icon.css"
+2017-04-19 14:30:59,349 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/color.css"
+2017-04-19 14:30:59,383 [INFO] RequestTimingFilter - Duration: 10ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-19 14:30:59,387 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-04-19 14:30:59,389 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js"
+2017-04-19 14:30:59,389 [INFO] RequestTimingFilter - Duration: 1ms for "/js/index.js"
+2017-04-19 14:30:59,391 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-04-19 14:30:59,568 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-19 14:30:59,569 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-04-19 14:30:59,569 [INFO] RequestTimingFilter - Duration: 0ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-04-19 14:30:59,620 [INFO] RequestTimingFilter - Duration: 6ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-04-19 14:30:59,664 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js.map"
+2017-04-19 14:31:56,505 [INFO] RequestTimingFilter - Duration: 58ms for "/"
+2017-04-19 14:31:56,530 [INFO] RequestTimingFilter - Duration: 0ms for "/css/easyui/color.css"
+2017-04-19 14:31:56,531 [INFO] RequestTimingFilter - Duration: 6ms for "/css/bootstrap.min.css"
+2017-04-19 14:31:56,534 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/icon.css"
+2017-04-19 14:31:56,536 [INFO] RequestTimingFilter - Duration: 8ms for "/css/sticky.footer.css"
+2017-04-19 14:31:56,538 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-19 14:31:56,539 [INFO] RequestTimingFilter - Duration: 8ms for "/js/easyui/jquery.min.js"
+2017-04-19 14:31:56,540 [INFO] RequestTimingFilter - Duration: 2ms for "/css/app.css"
+2017-04-19 14:31:56,541 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-04-19 14:31:56,548 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js"
+2017-04-19 14:31:56,553 [INFO] RequestTimingFilter - Duration: 2ms for "/js/main.js"
+2017-04-19 14:31:56,554 [INFO] RequestTimingFilter - Duration: 2ms for "/js/utils.js"
+2017-04-19 14:31:56,554 [INFO] RequestTimingFilter - Duration: 1ms for "/js/index.js"
+2017-04-19 14:31:56,570 [INFO] RequestTimingFilter - Duration: 21ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-19 14:31:56,723 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-04-19 14:31:56,724 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-19 14:31:56,729 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-04-19 14:31:56,755 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-04-19 14:31:56,810 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js.map"
+2017-04-19 14:31:56,823 [INFO] RequestTimingFilter - Duration: 3ms for "/api/menu"
+2017-04-19 14:31:56,826 [INFO] RequestTimingFilter - Duration: 5ms for "/api/granted_authorities"
+2017-04-19 14:31:56,827 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-04-19 14:32:04,124 [INFO] RequestTimingFilter - Duration: 2ms for "/logout"
+2017-04-19 14:32:04,129 [INFO] RequestTimingFilter - Duration: 1ms for "/login.html"
+2017-04-19 14:32:04,143 [INFO] RequestTimingFilter - Duration: 0ms for "/css/bootstrap.min.css"
+2017-04-19 14:32:04,145 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-19 14:32:04,146 [INFO] RequestTimingFilter - Duration: 0ms for "/css/easyui/color.css"
+2017-04-19 14:32:04,147 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-04-19 14:32:04,149 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.min.js"
+2017-04-19 14:32:04,150 [INFO] RequestTimingFilter - Duration: 2ms for "/css/app.css"
+2017-04-19 14:32:04,174 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-04-19 14:32:04,184 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-19 14:32:04,187 [INFO] RequestTimingFilter - Duration: 15ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-19 14:32:04,336 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-19 14:32:17,610 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-04-19 14:32:17,637 [INFO] RequestTimingFilter - Duration: 31ms for "/api/login"
+2017-04-19 14:32:17,648 [INFO] RequestTimingFilter - Duration: 3ms for "/"
+2017-04-19 14:32:17,661 [INFO] RequestTimingFilter - Duration: 1ms for "/css/bootstrap.min.css"
+2017-04-19 14:32:17,671 [INFO] RequestTimingFilter - Duration: 9ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-19 14:32:17,672 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.min.js"
+2017-04-19 14:32:17,675 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-04-19 14:32:17,676 [INFO] RequestTimingFilter - Duration: 4ms for "/css/easyui/icon.css"
+2017-04-19 14:32:17,678 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/color.css"
+2017-04-19 14:32:17,680 [INFO] RequestTimingFilter - Duration: 1ms for "/css/app.css"
+2017-04-19 14:32:17,680 [INFO] RequestTimingFilter - Duration: 5ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-19 14:32:17,682 [INFO] RequestTimingFilter - Duration: 2ms for "/js/main.js"
+2017-04-19 14:32:17,682 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-04-19 14:32:17,684 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-04-19 14:32:17,689 [INFO] RequestTimingFilter - Duration: 4ms for "/js/sprintf.min.js"
+2017-04-19 14:32:17,689 [INFO] RequestTimingFilter - Duration: 0ms for "/js/index.js"
+2017-04-19 14:32:17,784 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js.map"
+2017-04-19 14:32:17,860 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-19 14:32:17,861 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-04-19 14:32:17,862 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-04-19 14:32:17,891 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-04-19 14:32:17,956 [INFO] RequestTimingFilter - Duration: 3ms for "/api/menu"
+2017-04-19 14:32:17,958 [INFO] RequestTimingFilter - Duration: 1ms for "/api/granted_authorities"
+2017-04-19 14:32:17,958 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-04-19 15:52:23,022 [INFO] RequestTimingFilter - Duration: 24ms for "/"
+2017-04-19 15:52:23,330 [INFO] RequestTimingFilter - Duration: 289ms for "/api/verification_code_generation"
+2017-04-19 15:52:29,687 [INFO] RequestTimingFilter - Duration: 12ms for "/api/verification_code_generation"
+2017-04-19 15:52:30,313 [INFO] RequestTimingFilter - Duration: 9ms for "/api/verification_code_generation"
+2017-04-19 15:52:31,089 [INFO] RequestTimingFilter - Duration: 9ms for "/api/verification_code_generation"
+2017-04-19 15:52:32,112 [INFO] RequestTimingFilter - Duration: 8ms for "/api/verification_code_generation"
+2017-04-19 15:52:38,525 [INFO] RequestTimingFilter - Duration: 77ms for "/api/login"
+2017-04-19 15:52:39,098 [INFO] RequestTimingFilter - Duration: 566ms for "/"
+2017-04-19 15:52:39,115 [INFO] RequestTimingFilter - Duration: 9ms for "/js/index.js"
+2017-04-19 15:52:39,286 [INFO] RequestTimingFilter - Duration: 3ms for "/api/menu"
+2017-04-19 15:52:39,288 [INFO] RequestTimingFilter - Duration: 4ms for "/api/granted_authorities"
+2017-04-19 15:52:41,196 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js.map"
+2017-04-19 15:55:37,788 [INFO] RequestTimingFilter - Duration: 84ms for "/"
+2017-04-19 15:55:37,805 [INFO] RequestTimingFilter - Duration: 1ms for "/css/bootstrap.min.css"
+2017-04-19 15:55:37,814 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-19 15:55:37,816 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.min.js"
+2017-04-19 15:55:37,828 [INFO] RequestTimingFilter - Duration: 3ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-04-19 15:55:37,835 [INFO] RequestTimingFilter - Duration: 3ms for "/js/main.js"
+2017-04-19 15:55:37,838 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/icon.css"
+2017-04-19 15:55:37,842 [INFO] RequestTimingFilter - Duration: 21ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-19 15:55:37,844 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-04-19 15:55:37,850 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/color.css"
+2017-04-19 15:55:37,852 [INFO] RequestTimingFilter - Duration: 7ms for "/js/sprintf.min.js"
+2017-04-19 15:55:37,854 [INFO] RequestTimingFilter - Duration: 6ms for "/css/app.css"
+2017-04-19 15:55:37,855 [INFO] RequestTimingFilter - Duration: 2ms for "/css/sticky.footer.css"
+2017-04-19 15:55:37,861 [INFO] RequestTimingFilter - Duration: 7ms for "/js/index.js"
+2017-04-19 15:55:37,968 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js.map"
+2017-04-19 15:55:38,041 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-19 15:55:38,043 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-04-19 15:55:38,048 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-04-19 15:55:38,077 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-04-19 15:55:38,152 [INFO] RequestTimingFilter - Duration: 2ms for "/api/menu"
+2017-04-19 15:55:38,154 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-04-19 15:55:56,929 [INFO] RequestTimingFilter - Duration: 62ms for "/"
+2017-04-19 15:55:56,948 [INFO] RequestTimingFilter - Duration: 1ms for "/css/bootstrap.min.css"
+2017-04-19 15:55:56,952 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-04-19 15:55:56,953 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/color.css"
+2017-04-19 15:55:56,961 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-19 15:55:56,963 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/icon.css"
+2017-04-19 15:55:56,965 [INFO] RequestTimingFilter - Duration: 1ms for "/css/app.css"
+2017-04-19 15:55:56,987 [INFO] RequestTimingFilter - Duration: 13ms for "/js/easyui/jquery.min.js"
+2017-04-19 15:55:56,992 [INFO] RequestTimingFilter - Duration: 2ms for "/js/sprintf.min.js"
+2017-04-19 15:55:56,994 [INFO] RequestTimingFilter - Duration: 14ms for "/js/main.js"
+2017-04-19 15:55:56,995 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-04-19 15:55:56,995 [INFO] RequestTimingFilter - Duration: 2ms for "/js/index.js"
+2017-04-19 15:55:56,998 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-04-19 15:55:57,004 [INFO] RequestTimingFilter - Duration: 11ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-19 15:55:57,089 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js.map"
+2017-04-19 15:55:57,156 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-19 15:55:57,156 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-04-19 15:55:57,159 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-04-19 15:55:57,187 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-04-19 15:55:57,248 [INFO] RequestTimingFilter - Duration: 1ms for "/api/menu"
+2017-04-19 15:55:57,250 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-04-20 10:01:35,452 [INFO] UserDetailServiceImpl - User:com.sj.library.management.entity.User@2
+2017-04-20 10:02:18,664 [INFO] UserDetailServiceImpl - User:com.sj.library.management.entity.User@3
+2017-04-20 10:06:32,316 [INFO] UserTest - User:com.sj.library.management.entity.User@4
+2017-04-20 10:08:09,893 [INFO] UserTest - User:com.sj.library.management.entity.User@5
+2017-04-20 10:10:43,734 [INFO] UserTest - User:User{loginName='baoyu99', realName='by', type=2, code='', cardNo='12222', phoneNo='15757575757'}
+2017-04-20 10:11:11,291 [INFO] UserTest - User:User{loginName='baoyu99', realName='by', type=2, code='', cardNo='12222', phoneNo='15757575757'}
+2017-04-20 10:13:37,142 [INFO] UserTest - User:User{loginName='baoyu99', realName='by', type=2, code='', cardNo='12222', phoneNo='15757575757'}
+2017-04-20 11:03:48,981 [INFO] UserTest - User:com.sj.library.management.to.UserTO@534e58b6
+2017-04-20 15:27:41,252 [INFO] RequestTimingFilter - Duration: 19ms for "/"
+2017-04-20 15:27:41,340 [INFO] RequestTimingFilter - Duration: 86ms for "/login.html"
+2017-04-20 15:27:41,350 [INFO] RequestTimingFilter - Duration: 4ms for "/js/utils.js"
+2017-04-20 15:27:41,556 [INFO] RequestTimingFilter - Duration: 192ms for "/api/verification_code_generation"
+2017-04-20 15:27:41,592 [INFO] RequestTimingFilter - Duration: 3ms for "/favicon.ico"
+2017-04-20 15:27:47,841 [INFO] RequestTimingFilter - Duration: 11ms for "/api/verification_code_generation"
+2017-04-20 15:27:52,806 [INFO] RequestTimingFilter - Duration: 69ms for "/api/login"
+2017-04-20 15:27:53,400 [INFO] RequestTimingFilter - Duration: 588ms for "/"
+2017-04-20 15:27:53,415 [INFO] RequestTimingFilter - Duration: 2ms for "/js/main.js"
+2017-04-20 15:27:53,432 [INFO] RequestTimingFilter - Duration: 11ms for "/js/index.js"
+2017-04-20 15:27:53,606 [INFO] RequestTimingFilter - Duration: 3ms for "/api/menu"
+2017-04-20 15:27:58,036 [INFO] RequestTimingFilter - Duration: 2ms for "/js/sprintf.min.js.map"
+2017-04-20 15:28:02,077 [INFO] RequestTimingFilter - Duration: 4ms for "/"
+2017-04-20 15:28:02,097 [INFO] RequestTimingFilter - Duration: 4ms for "/css/bootstrap.min.css"
+2017-04-20 15:28:02,099 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/color.css"
+2017-04-20 15:28:02,101 [INFO] RequestTimingFilter - Duration: 2ms for "/css/app.css"
+2017-04-20 15:28:02,103 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/icon.css"
+2017-04-20 15:28:02,105 [INFO] RequestTimingFilter - Duration: 10ms for "/css/sticky.footer.css"
+2017-04-20 15:28:02,106 [INFO] RequestTimingFilter - Duration: 5ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-20 15:28:02,116 [INFO] RequestTimingFilter - Duration: 3ms for "/js/easyui/jquery.min.js"
+2017-04-20 15:28:02,121 [INFO] RequestTimingFilter - Duration: 4ms for "/js/main.js"
+2017-04-20 15:28:02,122 [INFO] RequestTimingFilter - Duration: 3ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-04-20 15:28:02,124 [INFO] RequestTimingFilter - Duration: 1ms for "/js/index.js"
+2017-04-20 15:28:02,126 [INFO] RequestTimingFilter - Duration: 7ms for "/js/sprintf.min.js"
+2017-04-20 15:28:02,129 [INFO] RequestTimingFilter - Duration: 6ms for "/js/utils.js"
+2017-04-20 15:28:02,133 [INFO] RequestTimingFilter - Duration: 17ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-20 15:28:02,260 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js.map"
+2017-04-20 15:28:02,327 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-04-20 15:28:02,331 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-04-20 15:28:02,331 [INFO] RequestTimingFilter - Duration: 7ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-20 15:28:02,365 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-04-20 15:28:02,433 [INFO] RequestTimingFilter - Duration: 3ms for "/api/menu"
+2017-04-20 15:28:02,435 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-04-20 15:40:10,288 [INFO] RequestTimingFilter - Duration: 20ms for "/"
+2017-04-20 15:40:10,378 [INFO] RequestTimingFilter - Duration: 87ms for "/login.html"
+2017-04-20 15:40:10,414 [INFO] RequestTimingFilter - Duration: 8ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-20 15:40:10,414 [INFO] RequestTimingFilter - Duration: 2ms for "/css/app.css"
+2017-04-20 15:40:10,415 [INFO] RequestTimingFilter - Duration: 5ms for "/js/easyui/jquery.min.js"
+2017-04-20 15:40:10,430 [INFO] RequestTimingFilter - Duration: 6ms for "/css/bootstrap.min.css"
+2017-04-20 15:40:10,433 [INFO] RequestTimingFilter - Duration: 6ms for "/css/sticky.footer.css"
+2017-04-20 15:40:10,433 [INFO] RequestTimingFilter - Duration: 21ms for "/css/easyui/color.css"
+2017-04-20 15:40:10,439 [INFO] RequestTimingFilter - Duration: 4ms for "/js/utils.js"
+2017-04-20 15:40:10,467 [INFO] RequestTimingFilter - Duration: 26ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-20 15:40:10,696 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-20 15:40:10,726 [INFO] RequestTimingFilter - Duration: 282ms for "/api/verification_code_generation"
+2017-04-20 15:40:16,062 [INFO] RequestTimingFilter - Duration: 12ms for "/api/verification_code_generation"
+2017-04-20 15:40:16,982 [INFO] RequestTimingFilter - Duration: 5ms for "/api/verification_code_generation"
+2017-04-20 15:40:21,862 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-04-20 15:40:22,075 [INFO] RequestTimingFilter - Duration: 216ms for "/api/login"
+2017-04-20 15:40:22,717 [INFO] RequestTimingFilter - Duration: 635ms for "/"
+2017-04-20 15:40:22,736 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-20 15:40:22,745 [INFO] RequestTimingFilter - Duration: 11ms for "/css/bootstrap.min.css"
+2017-04-20 15:40:22,747 [INFO] RequestTimingFilter - Duration: 10ms for "/css/easyui/icon.css"
+2017-04-20 15:40:22,752 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.min.js"
+2017-04-20 15:40:22,756 [INFO] RequestTimingFilter - Duration: 3ms for "/css/sticky.footer.css"
+2017-04-20 15:40:22,758 [INFO] RequestTimingFilter - Duration: 5ms for "/css/easyui/color.css"
+2017-04-20 15:40:22,759 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-04-20 15:40:22,760 [INFO] RequestTimingFilter - Duration: 6ms for "/css/app.css"
+2017-04-20 15:40:22,760 [INFO] RequestTimingFilter - Duration: 1ms for "/js/main.js"
+2017-04-20 15:40:22,768 [INFO] RequestTimingFilter - Duration: 23ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-20 15:40:22,773 [INFO] RequestTimingFilter - Duration: 3ms for "/js/sprintf.min.js"
+2017-04-20 15:40:22,773 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-04-20 15:40:22,774 [INFO] RequestTimingFilter - Duration: 2ms for "/js/index.js"
+2017-04-20 15:40:22,874 [INFO] RequestTimingFilter - Duration: 2ms for "/js/sprintf.min.js.map"
+2017-04-20 15:40:22,943 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-04-20 15:40:22,945 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-20 15:40:22,946 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-04-20 15:40:22,980 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-04-20 15:40:23,040 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-04-20 15:40:23,044 [INFO] RequestTimingFilter - Duration: 5ms for "/api/menu"
+2017-04-20 15:42:37,652 [INFO] RequestTimingFilter - Duration: 3ms for "/"
+2017-04-20 15:42:37,669 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/icon.css"
+2017-04-20 15:42:37,669 [INFO] RequestTimingFilter - Duration: 0ms for "/css/easyui/color.css"
+2017-04-20 15:42:37,670 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-20 15:42:37,677 [INFO] RequestTimingFilter - Duration: 5ms for "/css/bootstrap.min.css"
+2017-04-20 15:42:37,679 [INFO] RequestTimingFilter - Duration: 7ms for "/css/sticky.footer.css"
+2017-04-20 15:42:37,680 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-04-20 15:42:37,680 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.min.js"
+2017-04-20 15:42:37,675 [INFO] RequestTimingFilter - Duration: 8ms for "/css/app.css"
+2017-04-20 15:42:37,685 [INFO] RequestTimingFilter - Duration: 2ms for "/js/main.js"
+2017-04-20 15:42:37,689 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js"
+2017-04-20 15:42:37,691 [INFO] RequestTimingFilter - Duration: 1ms for "/js/index.js"
+2017-04-20 15:42:37,698 [INFO] RequestTimingFilter - Duration: 17ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-20 15:42:37,700 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-04-20 15:42:37,813 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js.map"
+2017-04-20 15:42:37,882 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-20 15:42:37,883 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-04-20 15:42:37,885 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-04-20 15:42:37,918 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-04-20 15:42:37,987 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-04-20 15:42:37,992 [INFO] BaseController - errorLog{}
+java.lang.NullPointerException
+	at com.sj.library.management.controller.ResourceController.loadMenu(ResourceController.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:863)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.doFilterInternal(OpenEntityManagerInViewFilter.java:177)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:316)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:122)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:169)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:48)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:205)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:213)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.sj.library.management.common.filter.RequestTimingFilter.doFilterInternal(RequestTimingFilter.java:23)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:620)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:540)
+	at java.lang.Thread.run(Thread.java:745)
+2017-04-20 15:42:38,008 [INFO] RequestTimingFilter - Duration: 27ms for "/resource/menu"
+2017-04-20 15:42:59,746 [INFO] RequestTimingFilter - Duration: 3ms for "/"
+2017-04-20 15:42:59,769 [INFO] RequestTimingFilter - Duration: 2ms for "/css/sticky.footer.css"
+2017-04-20 15:42:59,771 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-20 15:42:59,771 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/icon.css"
+2017-04-20 15:42:59,772 [INFO] RequestTimingFilter - Duration: 10ms for "/css/bootstrap.min.css"
+2017-04-20 15:42:59,772 [INFO] RequestTimingFilter - Duration: 1ms for "/css/app.css"
+2017-04-20 15:42:59,772 [INFO] RequestTimingFilter - Duration: 4ms for "/css/easyui/color.css"
+2017-04-20 15:42:59,778 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.min.js"
+2017-04-20 15:42:59,778 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-04-20 15:42:59,783 [INFO] RequestTimingFilter - Duration: 2ms for "/js/main.js"
+2017-04-20 15:42:59,793 [INFO] RequestTimingFilter - Duration: 3ms for "/js/utils.js"
+2017-04-20 15:42:59,797 [INFO] RequestTimingFilter - Duration: 2ms for "/js/index.js"
+2017-04-20 15:42:59,798 [INFO] RequestTimingFilter - Duration: 4ms for "/js/sprintf.min.js"
+2017-04-20 15:42:59,799 [INFO] RequestTimingFilter - Duration: 22ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-20 15:42:59,912 [INFO] RequestTimingFilter - Duration: 2ms for "/js/sprintf.min.js.map"
+2017-04-20 15:42:59,978 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-04-20 15:42:59,980 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-04-20 15:42:59,980 [INFO] RequestTimingFilter - Duration: 4ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-20 15:43:00,017 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-04-20 15:43:00,087 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-04-20 15:43:21,767 [INFO] BaseController - errorLog{}
+java.lang.NullPointerException
+	at com.sj.library.management.controller.ResourceController.loadMenu(ResourceController.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:863)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.doFilterInternal(OpenEntityManagerInViewFilter.java:177)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:316)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:122)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:169)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:48)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:205)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:213)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.sj.library.management.common.filter.RequestTimingFilter.doFilterInternal(RequestTimingFilter.java:23)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:620)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:540)
+	at java.lang.Thread.run(Thread.java:745)
+2017-04-20 15:43:21,773 [INFO] RequestTimingFilter - Duration: 21689ms for "/resource/menu"
+2017-04-20 15:43:44,255 [INFO] RequestTimingFilter - Duration: 6ms for "/"
+2017-04-20 15:43:44,284 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-04-20 15:43:44,284 [INFO] RequestTimingFilter - Duration: 0ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-20 15:43:44,285 [INFO] RequestTimingFilter - Duration: 1ms for "/css/bootstrap.min.css"
+2017-04-20 15:43:44,285 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/color.css"
+2017-04-20 15:43:44,286 [INFO] RequestTimingFilter - Duration: 1ms for "/css/app.css"
+2017-04-20 15:43:44,291 [INFO] RequestTimingFilter - Duration: 4ms for "/css/easyui/icon.css"
+2017-04-20 15:43:44,296 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.min.js"
+2017-04-20 15:43:44,299 [INFO] RequestTimingFilter - Duration: 0ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-04-20 15:43:44,299 [INFO] RequestTimingFilter - Duration: 0ms for "/js/utils.js"
+2017-04-20 15:43:44,301 [INFO] RequestTimingFilter - Duration: 3ms for "/js/main.js"
+2017-04-20 15:43:44,312 [INFO] RequestTimingFilter - Duration: 2ms for "/js/sprintf.min.js"
+2017-04-20 15:43:44,316 [INFO] RequestTimingFilter - Duration: 2ms for "/js/index.js"
+2017-04-20 15:43:44,318 [INFO] RequestTimingFilter - Duration: 20ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-20 15:43:44,420 [INFO] RequestTimingFilter - Duration: 2ms for "/js/sprintf.min.js.map"
+2017-04-20 15:43:44,492 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-20 15:43:44,492 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-04-20 15:43:44,495 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-04-20 15:43:44,525 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-04-20 15:43:44,591 [INFO] RequestTimingFilter - Duration: 0ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-04-20 15:47:59,852 [INFO] RequestTimingFilter - Duration: 17ms for "/"
+2017-04-20 15:47:59,944 [INFO] RequestTimingFilter - Duration: 86ms for "/login.html"
+2017-04-20 15:47:59,966 [INFO] RequestTimingFilter - Duration: 3ms for "/css/bootstrap.min.css"
+2017-04-20 15:47:59,993 [INFO] RequestTimingFilter - Duration: 7ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-20 15:47:59,996 [INFO] RequestTimingFilter - Duration: 1ms for "/css/app.css"
+2017-04-20 15:47:59,998 [INFO] RequestTimingFilter - Duration: 3ms for "/js/utils.js"
+2017-04-20 15:47:59,998 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/color.css"
+2017-04-20 15:47:59,998 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-20 15:48:00,003 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.min.js"
+2017-04-20 15:48:00,003 [INFO] RequestTimingFilter - Duration: 3ms for "/css/sticky.footer.css"
+2017-04-20 15:48:00,134 [INFO] RequestTimingFilter - Duration: 124ms for "/api/verification_code_generation"
+2017-04-20 15:48:00,221 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-20 15:48:08,913 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-04-20 15:48:08,993 [INFO] RequestTimingFilter - Duration: 83ms for "/api/login"
+2017-04-20 15:48:09,685 [INFO] RequestTimingFilter - Duration: 682ms for "/"
+2017-04-20 15:48:12,625 [INFO] RequestTimingFilter - Duration: 3ms for "/"
+2017-04-20 15:48:12,639 [INFO] RequestTimingFilter - Duration: 1ms for "/css/bootstrap.min.css"
+2017-04-20 15:48:12,644 [INFO] RequestTimingFilter - Duration: 3ms for "/js/easyui/jquery.min.js"
+2017-04-20 15:48:12,646 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-20 15:48:12,646 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-04-20 15:48:12,647 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/color.css"
+2017-04-20 15:48:12,648 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/icon.css"
+2017-04-20 15:48:12,654 [INFO] RequestTimingFilter - Duration: 7ms for "/css/app.css"
+2017-04-20 15:48:12,659 [INFO] RequestTimingFilter - Duration: 5ms for "/js/utils.js"
+2017-04-20 15:48:12,659 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-04-20 15:48:12,672 [INFO] RequestTimingFilter - Duration: 5ms for "/js/sprintf.min.js"
+2017-04-20 15:48:12,676 [INFO] RequestTimingFilter - Duration: 1ms for "/js/main.js"
+2017-04-20 15:48:12,679 [INFO] RequestTimingFilter - Duration: 2ms for "/js/index.js"
+2017-04-20 15:48:12,691 [INFO] RequestTimingFilter - Duration: 18ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-20 15:48:12,783 [INFO] RequestTimingFilter - Duration: 4ms for "/js/sprintf.min.js.map"
+2017-04-20 15:48:12,843 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-20 15:48:12,846 [INFO] RequestTimingFilter - Duration: 4ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-04-20 15:48:12,847 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-04-20 15:48:12,878 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-04-20 15:48:12,945 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-04-20 15:50:29,867 [INFO] RequestTimingFilter - Duration: 19ms for "/"
+2017-04-20 15:50:29,958 [INFO] RequestTimingFilter - Duration: 89ms for "/login.html"
+2017-04-20 15:50:29,989 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/color.css"
+2017-04-20 15:50:29,984 [INFO] RequestTimingFilter - Duration: 7ms for "/js/easyui/jquery.min.js"
+2017-04-20 15:50:29,988 [INFO] RequestTimingFilter - Duration: 1ms for "/css/app.css"
+2017-04-20 15:50:29,994 [INFO] RequestTimingFilter - Duration: 18ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-20 15:50:29,993 [INFO] RequestTimingFilter - Duration: 22ms for "/css/bootstrap.min.css"
+2017-04-20 15:50:29,985 [INFO] RequestTimingFilter - Duration: 14ms for "/css/sticky.footer.css"
+2017-04-20 15:50:30,022 [INFO] RequestTimingFilter - Duration: 3ms for "/js/utils.js"
+2017-04-20 15:50:30,022 [INFO] RequestTimingFilter - Duration: 12ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-20 15:50:30,162 [INFO] RequestTimingFilter - Duration: 129ms for "/api/verification_code_generation"
+2017-04-20 15:50:30,249 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-20 15:50:35,738 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-20 15:50:36,546 [INFO] RequestTimingFilter - Duration: 8ms for "/api/verification_code_generation"
+2017-04-20 15:50:37,422 [INFO] RequestTimingFilter - Duration: 9ms for "/api/verification_code_generation"
+2017-04-20 15:50:39,289 [INFO] RequestTimingFilter - Duration: 6ms for "/api/verification_code_generation"
+2017-04-20 15:50:41,057 [INFO] RequestTimingFilter - Duration: 5ms for "/api/verification_code_generation"
+2017-04-20 15:50:45,794 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-04-20 15:50:45,877 [INFO] RequestTimingFilter - Duration: 87ms for "/api/login"
+2017-04-20 15:50:46,560 [INFO] RequestTimingFilter - Duration: 675ms for "/"
+2017-04-20 15:50:46,577 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/easyui.css"
+2017-04-20 15:50:46,581 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/icon.css"
+2017-04-20 15:50:46,583 [INFO] RequestTimingFilter - Duration: 1ms for "/css/bootstrap.min.css"
+2017-04-20 15:50:46,588 [INFO] RequestTimingFilter - Duration: 1ms for "/js/easyui/jquery.min.js"
+2017-04-20 15:50:46,588 [INFO] RequestTimingFilter - Duration: 0ms for "/css/app.css"
+2017-04-20 15:50:46,592 [INFO] RequestTimingFilter - Duration: 3ms for "/css/sticky.footer.css"
+2017-04-20 15:50:46,593 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/color.css"
+2017-04-20 15:50:46,594 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-04-20 15:50:46,606 [INFO] RequestTimingFilter - Duration: 2ms for "/js/utils.js"
+2017-04-20 15:50:46,608 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js"
+2017-04-20 15:50:46,609 [INFO] RequestTimingFilter - Duration: 12ms for "/js/main.js"
+2017-04-20 15:50:46,615 [INFO] RequestTimingFilter - Duration: 4ms for "/js/index.js"
+2017-04-20 15:50:46,619 [INFO] RequestTimingFilter - Duration: 25ms for "/js/easyui/jquery.easyui.min.js"
+2017-04-20 15:50:46,707 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js.map"
+2017-04-20 15:50:46,784 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-04-20 15:50:46,785 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-04-20 15:50:46,788 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-04-20 15:50:46,816 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-04-20 15:50:47,045 [INFO] RequestTimingFilter - Duration: 163ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-04-20 15:53:00,487 [INFO] RequestTimingFilter - Duration: 133609ms for "/resource/menu"
+2017-04-20 15:53:00,508 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/tree_icons.png"
+2017-05-02 15:10:00,102 [INFO] RequestTimingFilter - Duration: 15ms for "/"
+2017-05-02 15:10:00,182 [INFO] RequestTimingFilter - Duration: 78ms for "/login.html"
+2017-05-02 15:10:00,199 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/color.css"
+2017-05-02 15:10:00,205 [INFO] RequestTimingFilter - Duration: 9ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-02 15:10:00,204 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/jquery.min.js"
+2017-05-02 15:10:00,208 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-05-02 15:10:00,198 [INFO] RequestTimingFilter - Duration: 5ms for "/css/bootstrap.min.css"
+2017-05-02 15:10:00,213 [INFO] RequestTimingFilter - Duration: 2ms for "/css/sticky.footer.css"
+2017-05-02 15:10:00,216 [INFO] RequestTimingFilter - Duration: 2ms for "/css/app.css"
+2017-05-02 15:10:00,396 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-05-02 15:10:00,408 [INFO] RequestTimingFilter - Duration: 187ms for "/api/verification_code_generation"
+2017-05-02 15:10:00,431 [INFO] RequestTimingFilter - Duration: 3ms for "/favicon.ico"
+2017-05-02 15:10:07,438 [INFO] RequestTimingFilter - Duration: 15ms for "/api/verification_code_generation"
+2017-05-02 15:10:12,477 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-05-02 15:10:12,507 [INFO] UserDetailServiceImpl - Usernull login.
+2017-05-02 15:10:12,557 [INFO] RequestTimingFilter - Duration: 90ms for "/api/login"
+2017-05-02 15:10:12,567 [INFO] RequestTimingFilter - Duration: 5ms for "/api/verification_code_generation"
+2017-05-02 15:10:43,774 [INFO] RequestTimingFilter - Duration: 31ms for "/api/login"
+2017-05-02 15:10:44,383 [INFO] RequestTimingFilter - Duration: 600ms for "/"
+2017-05-02 15:10:44,394 [INFO] RequestTimingFilter - Duration: 2ms for "/js/main.js"
+2017-05-02 15:10:44,394 [INFO] RequestTimingFilter - Duration: 4ms for "/css/easyui/icon.css"
+2017-05-02 15:10:44,396 [INFO] RequestTimingFilter - Duration: 1ms for "/js/index.js"
+2017-05-02 15:10:44,543 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-05-02 15:10:44,545 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-05-02 15:10:44,568 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-05-02 15:10:55,177 [INFO] BaseController - errorLog{}
+java.lang.NullPointerException
+	at com.sj.library.management.service.impl.ResourceServiceImpl.loadResourcesByUser(ResourceServiceImpl.java:154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy56.loadResourcesByUser(Unknown Source)
+	at com.sj.library.management.controller.ResourceController.loadMenu(ResourceController.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:863)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.doFilterInternal(OpenEntityManagerInViewFilter.java:177)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:316)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:122)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:169)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:48)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:205)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:213)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.sj.library.management.common.filter.RequestTimingFilter.doFilterInternal(RequestTimingFilter.java:23)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:620)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:540)
+	at java.lang.Thread.run(Thread.java:745)
+2017-05-02 15:10:55,196 [INFO] RequestTimingFilter - Duration: 10572ms for "/resource/menu"
+2017-05-02 15:11:08,455 [INFO] RequestTimingFilter - Duration: 2ms for "/js/sprintf.min.js.map"
+2017-05-02 15:11:17,258 [INFO] RequestTimingFilter - Duration: 6ms for "/"
+2017-05-02 15:11:17,274 [INFO] RequestTimingFilter - Duration: 1ms for "/css/bootstrap.min.css"
+2017-05-02 15:11:17,276 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-05-02 15:11:17,276 [INFO] RequestTimingFilter - Duration: 0ms for "/css/easyui/color.css"
+2017-05-02 15:11:17,278 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-02 15:11:17,279 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/icon.css"
+2017-05-02 15:11:17,282 [INFO] RequestTimingFilter - Duration: 4ms for "/css/app.css"
+2017-05-02 15:11:17,285 [INFO] RequestTimingFilter - Duration: 3ms for "/js/utils.js"
+2017-05-02 15:11:17,290 [INFO] RequestTimingFilter - Duration: 10ms for "/js/easyui/jquery.min.js"
+2017-05-02 15:11:17,291 [INFO] RequestTimingFilter - Duration: 4ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-02 15:11:17,293 [INFO] RequestTimingFilter - Duration: 6ms for "/js/main.js"
+2017-05-02 15:11:17,293 [INFO] RequestTimingFilter - Duration: 3ms for "/js/sprintf.min.js"
+2017-05-02 15:11:17,295 [INFO] RequestTimingFilter - Duration: 3ms for "/js/index.js"
+2017-05-02 15:11:17,301 [INFO] RequestTimingFilter - Duration: 20ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-02 15:11:17,493 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-05-02 15:11:17,494 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-05-02 15:11:17,497 [INFO] RequestTimingFilter - Duration: 5ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-05-02 15:11:17,528 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-05-02 15:11:17,585 [INFO] RequestTimingFilter - Duration: 2ms for "/js/sprintf.min.js.map"
+2017-05-02 15:11:17,683 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-05-02 15:12:02,223 [INFO] RequestTimingFilter - Duration: 44635ms for "/resource/menu"
+2017-05-02 15:12:02,242 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/images/tree_icons.png"
+2017-05-02 15:23:09,923 [INFO] RequestTimingFilter - Duration: 21ms for "/"
+2017-05-02 15:23:10,021 [INFO] RequestTimingFilter - Duration: 86ms for "/login.html"
+2017-05-02 15:23:10,051 [INFO] RequestTimingFilter - Duration: 5ms for "/css/bootstrap.min.css"
+2017-05-02 15:23:10,052 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/color.css"
+2017-05-02 15:23:10,054 [INFO] RequestTimingFilter - Duration: 5ms for "/js/easyui/jquery.min.js"
+2017-05-02 15:23:10,061 [INFO] RequestTimingFilter - Duration: 3ms for "/js/utils.js"
+2017-05-02 15:23:10,061 [INFO] RequestTimingFilter - Duration: 8ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-02 15:23:10,061 [INFO] RequestTimingFilter - Duration: 1ms for "/css/app.css"
+2017-05-02 15:23:10,064 [INFO] RequestTimingFilter - Duration: 2ms for "/css/sticky.footer.css"
+2017-05-02 15:23:10,088 [INFO] RequestTimingFilter - Duration: 30ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-02 15:23:10,276 [INFO] RequestTimingFilter - Duration: 196ms for "/api/verification_code_generation"
+2017-05-02 15:23:10,284 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-05-02 15:23:20,754 [INFO] RequestTimingFilter - Duration: 13ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-05-02 15:23:20,819 [INFO] RequestTimingFilter - Duration: 84ms for "/api/login"
+2017-05-02 15:23:21,519 [INFO] RequestTimingFilter - Duration: 691ms for "/"
+2017-05-02 15:23:21,529 [INFO] RequestTimingFilter - Duration: 1ms for "/css/bootstrap.min.css"
+2017-05-02 15:23:21,537 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-05-02 15:23:21,540 [INFO] RequestTimingFilter - Duration: 9ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-02 15:23:21,543 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/jquery.min.js"
+2017-05-02 15:23:21,544 [INFO] RequestTimingFilter - Duration: 9ms for "/css/easyui/icon.css"
+2017-05-02 15:23:21,546 [INFO] RequestTimingFilter - Duration: 1ms for "/css/app.css"
+2017-05-02 15:23:21,547 [INFO] RequestTimingFilter - Duration: 5ms for "/css/easyui/color.css"
+2017-05-02 15:23:21,547 [INFO] RequestTimingFilter - Duration: 5ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-02 15:23:21,563 [INFO] RequestTimingFilter - Duration: 3ms for "/js/utils.js"
+2017-05-02 15:23:21,565 [INFO] RequestTimingFilter - Duration: 2ms for "/js/sprintf.min.js"
+2017-05-02 15:23:21,567 [INFO] RequestTimingFilter - Duration: 9ms for "/js/main.js"
+2017-05-02 15:23:21,567 [INFO] RequestTimingFilter - Duration: 1ms for "/js/index.js"
+2017-05-02 15:23:21,569 [INFO] RequestTimingFilter - Duration: 25ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-02 15:23:21,720 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-05-02 15:23:21,722 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-05-02 15:23:21,723 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-05-02 15:23:21,753 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-05-02 15:23:21,809 [INFO] RequestTimingFilter - Duration: 3ms for "/js/sprintf.min.js.map"
+2017-05-02 15:23:21,822 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-05-02 15:23:24,490 [INFO] BaseController - errorLog{}
+java.lang.NullPointerException
+	at com.sj.library.management.service.impl.ResourceServiceImpl.loadResourcesByUser(ResourceServiceImpl.java:154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy57.loadResourcesByUser(Unknown Source)
+	at com.sj.library.management.controller.ResourceController.loadMenu(ResourceController.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:863)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:800)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.doFilterInternal(OpenEntityManagerInViewFilter.java:177)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:316)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:122)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:169)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:48)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:205)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:213)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at com.sj.library.management.common.filter.RequestTimingFilter.doFilterInternal(RequestTimingFilter.java:23)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1125)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1059)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:248)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:620)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:540)
+	at java.lang.Thread.run(Thread.java:745)
+2017-05-02 15:23:24,507 [INFO] RequestTimingFilter - Duration: 2690ms for "/resource/menu"
+2017-05-02 15:23:30,221 [INFO] RequestTimingFilter - Duration: 10ms for "/"
+2017-05-02 15:23:30,243 [INFO] RequestTimingFilter - Duration: 5ms for "/css/bootstrap.min.css"
+2017-05-02 15:23:30,247 [INFO] RequestTimingFilter - Duration: 4ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-02 15:23:30,251 [INFO] RequestTimingFilter - Duration: 2ms for "/css/sticky.footer.css"
+2017-05-02 15:23:30,253 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/icon.css"
+2017-05-02 15:23:30,253 [INFO] RequestTimingFilter - Duration: 1ms for "/css/app.css"
+2017-05-02 15:23:30,255 [INFO] RequestTimingFilter - Duration: 3ms for "/css/easyui/color.css"
+2017-05-02 15:23:30,260 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js"
+2017-05-02 15:23:30,261 [INFO] RequestTimingFilter - Duration: 7ms for "/js/easyui/jquery.min.js"
+2017-05-02 15:23:30,261 [INFO] RequestTimingFilter - Duration: 6ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-02 15:23:30,264 [INFO] RequestTimingFilter - Duration: 2ms for "/js/main.js"
+2017-05-02 15:23:30,265 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-05-02 15:23:30,277 [INFO] RequestTimingFilter - Duration: 19ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-02 15:23:30,280 [INFO] RequestTimingFilter - Duration: 2ms for "/js/index.js"
+2017-05-02 15:23:30,441 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-05-02 15:23:30,442 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-05-02 15:23:30,444 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-05-02 15:23:30,475 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-05-02 15:23:30,527 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js.map"
+2017-05-02 15:23:34,344 [INFO] RequestTimingFilter - Duration: 3759ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-05-02 15:23:47,466 [INFO] RequestTimingFilter - Duration: 16928ms for "/resource/menu"
+2017-05-02 15:23:47,485 [INFO] RequestTimingFilter - Duration: 4ms for "/css/easyui/bootstrap/images/tree_icons.png"
+2017-05-02 15:27:57,020 [INFO] RequestTimingFilter - Duration: 18ms for "/"
+2017-05-02 15:27:57,109 [INFO] RequestTimingFilter - Duration: 88ms for "/login.html"
+2017-05-02 15:27:57,124 [INFO] RequestTimingFilter - Duration: 5ms for "/css/bootstrap.min.css"
+2017-05-02 15:27:57,140 [INFO] RequestTimingFilter - Duration: 7ms for "/css/sticky.footer.css"
+2017-05-02 15:27:57,135 [INFO] RequestTimingFilter - Duration: 1ms for "/css/app.css"
+2017-05-02 15:27:57,132 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-02 15:27:57,145 [INFO] RequestTimingFilter - Duration: 2ms for "/js/easyui/jquery.min.js"
+2017-05-02 15:27:57,146 [INFO] RequestTimingFilter - Duration: 2ms for "/js/utils.js"
+2017-05-02 15:27:57,135 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/color.css"
+2017-05-02 15:27:57,148 [INFO] RequestTimingFilter - Duration: 8ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-02 15:27:57,276 [INFO] RequestTimingFilter - Duration: 121ms for "/api/verification_code_generation"
+2017-05-02 15:27:57,352 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-05-02 15:28:06,396 [INFO] RequestTimingFilter - Duration: 4ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-05-02 15:28:06,473 [INFO] RequestTimingFilter - Duration: 84ms for "/api/login"
+2017-05-02 15:28:07,130 [INFO] RequestTimingFilter - Duration: 647ms for "/"
+2017-05-02 15:28:07,145 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/easyui.css"
+2017-05-02 15:28:07,145 [INFO] RequestTimingFilter - Duration: 1ms for "/css/sticky.footer.css"
+2017-05-02 15:28:07,147 [INFO] RequestTimingFilter - Duration: 6ms for "/css/bootstrap.min.css"
+2017-05-02 15:28:07,148 [INFO] RequestTimingFilter - Duration: 4ms for "/css/app.css"
+2017-05-02 15:28:07,150 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/color.css"
+2017-05-02 15:28:07,157 [INFO] RequestTimingFilter - Duration: 10ms for "/css/easyui/icon.css"
+2017-05-02 15:28:07,160 [INFO] RequestTimingFilter - Duration: 9ms for "/js/easyui/jquery.min.js"
+2017-05-02 15:28:07,160 [INFO] RequestTimingFilter - Duration: 2ms for "/js/sprintf.min.js"
+2017-05-02 15:28:07,162 [INFO] RequestTimingFilter - Duration: 1ms for "/js/index.js"
+2017-05-02 15:28:07,162 [INFO] RequestTimingFilter - Duration: 1ms for "/js/utils.js"
+2017-05-02 15:28:07,164 [INFO] RequestTimingFilter - Duration: 11ms for "/js/easyui/easyui-lang-zh_CN.js"
+2017-05-02 15:28:07,168 [INFO] RequestTimingFilter - Duration: 5ms for "/js/main.js"
+2017-05-02 15:28:07,188 [INFO] RequestTimingFilter - Duration: 37ms for "/js/easyui/jquery.easyui.min.js"
+2017-05-02 15:28:07,342 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/blank.gif"
+2017-05-02 15:28:07,343 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/panel_tools.png"
+2017-05-02 15:28:07,345 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/layout_arrows.png"
+2017-05-02 15:28:07,374 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/tabs_icons.png"
+2017-05-02 15:28:07,431 [INFO] RequestTimingFilter - Duration: 1ms for "/js/sprintf.min.js.map"
+2017-05-02 15:28:07,440 [INFO] RequestTimingFilter - Duration: 1ms for "/css/easyui/bootstrap/images/loading.gif"
+2017-05-02 15:31:30,509 [INFO] RequestTimingFilter - Duration: 203071ms for "/resource/menu"
+2017-05-02 15:31:30,530 [INFO] RequestTimingFilter - Duration: 2ms for "/css/easyui/bootstrap/images/tree_icons.png"
