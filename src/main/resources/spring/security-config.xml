@@ -51,7 +51,6 @@
 
         <intercept-url pattern="/" access="isAuthenticated" />
         <intercept-url pattern="/user/**" access="isAuthenticated" />
-        <intercept-url pattern="/resource/granted_authorities" access="isAuthenticated" />
         <intercept-url pattern="/admin/**" access="hasPermission" />
 
         <form-login login-page="/login.html" login-processing-url="/api/login"

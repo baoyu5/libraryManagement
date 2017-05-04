@@ -40,7 +40,13 @@ public class RoleDaoImpl extends GenericDaoImpl<Role, Long> implements RoleDao {
         return jdbcTemplate.queryForObject(sql, Long.class);
     }
 
-    // /**
+    @Override
+    public List<Role> loadRoles() {
+        String ql = "from Role where deleted = false ";
+        return query(ql).getResultList();
+    }
+
+// /**
     //  * 流程角色
     //  * P10001, P10002, ...
     //  * @return

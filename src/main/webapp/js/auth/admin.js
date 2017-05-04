@@ -1,7 +1,7 @@
 var adminsApi = new sysCommon.api('admin', {
-        'createUri': 'admin/admin_add',
-        'deleteUri': 'admin/admin_delete',
-        'editUri': 'admin/admin_edit',
+        'createUri': 'admin/add',
+        'deleteUri': 'admin/delete',
+        'editUri': 'admin/edit',
         'recordIdName': 'id'
     }
 );
@@ -9,33 +9,33 @@ var adminsApi = new sysCommon.api('admin', {
 $(document).ready(
     function() {
         var toolbarAll = [{
-            text: '添加操作员',
+            text: '添加管理员',
             handler: function () {
-                adminsApi.create('添加操作员');
+                adminsApi.create('添加管理员');
             }
         }, {
-            text: '修改操作员',
+            text: '修改管理员',
             handler: function () {
-                adminsApi.edit('修改操作员');
+                adminsApi.edit('修改管理员');
             }
         }, {
-            text: '修改角色',
+            text: '修改管理员角色',
             handler: function () {
                 editRoles();
             }
         }, {
-            text: '修改密码',
+            text: '修改管理员密码',
             handler: function () {
                 editPassword();
             }
         }, {
-            text: '删除操作员',
+            text: '删除管理员',
             handler: function () {
-                adminsApi.delete('确认要删除该操作员吗?');
+                adminsApi.delete('确认要删除该管理员吗?');
             }
         }];
 
-        var urls = ['/admin/admin_add', '/admin/admin_edit', '/admin/admin_roles_update', '/admin/password_update', '/admin/admin_delete'];
+        var urls = ['/admin/add', '/admin/edit', '/admin/admin_roles_update', '/admin/password_update', '/admin/delete'];
 
         $('#dg4admin').datagrid({
             title: '管理员列表',
@@ -123,7 +123,7 @@ function editRoles() {
 
     var row = $('#dg4admin').datagrid('getSelected');
     if (row) {
-        $('#dlg4admin_roles').dialog('open').dialog('center').dialog('setTitle','修改角色');
+        $('#dlg4admin_roles').dialog('open').dialog('center').dialog('setTitle','修改管理员角色');
         $('#dg4admin_roles').datagrid({
             title: '角色列表',
             collapsible: false,//是否可折叠的

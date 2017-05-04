@@ -1,5 +1,6 @@
 package com.sj.library.management.controller;
 
+import com.sj.library.management.common.constant.AdminConstants;
 import com.sj.library.management.entity.Resource;
 import com.sj.library.management.security.UserDetailsImpl;
 import com.sj.library.management.service.ResourceService;
@@ -16,11 +17,11 @@ import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.sj.library.management.security.ResourceBasedVoter.sysAdmin;
+
 @Controller
 @RequestMapping(value = "/resource")
 public class ResourceController extends BaseController {
-
-    private String sysAdmin = "baoyu";
 
     @Autowired
     private ResourceService resourceService;
@@ -64,7 +65,7 @@ public class ResourceController extends BaseController {
         List<Resource> resources = new ArrayList();
 
         UserDetailsImpl userDetails = (UserDetailsImpl) token.getPrincipal();
-        if (sysAdmin.equals(userDetails.getUsername())) {
+        if (AdminConstants.LOGIN_NAME.equals(userDetails.getUsername())) {
             /**
              * 超级管理员加载所有菜单
              */
@@ -101,27 +102,14 @@ public class ResourceController extends BaseController {
     }
 
     /**
-     * 根据登录用户，加载所属普通资源
+     * 加载所有资源，树形结构
      */
-    @RequestMapping(value = "/granted_authorities", method = RequestMethod.POST)
+    @RequestMapping(value = "/resources")
     @ResponseBody
-    public ResponseTO getGrantedAuthorities(UsernamePasswordAuthenticationToken token) {
-        List<String> authorities = new ArrayList<String>();
-        for (GrantedAuthority ga : token.getAuthorities()) {
-            authorities.add(ga.getAuthority());
-        }
-        return success(authorities);
+    public List<Resource> loadAllResources() {
+        return resourceService.loadMenu();
     }
 
-    // /**
-    //  * 加载所有资源，树形结构
-    //  */
-    // @RequestMapping(value = "/resources")
-    // @ResponseBody
-    // public List<Resource> loadAllResources() {
-    //     return resourceService.loadMenu();
-    // }
-    //
     // /**
     //  * 按照 level 加载资源，扁平结构
     //  */

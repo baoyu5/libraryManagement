@@ -20,18 +20,18 @@ public class AdminController extends BaseController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "/admin_add", method = RequestMethod.POST)
+    @RequestMapping(value = "/add", method = RequestMethod.POST)
     public void addAdmin(@Valid @RequestBody UserTO to) {
         to.setType(UserType.ADMIN);
         userService.addUser(to);
     }
 
-    @RequestMapping(value = "/admin_delete", method = RequestMethod.POST)
+    @RequestMapping(value = "/delete", method = RequestMethod.POST)
     public void deleteAdmin(long id) {
         userService.deleteUser(id);
     }
 
-    @RequestMapping(value = "/admin_edit", method = RequestMethod.POST)
+    @RequestMapping(value = "/edit", method = RequestMethod.POST)
     public void editAdmin(UserTO to) {
         userService.editUser(to);
     }

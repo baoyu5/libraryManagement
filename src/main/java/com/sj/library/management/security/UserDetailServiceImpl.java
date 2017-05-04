@@ -1,7 +1,9 @@
 package com.sj.library.management.security;
 
+import com.sj.library.management.common.constant.AdminConstants;
 import com.sj.library.management.common.constant.UserType;
 import com.sj.library.management.common.constant.UserTypeFactory;
+import com.sj.library.management.dao.RoleDao;
 import com.sj.library.management.dao.UserDao;
 import com.sj.library.management.entity.Resource;
 import com.sj.library.management.entity.Role;
@@ -32,25 +34,30 @@ public class UserDetailServiceImpl implements UserDetailsService {
 
     @Autowired
     private UserDao userDao;
-
-    @Value("${sys.admin}")
-    private String sysAdmin;
-    @Value("${sys.admin.password}")
-    private String sysAdminPassword;
+    @Autowired
+    private RoleDao roleDao;
 
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        if (sysAdmin.equals(username)) {
+        if (AdminConstants.LOGIN_NAME.equals(username)) {
             UserDetailsImpl details = new UserDetailsImpl();
-
-            details.setPassword("111111");
-            details.setRealName("baoyu");
-            details.setUsername("baoyu");
+            details.setPassword(AdminConstants.PASSWORD);
+            details.setRealName(AdminConstants.REAL_NAME);
+            details.setUsername(AdminConstants.LOGIN_NAME);
             details.setId(0);
             details.setType(UserTypeFactory.getType(UserType.ADMIN));
 
-            // Set<GrantedAuthority> authorities = new HashSet<GrantedAuthority>();
-            // details.setGrantedAuthoritySet(authorities);
+            Set<GrantedAuthority> authorities = new HashSet<GrantedAuthority>();
+
+            for (Role r : roleDao.loadRoles()) {
+                for (Resource resource : r.getResources()) {
+                    if (!StringUtils.isEmpty(resource.getUrl())) {
+                        authorities.add(GrantedAuthorityFactory.newAuthority(resource.getUrl()));
+                    }
+                }
+            }
+
+            details.setGrantedAuthoritySet(authorities);
 
             return details;
         }
@@ -69,6 +76,7 @@ public class UserDetailServiceImpl implements UserDetailsService {
         details.setRealName(user.getRealName());
         details.setUsername(user.getLoginName());
         details.setId(user.getId());
+        details.setType(UserTypeFactory.getType(user.getType()));
 
         Set<GrantedAuthority> authorities = new HashSet<GrantedAuthority>();
 

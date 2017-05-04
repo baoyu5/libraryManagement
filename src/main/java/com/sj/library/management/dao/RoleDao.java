@@ -11,5 +11,7 @@ public interface RoleDao extends GenericDao<Role, Long> {
 
     long getRolesCount();
 
+    List<Role> loadRoles();
+
     // List<Role> loadRolesForProcess();
 }
