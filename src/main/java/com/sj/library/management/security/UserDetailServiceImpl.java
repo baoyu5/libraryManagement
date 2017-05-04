@@ -9,6 +9,7 @@ import com.sj.library.management.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -32,9 +33,14 @@ public class UserDetailServiceImpl implements UserDetailsService {
     @Autowired
     private UserDao userDao;
 
+    @Value("${sys.admin}")
+    private String sysAdmin;
+    @Value("${sys.admin.password}")
+    private String sysAdminPassword;
+
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        if ("baoyu".equals(username)) {
+        if (sysAdmin.equals(username)) {
             UserDetailsImpl details = new UserDetailsImpl();
 
             details.setPassword("111111");

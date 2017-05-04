@@ -11,7 +11,7 @@ public interface RoleService {
     long addRole(RoleTO to);
     void deleteRole(long id);
     void updateRole(RoleTO to);
-    void updateResources(long roleId, List<Long> resourceIds);
-    List<ResourceTO> getResources(long roleId);
+    void updateRoleResources(long roleId, List<Long> resourceIds);
+    List<ResourceTO> getRoleResources(long roleId);
     PaginationResult getRole(PageRequest pr);
 }

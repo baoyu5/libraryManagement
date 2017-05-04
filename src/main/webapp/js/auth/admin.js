@@ -42,7 +42,7 @@ $(document).ready(
             collapsible: false,//是否可折叠的
             fit: true,//自动大小
             url: 'admin/admins',
-            method: 'post',
+            method: 'get',
             remoteSort: false,
             idField: 'ID',
             singleSelect: true,//是否单选
@@ -71,30 +71,22 @@ function saveNewAdmin(){
     var count = 0;
     var tip1 = checkName($('#newAdminLoginName'), 4, 20);
     if (!$.isEmptyObject(tip1)) {
-        tips[count] = (count+1)+'.登录名'+tip1;
-        count++;
+        tips[count++] = count + tip1;
     }
     var tip2 = checkRealName($('#newAdminRealName'), 2, 20);
     if (!$.isEmptyObject(tip2)) {
-        tips[count] = (count+1)+'.姓名'+tip2;
-        count++;
+        tips[count++] = count + tip2;
     }
     var tip3 = checkPhone($('#newAdminPhone'));
     if (!$.isEmptyObject(tip3)) {
-        tips[count] = (count+1)+'.手机号'+tip3;
-        count++;
+        tips[count++] = count + tip3;
     }
     var tip4 = checkEmail($('#newAdminEmail'));
     if (!$.isEmptyObject(tip4)) {
-        tips[count] = (count+1)+'.邮箱'+tip4;
-        count++;
+        tips[count++] = count + tip4;
     }
     if (tips.length != 0) {
-        var text = '';
-        for (var i = 0;i < tips.length;i++) {
-            text = text+tips[i]+"<br/>";
-        }
-        showError($('#dlg4_new_admin_tips'), text);
+        showTips(tips, $('#dlg4_new_admin_tips'));
         return;
     }
     adminsApi.save();
@@ -105,30 +97,22 @@ function saveAdmin(){
     var count = 0;
     var tip1 = checkName($('#adminLoginName'), 4, 20);
     if (!$.isEmptyObject(tip1)) {
-        tips[count] = (count+1)+'.登录名'+tip1;
-        count++;
+        tips[count++] = count + tip1;
     }
     var tip2 = checkRealName($('#adminRealName'), 2, 20);
     if (!$.isEmptyObject(tip2)) {
-        tips[count] = (count+1)+'.姓名'+tip2;
-        count++;
+        tips[count++] = count + tip2;
     }
     var tip3 = checkPhone($('#adminPhone'));
     if (!$.isEmptyObject(tip3)) {
-        tips[count] = (count+1)+'.手机号'+tip3;
-        count++;
+        tips[count++] = count + tip3;
     }
     var tip4 = checkEmail($('#adminEmail'));
     if (!$.isEmptyObject(tip4)) {
-        tips[count] = (count+1)+'.邮箱'+tip4;
-        count++;
+        tips[count++] = count + tip4;
     }
     if (tips.length != 0) {
-        var text = '';
-        for (var i = 0;i<tips.length;i++) {
-            text = text+tips[i]+"<br/>";
-        }
-        showError($('#dlg4admins_tips'), text);
+        showTips(tips, $('#dlg4admins_tips'));
         return;
     }
     adminsApi.update();
@@ -194,12 +178,29 @@ function savePassword() {
     var row = $('#dg4admin').datagrid('getSelected');
 
     // todo 密码判断
-    var password = $('#adminNewPassword').val();
-    var passwordConfirm = $("#adminNewPasswordConfirm").val();
+    var tips = [];
+    var count = 0;
+
+    var tip1 = checkPassword($('#adminNewPassword'));
+    if (!$.isEmptyObject(tip1)) {
+        tips[count++] = count + tip1 + '<br/>';
+    }
+    var tip2 = checkPasswordConfirm($('#adminNewPassword'), $("#adminNewPasswordConfirm"));
+    if (!$.isEmptyObject(tip2)) {
+        tips[count++] = count + tip2 + '<br/>';
+    }
+
+    if (tips.length != 0) {
+        showTips(tips, $('#dlg4admin_password_tips'));
+        return;
+    }
+
+    var password = $('#adminNewPassword').val().trim();
+    var passwordConfirm = $("#adminNewPasswordConfirm").val().trim();
 
     $.ajax({
         url: "admin/password_update",
-        data:{'adminId':row['id'], 'password':$('#adminNewPassword').val(), 'passwordConfirm':$("#adminNewPasswordConfirm").val()},
+        data:{'adminId':row['id'], 'password':password, 'passwordConfirm':passwordConfirm},
         type: "post",
         success: function () {
             $('#dlg4admin_password').dialog('close');

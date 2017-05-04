@@ -20,8 +20,7 @@ import java.util.List;
 @RequestMapping(value = "/resource")
 public class ResourceController extends BaseController {
 
-    @Value("${sys.admin}")
-    private String sysAdmin;
+    private String sysAdmin = "baoyu";
 
     @Autowired
     private ResourceService resourceService;
@@ -32,31 +31,29 @@ public class ResourceController extends BaseController {
     //                                 @RequestParam(required = false) String resourceName,
     //                                 @RequestParam int rows,
     //                                 @RequestParam int page) {
-    //     return success(resourceService.getResources(type, resourceName, PageRequest.newRequest(rows, page)));
+    //     return success(resourceService.getRoleResources(type, resourceName, PageRequest.newRequest(rows, page)));
     // }
-    //
-    // @RequestMapping(value = "/add", method = RequestMethod.POST)
-    // @ResponseBody
-    // public ResponseTO addResource(@Valid @RequestBody ResourceTO to) {
-    //     LOG.info(JsonUtils.toJson(to));
-    //
-    //     resourceService.addResource(to);
-    //     return success(null);
-    // }
-    //
-    // @RequestMapping(value = "/edit", method = RequestMethod.POST)
-    // @ResponseBody
-    // public ResponseTO editResource(@Valid @RequestBody ResourceTO to) {
-    //     resourceService.updateResource(to);
-    //     return success(null);
-    // }
-    //
-    // @RequestMapping(value = "/delete", method = RequestMethod.POST)
-    // @ResponseBody
-    // public ResponseTO deleteResource(@RequestParam int id) {
-    //     resourceService.deleteResource(id);
-    //     return success(null);
-    // }
+
+    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    @ResponseBody
+    public ResponseTO addResource(@Valid @RequestBody ResourceTO to) {
+        resourceService.addResource(to);
+        return success();
+    }
+
+    @RequestMapping(value = "/edit", method = RequestMethod.POST)
+    @ResponseBody
+    public ResponseTO editResource(@Valid @RequestBody ResourceTO to) {
+        resourceService.updateResource(to);
+        return success(null);
+    }
+
+    @RequestMapping(value = "/delete", method = RequestMethod.POST)
+    @ResponseBody
+    public ResponseTO deleteResource(@RequestParam int id) {
+        resourceService.deleteResource(id);
+        return success();
+    }
 
     /**
      * 加载右侧菜单，树形结构
@@ -103,20 +100,19 @@ public class ResourceController extends BaseController {
         return resources;
     }
 
-    // /**
-    //  * 根据登录用户，加载所属普通资源
-    //  */
-    // @RequestMapping(value = "/granted_authorities", method = RequestMethod.POST)
-    // @ResponseBody
-    // public ResponseTO getGrantedAuthorities(UsernamePasswordAuthenticationToken token) {
-    //     List<String> authorities = new ArrayList<String>();
-    //     for (GrantedAuthority ga : token.getAuthorities()) {
-    //         authorities.add(ga.getAuthority());
-    //     }
-    //
-    //     return success(authorities);
-    // }
-    //
+    /**
+     * 根据登录用户，加载所属普通资源
+     */
+    @RequestMapping(value = "/granted_authorities", method = RequestMethod.POST)
+    @ResponseBody
+    public ResponseTO getGrantedAuthorities(UsernamePasswordAuthenticationToken token) {
+        List<String> authorities = new ArrayList<String>();
+        for (GrantedAuthority ga : token.getAuthorities()) {
+            authorities.add(ga.getAuthority());
+        }
+        return success(authorities);
+    }
+
     // /**
     //  * 加载所有资源，树形结构
     //  */

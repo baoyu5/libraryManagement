@@ -22,6 +22,15 @@ public class UserTO {
     private String Email;
 
     private int type;
+    private String typeDesc;
+
+    public String getTypeDesc() {
+        return typeDesc;
+    }
+
+    public void setTypeDesc(String typeDesc) {
+        this.typeDesc = typeDesc;
+    }
 
     public long getId() {
         return id;

@@ -1,10 +1,7 @@
 package com.sj.library.management.service.impl;
 
-import com.sj.library.management.common.constant.ErrorCode;
 import com.sj.library.management.common.exception.ResourceNotExistsException;
 import com.sj.library.management.common.exception.UpdateException;
-import com.sj.library.management.common.pagination.PageRequest;
-import com.sj.library.management.common.pagination.PaginationResult;
 import com.sj.library.management.dao.ResourceDao;
 import com.sj.library.management.dao.UserDao;
 import com.sj.library.management.entity.Resource;
@@ -37,7 +34,7 @@ public class ResourceServiceImpl implements ResourceService {
         }
 
         if (resource == null) {
-            throw new ResourceNotExistsException(ErrorCode.ERROR_SERVICE);
+            throw new ResourceNotExistsException();
         }
 
         resource.setName(to.getName());
@@ -46,12 +43,12 @@ public class ResourceServiceImpl implements ResourceService {
 
         Resource newParent = resourceDao.load(to.getParentId());
         if (newParent == null && to.getLevel() != 0) {
-            throw new UpdateException("新的父节点不存在！", ErrorCode.ERROR_SERVICE);
+            throw new UpdateException("新的父节点不存在！");
         }
 
         Resource oldParent = resourceDao.load(to.getOldParentId());
         if (oldParent == null && resource.getLevel() != 0) {
-            throw new UpdateException("老的父节点不存在！", ErrorCode.ERROR_SERVICE);
+            throw new UpdateException("老的父节点不存在！");
         }
 
         cycleCheck(resource, to.getParentId());
@@ -71,12 +68,12 @@ public class ResourceServiceImpl implements ResourceService {
 
     private void cycleCheck(Resource resource, long newParentId) {
         if (resource.getId() == newParentId) {
-            throw new UpdateException("自己不能是自己的下级！", ErrorCode.ERROR_SERVICE);
+            throw new UpdateException("自己不能是自己的下级！");
         }
 
         Resource r = resourceDao.load(newParentId);
         if (resource.getChildren().contains(r)) {
-            throw new UpdateException("自己不能是自己的下级的下级！", ErrorCode.ERROR_SERVICE);
+            throw new UpdateException("自己不能是自己的下级的下级！");
         }
     }
 
@@ -90,16 +87,16 @@ public class ResourceServiceImpl implements ResourceService {
         }
     }
 
-    @Override
-    public PaginationResult getResources(Integer type, String resourceName, PageRequest pr) {
-
-        PaginationResult result = new PaginationResult();
-
-        result.setRows(resourceDao.getResources(type, resourceName, pr));
-        result.setTotal(resourceDao.getResourcesCount(type, resourceName));
-
-        return result;
-    }
+    // @Override
+    // public PaginationResult getRoleResources(Integer type, String resourceName, PageRequest pr) {
+    //
+    //     PaginationResult result = new PaginationResult();
+    //
+    //     result.setRows(resourceDao.getRoleResources(type, resourceName, pr));
+    //     result.setTotal(resourceDao.getResourcesCount(type, resourceName));
+    //
+    //     return result;
+    // }
 
     @Override
     public long addResource(ResourceTO to) {
@@ -133,18 +130,17 @@ public class ResourceServiceImpl implements ResourceService {
         if (level == 0) {
             return new ArrayList<ResourceTO>();
         }
-
         return resourceDao.getByLevel(level - 1);
-     }
+    }
 
-     @Override
-     public List<Resource> loadMenu() {
-     List<Resource> resources = resourceDao.loadFromLevel12();
-     return resources;
-     }
+    @Override
+    public List<Resource> loadMenu() {
+        List<Resource> resources = resourceDao.loadFromLevel12();
+        return resources;
+    }
 
-     /**
-      * 加载会员所属所有资源
+    /**
+     * 加载会员所属所有资源
      */
     @Override
     public List<Resource> loadResourcesByUser(long userId) {
@@ -169,8 +165,8 @@ public class ResourceServiceImpl implements ResourceService {
         if (r.getChildren().size() != 0) {
             throw new RuntimeException("该资源含有子节点，不能删除");
         }
-        if(resourceDao.getRoleResourceCountByresourceId(r.getId()) > 0) {
-            throw new RuntimeException("该资源已被角色修改，无法删除！");
+        if (resourceDao.getRoleCountByResourceId(r.getId()) > 0) {
+            throw new RuntimeException("该资源已被角色用于，无法删除！");
         }
 
         resourceDao.removeResource(id);

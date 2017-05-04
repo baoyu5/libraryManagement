@@ -10,7 +10,7 @@ import java.util.List;
 public interface ResourceService {
     long addResource(ResourceTO to);
 
-    PaginationResult getResources(Integer type, String resourceName, PageRequest pr);
+    // PaginationResult getRoleResources(Integer type, String resourceName, PageRequest pr);
 
     void updateResource(ResourceTO to);
 

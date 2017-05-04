@@ -9,9 +9,4 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping(value = "/user")
 public class UserController extends BaseController {
 
-    @RequestMapping(value = "/admin_add", method = RequestMethod.POST)
-    public void addAdmin(UserTO to) {
-
-    }
-
 }

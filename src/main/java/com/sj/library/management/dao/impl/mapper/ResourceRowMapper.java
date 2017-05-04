@@ -19,7 +19,6 @@ public class ResourceRowMapper implements RowMapper<ResourceTO> {
             r.setParentId(rs.getLong("parentId"));
             r.setParentName(rs.getString("parentName"));
         } catch (SQLException se) {
-
         }
         return r;
     }

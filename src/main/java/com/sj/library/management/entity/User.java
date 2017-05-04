@@ -24,12 +24,15 @@ public class User extends BaseEntity {
      * 用户类型
      * @see com.sj.library.management.common.constant.UserType
      */
-    @Column(name = "type")
+    @Column(name = "type", nullable = false)
     private int type;
 
     // 手机号
     @Column(name = "phone_no")
     private String phoneNo;
+
+    @Column(name = "email")
+    private String email;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
@@ -87,6 +90,14 @@ public class User extends BaseEntity {
         this.phoneNo = phoneNo;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -95,6 +106,7 @@ public class User extends BaseEntity {
                 ", password='" + password + '\'' +
                 ", type=" + type +
                 ", phoneNo='" + phoneNo + '\'' +
+                ", email='" + email + '\'' +
                 ", roles=" + roles +
                 '}';
     }

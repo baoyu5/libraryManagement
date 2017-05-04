@@ -88,18 +88,18 @@ function load() {
     });
 
     // 加载资源、权限
-    // $.ajax({
-    //     url: "api/granted_authorities",
-    //     type: "post",
-    //     dataType: "json",
-    //     success: function (response) {
-    //         authorities = response["data"];
-    //         console.log(authorities);
-    //     },
-    //     error: function (data) {
-    //         errorHandler2(data);
-    //     }
-    // });
+    $.ajax({
+        url: "resource/granted_authorities",
+        type: "post",
+        dataType: "json",
+        success: function (response) {
+            authorities = response["data"];
+            // console.log(authorities);
+        },
+        error: function (data) {
+            errorHandler2(data);
+        }
+    });
 
 
     // $("#tt").tabs({

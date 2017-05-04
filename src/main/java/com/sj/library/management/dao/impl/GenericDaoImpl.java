@@ -1,6 +1,6 @@
 package com.sj.library.management.dao.impl;
 
-import com.sj.library.management.common.exception.DaoException;
+import com.sj.library.management.common.exception.AppException;
 import com.sj.library.management.dao.GenericDao;
 
 import javax.persistence.EntityManager;
@@ -67,7 +67,7 @@ public abstract class GenericDaoImpl<T, KeyType> implements GenericDao<T, KeyTyp
         try {
             return q.getResultList();
         } catch (Throwable t) {
-            throw new DaoException("Get ResultList ERROR!", t);
+            throw new AppException("Get ResultList ERROR!", t);
         }
     }
 }

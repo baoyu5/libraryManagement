@@ -112,15 +112,15 @@ function getToolbar(all, urls) {
 function checkName(target, min, max) {
     var name = target.val().trim();
     if ($.isEmptyObject(name)) {
-        return '不能为空';
+        return '.用户名不能为空';
     }
     var reg = /^([0-9a-zA-Z]|[\u4E00-\u9FA5])*$/;
     if (!name.match(reg)) {
-        return "只能输入中英文或数字";
+        return ".用户名只能输入中英文或数字";
     }
     // var newName = name.replace(/[\u4E00-\u9FA5]/g,"aa");
     if (name.length < min || name.length > max) {
-        return "不能少于"+min+"位，或大于"+max+"位";
+        return ".用户名不能少于"+min+"位，或大于"+max+"位";
     }
     return "";
 }
@@ -128,14 +128,14 @@ function checkName(target, min, max) {
 function checkRealName(target,min,max) {
     var realName = target.val().trim();
     if ($.isEmptyObject(realName)) {
-        return '不能为空';
+        return '.真实姓名不能为空';
     }
     var reg = /^([a-zA-Z]|[\u4E00-\u9FA5])*$/;
     if (!realName.match(reg)) {
-        return "只能输入中英文";
+        return ".真实姓名只能输入中英文";
     }
     if (realName.length < min || realName.length > max) {
-        return "不能少于"+min+"位，或大于"+max+"位";
+        return ".真实姓名不能少于"+min+"位，或大于"+max+"位";
     }
     return "";
 }
@@ -143,11 +143,11 @@ function checkRealName(target,min,max) {
 function checkPhone(target) {
     var phone = target.val().trim();
     if ($.isEmptyObject(phone)) {
-        return "不能为空";
+        return ".手机号码不能为空";
     }
     var reg = /^\d{11}$/;
     if (!phone.match(reg)) {
-        return "不正确";
+        return ".手机号码不正确";
     }
     return "";
 }
@@ -155,40 +155,47 @@ function checkPhone(target) {
 function checkEmail (target) {
     var email = target.val().trim();
     if ($.isEmptyObject(email)) {
-        return '不能为空';
+        return '.邮箱不能为空';
     }
     var reg = /^.+@.+\..+$/;
     if (!email.match(reg)) {
-        return '不正确'
+        return '.邮箱不正确'
     }
     return "";
 }
 
 function checkPassword (target1) {
     var password1 = target1.val().trim();
-    var re = new RegExp("((?=[\x21-\x7e]+)[^A-Za-z0-9])");
-    var len = re.test(password1);
 
     if ($.isEmptyObject(password1)) {
-        return '不能为空！';
+        return ".密码不能为空"
     }
 
-    if (!len || password1.length < 8 || password1.length > 20) {
-        return "长度8-20位,且包含数字,字母,特殊字符！";
-    }
+    var reg = new RegExp('(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9]).{8,20}');
+    var spa = /^\S+$/gi;
 
+    if (!reg.test(password1) || !spa.test(password1)) {
+        return ".密码不含空格，长度8-20位,且包含数字,字母,特殊字符";
+    }
     return "";
 }
 
-function checkPasswordConfirm (target1,target2) {
+function checkPasswordConfirm(target1,target2) {
     var password1 = target1.val().trim();
     var password2 = target2.val().trim();
 
     if (password1 != password2) {
-        return '不一致！';
+        return '.两次密码不一致';
     }
+    return '';
+}
 
-    return "";
+function showTips(tips, target) {
+    var text = '';
+    for (var i = 0;i < tips.length;i++) {
+        text = text+tips[i]+"<br/>";
+    }
+    showError(target, text);
 }
 
 // function checkProduct(target) {

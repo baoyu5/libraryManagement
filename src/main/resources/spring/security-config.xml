@@ -50,10 +50,9 @@
         <csrf disabled="true" />
 
         <intercept-url pattern="/" access="isAuthenticated" />
-        <intercept-url pattern="/api/menu" access="isAuthenticated" />
-        <intercept-url pattern="/api/operator_self_password_edit" access="isAuthenticated" />
-        <intercept-url pattern="/api/granted_authorities" access="isAuthenticated" />
-        <intercept-url pattern="/api/**" access="hasPermission" />
+        <intercept-url pattern="/user/**" access="isAuthenticated" />
+        <intercept-url pattern="/resource/granted_authorities" access="isAuthenticated" />
+        <intercept-url pattern="/admin/**" access="hasPermission" />
 
         <form-login login-page="/login.html" login-processing-url="/api/login"
                     authentication-failure-handler-ref="simpleRestfulAuthenticationFailureHandler"

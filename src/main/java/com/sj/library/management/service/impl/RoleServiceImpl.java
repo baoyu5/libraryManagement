@@ -1,6 +1,5 @@
 package com.sj.library.management.service.impl;
 
-import com.sj.library.management.common.constant.ErrorCode;
 import com.sj.library.management.common.exception.DeleteException;
 import com.sj.library.management.common.exception.RoleNotExistsException;
 import com.sj.library.management.common.pagination.PageRequest;
@@ -45,7 +44,7 @@ public class RoleServiceImpl implements RoleService {
     public void deleteRole(long id) {
 
         if (userDao.getUserCountByRoleId(id) != 0) {
-            throw new DeleteException("该角色已被用户拥有，无法删除！", ErrorCode.ERROR_SERVICE);
+            throw new DeleteException("该角色已被用户拥有，无法删除！");
         }
 
         Role role = null;
@@ -56,13 +55,17 @@ public class RoleServiceImpl implements RoleService {
 
         if (role != null) {
             role.setDeleted(true);
+            // 将该角色的资源删除
+            if (role.getResources() != null) {
+                role.getResources().clear();
+            }
         } else {
-            throw new RoleNotExistsException(ErrorCode.ERROR_SERVICE);
+            throw new RoleNotExistsException();
         }
     }
 
     @Override
-    public void updateResources(long roleId, List<Long> resourceIds) {
+    public void updateRoleResources(long roleId, List<Long> resourceIds) {
         Role r = roleDao.load(roleId);
         r.getResources().clear();
         for(long resourceId: resourceIds) {
@@ -88,8 +91,8 @@ public class RoleServiceImpl implements RoleService {
     }
 
     @Override
-    public List<ResourceTO> getResources(long roleId) {
-        List<ResourceTO> resourceTOs = resourceDao.getResources(roleId);
+    public List<ResourceTO> getRoleResources(long roleId) {
+        List<ResourceTO> resourceTOs = resourceDao.getRoleResources(roleId);
         return resourceTOs;
     }
 }
