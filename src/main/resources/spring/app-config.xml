@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config />
+    <context:component-scan base-package="com.sj.library.management.dao" />
+    <context:component-scan base-package="com.sj.library.management.service" />
+    <context:component-scan base-package="com.sj.library.management.security" />
+
+    <bean id="appProperties" class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+        <property name="fileEncoding" value="UTF-8" />
+        <property name="localOverride" value="true" />
+        <property name="ignoreUnresolvablePlaceholders" value="true" />
+        <property name="order" value="10" />
+        <property name="location" value="classpath:app.properties" />
+    </bean>
+
+    <!--上传文件限制-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- one of the properties available; the maximum file size in bytes -->
+        <property name="maxUploadSize" value="10000000" />
+        <property name="resolveLazily" value="true" />
+    </bean>
+
+    <import resource="db-config.xml"/>
+    <import resource="security-config.xml" />
+</beans>

@@ -1,0 +1,30 @@
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.labelClass {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+.img_thumbnail {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.info-loading {
+    padding-left: 30px;
+    background: #d9edf7 url('easyui/bootstrap/images/loading.gif') no-repeat 10px 10px;
+}

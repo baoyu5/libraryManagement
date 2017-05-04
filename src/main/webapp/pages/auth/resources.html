@@ -1,0 +1,78 @@
+<script src="../../js/auth/resources.js" type="text/javascript"/>
+
+<div class="easyui-layout" style="height:100%;">
+    <div data-options="region:'center'" style="padding: 5px;">
+        <table id="dg4resources">
+            <thead>
+            <tr>
+                <th field="id" width="10%">ID</th>
+                <th field="owner" width="15%"> 所属</th>
+                <th field="name" width="15%">名称</th>
+                <th field="url" width="30%">URL</th>
+                <th field="description" width="25%">描述</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>权限分配</td>
+                <td>角色管理</td>
+                <td>pages/auth/roles.html</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>权限分配</td>
+                <td>资源管理</td>
+                <td>pages/auth/resources.html</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>权限分配</td>
+                <td>操作员管理</td>
+                <td>pages/auth/admins.html</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div id="dlg4resources" class="easyui-dialog" style="width:500px;height:350px;padding:10px 20px"
+             closed="true" buttons="#dlg-buttons-resources" modal="true">
+            <div id="dlg4resources_tips">
+                <!--<div class="alert alert-danger" role="alert"></div>-->
+            </div>
+            <form id="fm4resources" method="post" novalidate style="margin-bottom: 0px; margin-top: 10px">
+                <table class="table" style="margin-bottom: 0px;">
+                    <tr>
+                        <td style="text-align: right">资源名称：</td>
+                        <td><input name="name" class="easyui-textbox" required="true"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right">所属：</td>
+                        <td>
+                            <select name="owner" class="easyui-combobox" style="width: 212px;height:26px;">
+                                <option value="清结算">清结算</option>
+                                <option value="权限分配">权限分配</option>
+                                <option value="开放平台">开放平台</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right">URL：</td>
+                        <td><input name="url" class="easyui-textbox" required="true"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right">描述：</td>
+                        <td><input name="description" class="easyui-textbox"><input name="id" hidden></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="dlg-buttons-resources">
+            <a href="javascript:void(0)" class="easyui-linkbutton" onclick="javascript:$('#dlg4resources').dialog('close')" style="width:80px">取消</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton c6" onclick="saveResource()" style="width:80px">提交</a>
+        </div>
+
+    </div>
+</div>

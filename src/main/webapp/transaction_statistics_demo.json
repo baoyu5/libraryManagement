@@ -1,0 +1,16 @@
+{"total":28,"rows":[
+    {"marketName":"陕西煤炭交易中心","date":"2016-07-01","successCount":"20","successTotalAmount":"300002300","failedCount":"2","failedTotalAmount":"346709"},
+    {"marketName":"陕西煤炭交易中心","date":"2016-07-02","successCount":"20","successTotalAmount":"300002300","failedCount":"2","failedTotalAmount":"346709"},
+    {"marketName":"陕西煤炭交易中心","date":"2016-07-03","successCount":"20","successTotalAmount":"300002300","failedCount":"2","failedTotalAmount":"346709"},
+    {"marketName":"陕西煤炭交易中心","date":"2016-07-04","successCount":"20","successTotalAmount":"300002300","failedCount":"2","failedTotalAmount":"346709"},
+    {"marketName":"陕西煤炭交易中心","date":"2016-07-05","successCount":"20","successTotalAmount":"300002300","failedCount":"2","failedTotalAmount":"346709"},
+    {"marketName":"陕西煤炭交易中心","date":"2016-07-06","successCount":"20","successTotalAmount":"300002300","failedCount":"2","failedTotalAmount":"346709"},
+    {"marketName":"陕西煤炭交易中心","date":"2016-07-07","successCount":"20","successTotalAmount":"300002300","failedCount":"2","failedTotalAmount":"346709"},
+    {"marketName":"陕西煤炭交易中心","date":"2016-07-08","successCount":"20","successTotalAmount":"300002300","failedCount":"2","failedTotalAmount":"346709"}
+
+
+],"footer":[
+    {"marketName":"总计（20160701 - 20160706）："},
+    {"marketName":"成功记录 60 条","date":"金额 90000000 元"},
+    {"marketName":"失败记录 6 条","date":"金额 100000 元"}
+]}

@@ -1,0 +1,108 @@
+<script src="../../js/auth/roles.js" type="text/javascript"/>
+
+<div id="cdc" class="easyui-layout" style="height:100%;">
+    <div data-options="region:'center'" style="padding: 5px;">
+        <table id="dg4roles">
+            <thead>
+            <tr>
+                <th field="id" width="10%">ID</th>
+                <th field="name" width="15%">角色名</th>
+                <th field="description" width="25%">描述</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>一级管理员</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>二级管理员</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>三级管理员</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div id="dlg4roles" class="easyui-dialog" style="width:500px;height:280px;padding:10px 20px"
+             closed="true" buttons="#dlg-buttons" modal="true">
+            <div id="dlg4roles_tips">
+            <!--<div class="alert alert-danger" role="alert"></div>-->
+            </div>
+            <form id="fm4roles" method="post" novalidate style="margin-bottom: 0px; margin-top: 10px">
+                <table class="table" style="margin-bottom: 0px;">
+                    <tr>
+                        <td style="text-align: right">角色名称：</td>
+                        <td><input name="name" class="easyui-textbox" required="true"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right">描述：</td>
+                        <td><input name="description" class="easyui-textbox"><input name="id" hidden></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="dlg-buttons">
+            <a href="javascript:void(0)" class="easyui-linkbutton" onclick="javascript:$('#dlg4roles').dialog('close')" style="width:80px">取消</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton c6" onclick="saveUser()" style="width:80px">提交</a>
+        </div>
+
+        <div id="dlg4roles_resources" class="easyui-dialog" style="width:400px;height:500px;padding:10px 20px"
+             closed="true" buttons="#dlg-buttons-roles-resources" modal="true">
+            <div id="dlg4roles_resources_tips">
+                <!--<div class="alert alert-danger" role="alert"></div>-->
+
+            </div>
+            <form id="fm4admins_resources" method="post" novalidate style="margin-bottom: 0px;; margin-top: 10px">
+                <table class="table table-striped" style="margin-bottom: 0px;">
+                    <tr>
+                        <td style="text-align: right"><input type="checkbox" name="resourceIds" id="resourceId_1" style="margin-top: 0px;"></td>
+                        <td><label for="resourceId_1" class="labelClass">资源管理</label> </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right"><input type="checkbox" name="resourceIds" id="resourceId_2" style="margin-top: 0px;"></td>
+                        <td><label for="resourceId_2" class="labelClass">角色管理</label> </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right"><input type="checkbox" name="resourceIds" id="resourceId_4" style="margin-top: 0px;"></td>
+                        <td><label for="resourceId_4" class="labelClass">操作员管理</label> </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right"><input type="checkbox" name="resourceIds" id="resourceId_5" style="margin-top: 0px;"></td>
+                        <td><label for="resourceId_5" class="labelClass">市场管理</label> </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right"><input type="checkbox" name="resourceIds" id="resourceId_6" style="margin-top: 0px;"></td>
+                        <td><label for="resourceId_6" class="labelClass">会员账户管理</label> </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right"><input type="checkbox" name="resourceIds" id="resourceId_7" style="margin-top: 0px;"></td>
+                        <td><label for="resourceId_7" class="labelClass">后台任务管理</label> </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right"><input type="checkbox" name="resourceIds" id="resourceId_8" style="margin-top: 0px;"></td>
+                        <td><label for="resourceId_8" class="labelClass">分润策略管理</label> </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right"><input type="checkbox" name="resourceIds" id="resourceId_9" style="margin-top: 0px;"></td>
+                        <td><label for="resourceId_9" class="labelClass">交易明细查询</label> </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right"><input type="checkbox" name="resourceIds" id="resourceId_10" style="margin-top: 0px;"></td>
+                        <td><label for="resourceId_10" class="labelClass">接口管理</label> </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="dlg-buttons-roles-resources">
+            <a href="javascript:void(0)" class="easyui-linkbutton" onclick="javascript:$('#dlg4roles_resources').dialog('close')"
+               style="width:80px">取消</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton c6" onclick="saveResources()" style="width:80px">提交</a>
+        </div>
+    </div>
+</div>

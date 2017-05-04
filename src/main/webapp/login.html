@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>图书馆管理系统</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/easyui/bootstrap/easyui.css">
+    <link rel="stylesheet" href="css/sticky.footer.css">
+    <link rel="stylesheet" type="text/css" href="css/easyui/color.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script type="text/javascript" src="js/easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="js/easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+</head>
+
+<body>
+<div id="cc" class="easyui-layout" style="height:100%;">
+    <div data-options="region:'north'" style="height:50px">
+        <div class="navbar navbar-inverse navbar-fixed-top" >
+            <div class="navbar-inner" style="height: 47px" >
+                <div class="nav-collapse collapse" style="margin-top: 5px;">
+                    <ul class="nav" >
+                        <li class="active" style="font-size: 16px"><a  id="index" href="#">图书馆管理系统</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-options="region:'center'">
+        <div id="dlg4loginDiv" style="display: none">
+            <div id="dlg4login" class="easyui-dialog" style="width:500px;height:360px;padding:10px 20px;" closed="false" closable="false"
+                 buttons="#dlg-buttons-login" title="登录" draggable="false">
+                <div id="dlg4login_tips">  </div>
+                <form id="fm4login" method="post" novalidate style="margin-bottom: 0px;; margin-top: 10px" action="/login">
+                <table class="table" style="margin-bottom: 0px;">
+                    <tr>
+                        <td style="text-align: right">登录名：</td>
+                        <td><input name="username" id="j_username" class="easyui-textbox"  prompt="登录名"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right">密码：</td>
+                        <td><input name="password" id="j_password" class="easyui-textbox" type="password" prompt="密码" style="width: 212px;"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right">验证码：</td>
+                        <td><input name="j_verification_code" id="j_verification_code" class="easyui-textbox" prompt="请输入验证码" style="width: 100px;" > &nbsp;&nbsp;&nbsp;&nbsp;
+                            <img src="api/verification_code_generation" id="verificationImage" style="height: 22px; border-radius: 5px;" onclick="refreshImage()">
+                        </td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+            <div id="dlg-buttons-login">
+                <a href="javascript:void(0)" class="easyui-linkbutton c6" id="loginBtn" style="width:80px" onclick="login()">登录</a>
+            </div>
+        </div>
+    </div>
+    <div data-options="region:'south'" style="height:40px; background-color: #f2f2f2">
+        <div style="padding-top: 10px; padding-left: 10px; text-align: center">@ ****</div>
+    </div>
+</div>
+    <script language="javascript" type="text/javascript">
+        var logging = false;
+        function login() {
+            if (logging) {
+                return;
+            }
+            logging = true;
+
+            $("#dlg4login_tips").html(MESSAGE_USER_LOGGING);
+
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: 'api/login',
+                data: $('#fm4login').serialize(),
+                success: function (data) {
+                    $("#dlg4login_tips").html('<div class="alert alert-success">登录成功！</div>');
+                    logging = false;
+                    top.location = "/";
+                },
+                error: function(data) {
+                    logging = false;
+                    errorHandler(data, $("#dlg4login_tips"));
+                    $('#j_verification_code').textbox('clear');
+                    refreshImage();
+                }
+            });
+        }
+
+        function refreshImage() {
+            var el = document.getElementById("verificationImage");
+            el.src = el.src + '?';
+        }
+        /*回车--登录*/
+        $("body").keydown(function(e){
+            var curKey = e.which;
+            if(curKey == 13){
+                login();
+            }
+        });
+
+        function funcTest(){
+            //每隔15分种执行一次refreshImage方法
+            window.setInterval("refreshImage()",900000);
+        }
+        window.onload = funcTest;
+    </script>
+</body>
+</html>
