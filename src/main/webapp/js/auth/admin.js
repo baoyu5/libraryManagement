@@ -1,7 +1,7 @@
 var adminsApi = new sysCommon.api('admin', {
-        'createUri': 'user/admin_add',
-        'deleteUri': 'user/admin_delete',
-        'editUri': 'user/admin_edit',
+        'createUri': 'admin/admin_add',
+        'deleteUri': 'admin/admin_delete',
+        'editUri': 'admin/admin_edit',
         'recordIdName': 'id'
     }
 );
@@ -35,13 +35,13 @@ $(document).ready(
             }
         }];
 
-        var urls = ['/user/admin_add', '/user/admin_edit', '/user/admin_roles_update', '/user/password_update', '/user/admin_delete'];
+        var urls = ['/admin/admin_add', '/admin/admin_edit', '/admin/admin_roles_update', '/admin/password_update', '/admin/admin_delete'];
 
         $('#dg4admin').datagrid({
             title: '管理员列表',
             collapsible: false,//是否可折叠的
             fit: true,//自动大小
-            url: 'api/admins',
+            url: 'admin/admins',
             method: 'post',
             remoteSort: false,
             idField: 'ID',
@@ -145,7 +145,7 @@ function editRoles() {
             collapsible: false,//是否可折叠的
             border: false,
             fit: true,//自动大小
-            url: 'role/roles',
+            url: 'admin/roles',
             method: 'post',
             remoteSort: false,
             idField: 'id',
@@ -158,7 +158,7 @@ function editRoles() {
                 $('#dg4admin_roles').datagrid('clearChecked');
 
                 $.ajax({
-                    url: "user/admin_roles?adminId="+ row['id'],
+                    url: "admin/admin_roles?adminId="+ row['id'],
                     type: "post",
                     success: function (data) {
                         var roles = data['data'];
@@ -194,9 +194,11 @@ function savePassword() {
     var row = $('#dg4admin').datagrid('getSelected');
 
     // todo 密码判断
+    var password = $('#adminNewPassword').val();
+    var passwordConfirm = $("#adminNewPasswordConfirm").val();
 
     $.ajax({
-        url: "user/password_update",
+        url: "admin/password_update",
         data:{'adminId':row['id'], 'password':$('#adminNewPassword').val(), 'passwordConfirm':$("#adminNewPasswordConfirm").val()},
         type: "post",
         success: function () {
