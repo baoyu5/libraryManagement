@@ -20,6 +20,11 @@
         <property name="location" value="classpath:app.properties" />
     </bean>
 
+    <bean id="idFactory" class="me.anyteam.commons.id.IDFactory" init-method="init">
+        <property name="dataCenterId" value="${id.factory.data.center.id}" />
+        <property name="workerId" value="${id.factory.work.id}" />
+    </bean>
+
     <!--上传文件限制-->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <!-- one of the properties available; the maximum file size in bytes -->

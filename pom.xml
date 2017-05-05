@@ -165,6 +165,12 @@
             <artifactId>jxl</artifactId>
             <version>2.6.12</version>
         </dependency>
+
+        <dependency>
+            <groupId>me.anyteam</groupId>
+            <artifactId>atm-commons</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <build>
