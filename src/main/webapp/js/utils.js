@@ -190,6 +190,20 @@ function checkPasswordConfirm(target1,target2) {
     return '';
 }
 
+function checkLoginPassword(){
+    var pwd = $("input[name = 'newPassword']").val();
+    var reg = new RegExp('(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9]).{8,20}');
+    var spa = /^\S+$/gi;//验证空格
+    //console.log(spa.test(pwd));
+    if(reg.test(pwd) && spa.test(pwd)){
+        return true;
+    };
+    colorIsRed("newPassword_span");
+    $("#newPassword_span").text("密码8-20个字符中必须包含字母、数字、符号（空格除外）！");
+    $("#sub").attr('disabled',true);
+    return false;
+}
+
 function showTips(tips, target) {
     var text = '';
     for (var i = 0;i < tips.length;i++) {
