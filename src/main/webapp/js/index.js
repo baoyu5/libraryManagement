@@ -12,7 +12,7 @@ function editMyselfPassword() {
 function saveMyselfPassword() {
     var tips = checkParams();
 
-    if (tips != null || tips.length != 0) {
+    if (tips) {
         showError($('#dlg4_myself_password_tips'), tips);
         return;
     } else {
@@ -22,7 +22,7 @@ function saveMyselfPassword() {
         var data = {'oldPassword': oldPassword, 'newPassword': newPassword, 'newPasswordConfirm': newPasswordConfirm};
 
         $.ajax({
-            url: "/user/self_password_edit",
+            url: "/user/self_password_update",
             type: "post",
             data: data,
             success: function (data) {
@@ -48,14 +48,13 @@ function checkParams() {
 
     var tips1 = checkPassword($('#newPassword'));
     if (!$.isEmptyObject(tips1)) {
-        tips += ((count++) + '.新密码' + tips1 + '<br/>');
+        tips += ((count++) + tips1 + '<br/>');
     }
 
     var tips2 = checkPasswordConfirm($('#newPassword'), $('#newPasswordConfirm'))
     if (!$.isEmptyObject(tips1)) {
-        tips += ((count++) + '.两次新密码' + tips2 + '<br/>');
+        tips += ((count++) + tips2 + '<br/>');
     }
-
     return tips;
 }
 

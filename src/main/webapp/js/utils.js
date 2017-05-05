@@ -109,33 +109,33 @@ function getToolbar(all, urls) {
 /**
  * 输入名称的校验
  */
-function checkName(target, min, max) {
+function checkName(target, min, max, msg) {
     var name = target.val().trim();
     if ($.isEmptyObject(name)) {
-        return '不能为空';
+        return msg + '不能为空';
     }
     var reg = /^([0-9a-zA-Z]|[\u4E00-\u9FA5])*$/;
     if (!name.match(reg)) {
-        return "只能输入中英文或数字";
+        return msg + "只能输入中英文或数字";
     }
     // var newName = name.replace(/[\u4E00-\u9FA5]/g,"aa");
     if (name.length < min || name.length > max) {
-        return "不能少于"+min+"位，或大于"+max+"位";
+        return msg + "不能少于"+min+"位，或大于"+max+"位";
     }
     return "";
 }
 
-function checkRealName(target,min,max) {
+function checkRealName(target, min, max, msg) {
     var realName = target.val().trim();
     if ($.isEmptyObject(realName)) {
-        return '.真实姓名不能为空';
+        return msg + '不能为空';
     }
     var reg = /^([a-zA-Z]|[\u4E00-\u9FA5])*$/;
     if (!realName.match(reg)) {
-        return ".真实姓名只能输入中英文";
+        return msg + "只能输入中英文";
     }
     if (realName.length < min || realName.length > max) {
-        return ".真实姓名不能少于"+min+"位，或大于"+max+"位";
+        return msg + "不能少于"+min+"位，或大于"+max+"位";
     }
     return "";
 }
@@ -197,36 +197,3 @@ function showTips(tips, target) {
     }
     showError(target, text);
 }
-
-// function checkProduct(target) {
-//     var product = target.val().trim();
-//     if ($.isEmptyObject(product)){
-//         return '不能为空';
-//     }
-//     var reg = /^[0-9a-zA-Z]*$/;
-//     if (!product.match(reg)){
-//         return '不能输入中文汉字或特殊字符';
-//     }
-//     return "";
-// }
-
-
-//无记录方法
-// function noRecord($$,data, columnName ,index){
-//     var o = {};
-//     o[columnName] = '<div class="noRst" style="text-align:center;color:red;">无记录！</div>';
-//     if (data.total == 0) {
-//         //添加一个新数据行，第一列的值为你需要的提示信息，然后将其他列合并到第一列来，注意修改colspan参数为你columns配置的总列数
-//
-//         var agm = arguments[2];
-//         console.log(agm);
-//         $$.datagrid('appendRow', o);
-//         $$.datagrid('mergeCells', { index: 0, field: columnName , colspan: index });
-//         //$$.datagrid('mergeCells').removeClass('lines-both lines-no lines-right lines-bottom');
-//         //隐藏分页导航条，这个需要熟悉datagrid的html结构，直接用jquery操作DOM对象，easyui datagrid没有提供相关方法隐藏导航条
-//         $$.closest('div.datagrid-wrap').find('div.datagrid-pager').hide();
-//         //$(".datagrid-toolbar").attr("disabled", true);
-//     }
-// //如果通过调用reload方法重新加载数据有数据时显示出分页导航容器
-//     else $$.closest('div.datagrid-wrap').find('div.datagrid-pager').show();
-// }

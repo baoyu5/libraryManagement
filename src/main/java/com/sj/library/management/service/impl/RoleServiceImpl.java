@@ -1,6 +1,6 @@
 package com.sj.library.management.service.impl;
 
-import com.sj.library.management.common.exception.DeleteException;
+import com.sj.library.management.common.exception.RoleInUsedException;
 import com.sj.library.management.common.exception.RoleNotExistsException;
 import com.sj.library.management.common.pagination.PageRequest;
 import com.sj.library.management.common.pagination.PaginationResult;
@@ -44,29 +44,21 @@ public class RoleServiceImpl implements RoleService {
     public void deleteRole(long id) {
 
         if (userDao.getUserCountByRoleId(id) != 0) {
-            throw new DeleteException("该角色已被用户拥有，无法删除！");
+            throw new RoleInUsedException();
         }
 
-        Role role = null;
-        try {
-            role = roleDao.load(id);
-        } catch (NoResultException e) {
-        }
+        Role role = getRole(id);
 
-        if (role != null) {
-            role.setDeleted(true);
-            // 将该角色的资源删除
-            if (role.getResources() != null) {
-                role.getResources().clear();
-            }
-        } else {
-            throw new RoleNotExistsException();
+        role.setDeleted(true);
+        // 将该角色的资源删除
+        if (role.getResources() != null) {
+            role.getResources().clear();
         }
     }
 
     @Override
     public void updateRoleResources(long roleId, List<Long> resourceIds) {
-        Role r = roleDao.load(roleId);
+        Role r = getRole(roleId);
         r.getResources().clear();
         for(long resourceId: resourceIds) {
             r.getResources().add(resourceDao.load(resourceId));
@@ -85,7 +77,7 @@ public class RoleServiceImpl implements RoleService {
 
     @Override
     public void updateRole(RoleTO to) {
-        Role role = roleDao.load(to.getId());
+        Role role = getRole(to.getId());
         role.setDescription(to.getDescription());
         role.setName(to.getName());
     }
@@ -94,5 +86,17 @@ public class RoleServiceImpl implements RoleService {
     public List<ResourceTO> getRoleResources(long roleId) {
         List<ResourceTO> resourceTOs = resourceDao.getRoleResources(roleId);
         return resourceTOs;
+    }
+
+    private Role getRole(long id) {
+        Role role = null;
+        try {
+            role = roleDao.load(id);
+        } catch (NoResultException e) {
+        }
+        if (role == null) {
+            throw new RoleNotExistsException();
+        }
+        return role;
     }
 }

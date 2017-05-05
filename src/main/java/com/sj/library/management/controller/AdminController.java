@@ -2,6 +2,7 @@ package com.sj.library.management.controller;
 
 import com.sj.library.management.common.constant.DateConstants;
 import com.sj.library.management.common.constant.UserType;
+import com.sj.library.management.common.exception.PasswordNotNullException;
 import com.sj.library.management.common.util.DateUtil;
 import com.sj.library.management.service.UserService;
 import com.sj.library.management.to.ResponseTO;
@@ -12,6 +13,8 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 @RequestMapping(value = "/admin")
@@ -30,13 +33,13 @@ public class AdminController extends BaseController {
     @RequestMapping(value = "/delete", method = RequestMethod.POST)
     @ResponseBody
     public void deleteAdmin(long id) {
-        userService.deleteUser(id);
+        userService.deleteAdmin(id);
     }
 
     @RequestMapping(value = "/edit", method = RequestMethod.POST)
     @ResponseBody
     public void editAdmin(UserTO to) {
-        userService.editUser(to);
+        userService.editAdmin(to);
     }
 
     @RequestMapping(value = "/admins", method = RequestMethod.GET)
@@ -55,5 +58,33 @@ public class AdminController extends BaseController {
             endLongTime = DateUtil.parseDateToLongStrict(endTime, DateConstants.YYYYMMDD_DASH);
         }
         return success(userService.getUsers(loginName, realName, UserType.ADMIN, startLongTime, endLongTime, page, rows));
+    }
+
+    @RequestMapping(value = "/admin_roles_update", method = RequestMethod.POST)
+    @ResponseBody
+    public void adminRolesUpdate(@RequestParam long adminId, @RequestParam String rolesIds) {
+        List<Long> ids = new ArrayList<Long>();
+        if (!StringUtils.isEmpty(rolesIds)) {
+            String[] roleIdStrs = rolesIds.split(",");
+            for (String s: roleIdStrs) {
+                ids.add(Long.valueOf(s));
+            }
+        }
+        userService.updateRoles(adminId, ids);
+    }
+
+    @RequestMapping(value = "/admin_password_update", method = RequestMethod.POST)
+    @ResponseBody
+    public void adminPasswordUpdate(@RequestParam long adminId, @RequestParam String password) {
+        if (!StringUtils.hasText(password)) {
+            throw new PasswordNotNullException();
+        }
+        userService.adminPasswordUpdate(adminId, password.trim());
+    }
+
+    @RequestMapping(value = "/admin_roles", method = RequestMethod.GET)
+    @ResponseBody
+    public ResponseTO adminRoles(@RequestParam long adminId) {
+        return success(userService.getAdminRoles(adminId));
     }
 }

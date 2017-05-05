@@ -22,12 +22,11 @@ public class RoleController extends BaseController {
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseTO addRole(@Valid @RequestBody RoleTO to) {
+    public void addRole(@Valid @RequestBody RoleTO to) {
         roleService.addRole(to);
-        return success();
     }
 
-    @RequestMapping(value = "/roles")
+    @RequestMapping(value = "/roles", method = RequestMethod.GET)
     @ResponseBody
     public ResponseTO getRoles(@RequestParam int rows, @RequestParam int page) {
         return success(roleService.getRole(PageRequest.newRequest(rows, page)));
@@ -35,21 +34,19 @@ public class RoleController extends BaseController {
 
     @RequestMapping(value = "/delete", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseTO deleteRole(@RequestParam long id) {
+    public void deleteRole(@RequestParam long id) {
         roleService.deleteRole(id);
-        return success();
     }
 
     @RequestMapping(value = "/edit", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseTO updateRole(@Valid @RequestBody RoleTO to) {
+    public void updateRole(@Valid @RequestBody RoleTO to) {
         roleService.updateRole(to);
-        return success(null);
     }
 
-    @RequestMapping(value = "/role_resources_add", method = RequestMethod.POST)
+    @RequestMapping(value = "/role_resources_update", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseTO updateResources4Role(@RequestParam long roleId, @RequestParam String resourceIds) {
+    public void updateResources4Role(@RequestParam long roleId, @RequestParam String resourceIds) {
         List<Long> ids = new ArrayList<Long>();
         if (StringUtils.hasText(resourceIds)) {
             String[] resourcesIdsStr = resourceIds.split(",");
@@ -57,12 +54,10 @@ public class RoleController extends BaseController {
                 ids.add(Long.valueOf(s));
             }
         }
-
         roleService.updateRoleResources(roleId, ids);
-        return success(null);
     }
 
-    @RequestMapping(value = "/role_resources")
+    @RequestMapping(value = "/role_resources", method = RequestMethod.GET)
     @ResponseBody
     public ResponseTO getResources4Role(@RequestParam long roleId) {
         return success(roleService.getRoleResources(roleId));

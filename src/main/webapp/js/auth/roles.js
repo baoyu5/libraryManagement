@@ -37,6 +37,7 @@ $(document).ready(
             collapsible: false,//是否可折叠的
             fit: true,//自动大小
             url: 'role/roles',
+            method: 'get',
             remoteSort: false,
             idField: 'ID',
             singleSelect: true,//是否单选
@@ -61,18 +62,18 @@ $(document).ready(
 );
 
 function saveNewRole(){
-    var tip = checkName($('#newRoleName'), 6, 20);
+    var tip = checkName($('#newRoleName'), 6, 20, "1.角色名");
     if (!$.isEmptyObject(tip)) {
-        showError($('#dlg4_new_role_tips'),"1.角色名"+tip)
+        showError($('#dlg4_new_role_tips'), tip)
         return;
     }
     roleApi.save();
 }
 
 function saveRole(){
-    var tip = checkName($('#roleName'), 6, 20);
+    var tip = checkName($('#roleName'), 6, 20, "1.角色名");
     if (!$.isEmptyObject(tip)) {
-        showError($('#dlg4role_tips'),"1.角色名"+tip)
+        showError($('#dlg4role_tips'), tip)
         return;
     }
     roleApi.update();
@@ -88,12 +89,13 @@ function editResources() {
             $('#dlg4role_resources').dialog('open').dialog('center').dialog('setTitle','修改资源');
 
             $('#resourcesTree').tree({
-                url: "resource/resources",
+                url: "resource/load_all_resources",
+                method: 'get',
                 checkbox: true,
                 onLoadSuccess: function(node, data) {
                     $.ajax({
                         url: "role/role_resources?roleId=" + row["id"],
-                        type: "post",
+                        type: "get",
                         success: function (response) {
                             var data = response["data"];
                             if (data != undefined) {

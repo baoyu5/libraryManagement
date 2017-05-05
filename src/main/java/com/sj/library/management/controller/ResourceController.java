@@ -25,7 +25,7 @@ public class ResourceController extends BaseController {
     @Autowired
     private ResourceService resourceService;
 
-     @RequestMapping(value = "/get_resources")
+     @RequestMapping(value = "/resources", method = RequestMethod.GET)
      @ResponseBody
      public ResponseTO getResources(@RequestParam(required = false) Integer type,
                                      @RequestParam(required = false) String resourceName,
@@ -36,74 +36,26 @@ public class ResourceController extends BaseController {
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseTO addResource(@Valid @RequestBody ResourceTO to) {
+    public void addResource(@Valid @RequestBody ResourceTO to) {
         resourceService.addResource(to);
-        return success();
     }
 
     @RequestMapping(value = "/edit", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseTO editResource(@Valid @RequestBody ResourceTO to) {
+    public void editResource(@Valid @RequestBody ResourceTO to) {
         resourceService.updateResource(to);
-        return success(null);
     }
 
     @RequestMapping(value = "/delete", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseTO deleteResource(@RequestParam int id) {
+    public void deleteResource(@RequestParam int id) {
         resourceService.deleteResource(id);
-        return success();
-    }
-
-    /**
-     * 加载右侧菜单，树形结构
-     */
-    @RequestMapping(value = "/menu", method = RequestMethod.POST)
-    @ResponseBody
-    public List<Resource> loadMenu(UsernamePasswordAuthenticationToken token) {
-        List<Resource> resources = new ArrayList();
-
-        UserDetailsImpl userDetails = (UserDetailsImpl) token.getPrincipal();
-        if (AdminConstants.LOGIN_NAME.equals(userDetails.getUsername())) {
-            /**
-             * 超级管理员加载所有菜单
-             */
-            resources = resourceService.loadMenu();
-        } else {
-            /**
-             * 普通操作员
-             */
-            List<Resource> tmp = resourceService.loadResourcesByUser(userDetails.getId());
-            for (Resource p : tmp) {
-                if (p.getLevel() == 1) {
-                    List<Resource> tobeRemoved = new ArrayList();
-                    for (Resource c : p.getChildren()) {
-                        if (!tmp.contains(c)) {
-                            tobeRemoved.add(c);
-                        }
-                    }
-                    p.getChildren().removeAll(tobeRemoved);
-                    resources.add(p);
-                }
-            }
-        }
-
-        for (Resource r : resources) {
-            List<Resource> children = r.getChildren();
-            if (children != null) {
-                for (Resource cr : children) {
-                    cr.setChildren(null);
-                }
-            }
-        }
-
-        return resources;
     }
 
     /**
      * 加载所有资源，树形结构
      */
-    @RequestMapping(value = "/resources")
+    @RequestMapping(value = "/load_all_resources", method = RequestMethod.GET)
     @ResponseBody
     public List<Resource> loadAllResources() {
         return resourceService.loadMenu();
@@ -112,7 +64,7 @@ public class ResourceController extends BaseController {
      /**
       * 按照 level 加载资源，扁平结构
       */
-     @RequestMapping(value = "/menu_by_level")
+     @RequestMapping(value = "/menu_by_level", method = RequestMethod.GET)
      @ResponseBody
      public List<ResourceTO> loadMenuByLevel(@RequestParam int level) {
          List<ResourceTO> resources = resourceService.getMenuByLevel(level);

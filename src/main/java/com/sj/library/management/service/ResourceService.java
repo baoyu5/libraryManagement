@@ -16,7 +16,7 @@ public interface ResourceService {
 
     List<Resource> loadResourcesByUser(long userId);
 
-    long deleteResource(long id);
+    void deleteResource(long id);
 
     List<Resource> loadMenu();
 

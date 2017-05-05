@@ -70,11 +70,11 @@ $(document).ready(
 function saveNewAdmin(){
     var tips = [];
     var count = 0;
-    var tip1 = checkName($('#newAdminLoginName'), 4, 20);
+    var tip1 = checkName($('#newAdminLoginName'), 4, 20, ".登录名");
     if (!$.isEmptyObject(tip1)) {
         tips[count++] = count + tip1;
     }
-    var tip2 = checkRealName($('#newAdminRealName'), 2, 20);
+    var tip2 = checkRealName($('#newAdminRealName'), 2, 20, ".真实姓名");
     if (!$.isEmptyObject(tip2)) {
         tips[count++] = count + tip2;
     }
@@ -105,11 +105,11 @@ function saveNewAdmin(){
 function saveAdmin(){
     var tips = [];
     var count = 0;
-    var tip1 = checkName($('#adminLoginName'), 4, 20);
+    var tip1 = checkName($('#adminLoginName'), 4, 20, ".登录名");
     if (!$.isEmptyObject(tip1)) {
         tips[count++] = count + tip1;
     }
-    var tip2 = checkRealName($('#adminRealName'), 2, 20);
+    var tip2 = checkRealName($('#adminRealName'), 2, 20, ".真实姓名");
     if (!$.isEmptyObject(tip2)) {
         tips[count++] = count + tip2;
     }
@@ -140,7 +140,7 @@ function editRoles() {
             border: false,
             fit: true,//自动大小
             url: 'role/roles',
-            method: 'post',
+            method: 'get',
             remoteSort: false,
             idField: 'id',
             singleSelect: false,//是否单选
@@ -153,7 +153,7 @@ function editRoles() {
 
                 $.ajax({
                     url: "admin/admin_roles?adminId="+ row['id'],
-                    type: "post",
+                    type: "get",
                     success: function (data) {
                         var roles = data['data'];
                         for (var i = 0; i < roles.length; i++) {
@@ -204,11 +204,10 @@ function savePassword() {
     }
 
     var password = $('#adminNewPassword').val().trim();
-    var passwordConfirm = $("#adminNewPasswordConfirm").val().trim();
 
     $.ajax({
         url: "admin/admin_password_update",
-        data:{'adminId':row['id'], 'password':password, 'passwordConfirm':passwordConfirm},
+        data:{'adminId':row['id'], 'password':password},
         type: "post",
         success: function () {
             $('#dlg4admin_password').dialog('close');

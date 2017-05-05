@@ -1,7 +1,6 @@
 package com.sj.library.management.service.impl;
 
-import com.sj.library.management.common.exception.ResourceNotExistsException;
-import com.sj.library.management.common.exception.UpdateException;
+import com.sj.library.management.common.exception.*;
 import com.sj.library.management.common.pagination.PageRequest;
 import com.sj.library.management.common.pagination.PaginationResult;
 import com.sj.library.management.dao.ResourceDao;
@@ -29,29 +28,15 @@ public class ResourceServiceImpl implements ResourceService {
 
     @Override
     public void updateResource(ResourceTO to) {
-        Resource resource = null;
-        try {
-            resource = resourceDao.load(to.getId());
-        } catch (NoResultException e) {
-        }
-
-        if (resource == null) {
-            throw new ResourceNotExistsException();
-        }
+        Resource resource = loadResource(to.getId());
 
         resource.setName(to.getName());
         resource.setDescription(to.getDescription());
         resource.setUrl(to.getUrl());
 
-        Resource newParent = resourceDao.load(to.getParentId());
-        if (newParent == null && to.getLevel() != 0) {
-            throw new UpdateException("新的父节点不存在！");
-        }
+        Resource newParent = loadResource(to.getParentId());
 
-        Resource oldParent = resourceDao.load(to.getOldParentId());
-        if (oldParent == null && resource.getLevel() != 0) {
-            throw new UpdateException("老的父节点不存在！");
-        }
+        Resource oldParent = loadResource(to.getOldParentId());
 
         cycleCheck(resource, to.getParentId());
 
@@ -70,12 +55,12 @@ public class ResourceServiceImpl implements ResourceService {
 
     private void cycleCheck(Resource resource, long newParentId) {
         if (resource.getId() == newParentId) {
-            throw new UpdateException("自己不能是自己的下级！");
+            throw new AppException("自己不能是自己的下级");
         }
 
         Resource r = resourceDao.load(newParentId);
         if (resource.getChildren().contains(r)) {
-            throw new UpdateException("自己不能是自己的下级的下级！");
+            throw new AppException("自己不能是自己的下级的下级");
         }
     }
 
@@ -104,7 +89,7 @@ public class ResourceServiceImpl implements ResourceService {
     public long addResource(ResourceTO to) {
 
         if (resourceDao.loadResourceName(to.getName()) != null) {
-            throw new RuntimeException("资源名称重复");
+            throw new ResourceExistsException();
         }
 
         Resource resource = new Resource();
@@ -129,9 +114,6 @@ public class ResourceServiceImpl implements ResourceService {
 
     @Override
     public List<ResourceTO> getMenuByLevel(int level) {
-        if (level == 0) {
-            return new ArrayList<ResourceTO>();
-        }
         return resourceDao.getByLevel(level - 1);
     }
 
@@ -162,23 +144,26 @@ public class ResourceServiceImpl implements ResourceService {
     }
 
     @Override
-    public long deleteResource(long id) {
+    public void deleteResource(long id) {
         Resource r = resourceDao.load(id);
-        if (r.getChildren().size() != 0) {
-            throw new RuntimeException("该资源含有子节点，不能删除");
+        if ((r.getChildren() != null && r.getChildren().size() != 0)
+                || resourceDao.getRoleCountByResourceId(r.getId()) > 0) {
+            throw new ResourceInUsedException();
         }
-        if (resourceDao.getRoleCountByResourceId(r.getId()) > 0) {
-            throw new RuntimeException("该资源已被角色用于，无法删除！");
-        }
+        r.setDeleted(true);
 
-        resourceDao.removeResource(id);
-        //未该数据库级联删除所需要的代码
-       /* }else{
-            if(resourceDao.getResourceMappingCountByResourceId(r.getId()) > 0){
-                resourceDao.removeResourceMappingByResourceId(r.getId());
-            }
-            resourceDao.remove(r);
-        }*/
-        return id;
+        // resourceDao.deleteResourceMapping(id);
+    }
+
+    private Resource loadResource(long id) {
+        Resource resource = null;
+        try {
+            resource = resourceDao.load(id);
+        } catch (NoResultException e) {
+        }
+        if (resource == null) {
+            throw new ResourceNotExistsException();
+        }
+        return resource;
     }
 }

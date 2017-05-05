@@ -46,7 +46,7 @@
         </div>
     </div>
     <div data-options="region:'center'" style="padding: 5px;" id="rscDiv">
-        <table id="dg4resources">
+        <table id="dg4resource">
             <thead>
             <tr>
                 <%--<th field="id" width="10%">ID</th>--%>
@@ -61,10 +61,10 @@
 
             </tbody>
         </table>
-        <div id="dlg4resources" class="easyui-dialog" style="width:500px;height:350px;padding:10px 20px"
-             closed="true" buttons="#dlg-buttons-resources" modal="true">
-            <div id="dlg4resources_tips"></div>
-            <form id="fm4resources" method="post" novalidate style="margin-bottom: 0px; margin-top: 10px">
+        <div id="dlg4resource" class="easyui-dialog" style="width:500px;height:350px;padding:10px 20px"
+             closed="true" buttons="#dlg-buttons-resource" modal="true">
+            <div id="dlg4resource_tips"></div>
+            <form id="fm4resource" method="post" novalidate style="margin-bottom: 0px; margin-top: 10px">
                 <table class="table" style="margin-bottom: 0px;">
                     <tr>
                         <td style="text-align: right">资源名称：</td>
@@ -98,10 +98,10 @@
                 </table>
             </form>
         </div>
-        <div id="dlg-buttons-resources">
+        <div id="dlg-buttons-resource">
             <a href="javascript:void(0)" class="easyui-linkbutton c6" onclick="saveResource()" style="width:80px">提交</a>
             <a href="javascript:void(0)" class="easyui-linkbutton"
-               onclick="javascript:$('#dlg4resources').dialog('close')" style="width:80px">取消</a>
+               onclick="javascript:$('#dlg4resource').dialog('close')" style="width:80px">取消</a>
         </div>
     </div>
 </div>

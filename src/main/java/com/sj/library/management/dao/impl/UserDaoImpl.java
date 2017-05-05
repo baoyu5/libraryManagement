@@ -2,8 +2,10 @@ package com.sj.library.management.dao.impl;
 
 import com.sj.library.management.common.pagination.PageRequest;
 import com.sj.library.management.dao.UserDao;
+import com.sj.library.management.dao.impl.mapper.RoleRowMapper;
 import com.sj.library.management.dao.impl.mapper.UserRowMapper;
 import com.sj.library.management.entity.User;
+import com.sj.library.management.to.RoleTO;
 import com.sj.library.management.to.UserTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -64,6 +66,12 @@ public class UserDaoImpl extends GenericDaoImpl<User, Long> implements UserDao {
             paramList.add(pr.getPageRows());
         }
         return jdbcTemplate.query(sql.toString(), paramList.toArray(), new UserRowMapper());
+    }
+
+    @Override
+    public List<RoleTO> getAdminRoles(long adminId) {
+        String sql = "select r.id, r.name, r.description from t_role r, t_user_role tur where tur.user_id = ? and tur.role_id = r.id order by r.id asc";
+        return jdbcTemplate.query(sql, new Object[]{adminId}, new RoleRowMapper());
     }
 
     @Override

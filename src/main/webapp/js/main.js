@@ -63,8 +63,8 @@ function load() {
 
     // 左侧菜单
     $('#menuTree').tree({
-        url: "resource/menu",
-        method: "post",
+        url: "user/menu",
+        method: "get",
         onClick: function (node) {
             if (!clickHandling) {
                 if (node.attributes.level != 0 && node.attributes.url != "") {
@@ -90,7 +90,7 @@ function load() {
     // 加载资源、权限
     $.ajax({
         url: "user/granted_authorities",
-        type: "post",
+        type: "get",
         dataType: "json",
         success: function (response) {
             authorities = response["data"];
@@ -487,49 +487,6 @@ sysCommon.loadRowToView = function (row, viewId) {
 //region --- 通用配置 ---
 var sysConfig = {};
 
-sysConfig.picBaseUrl = '/uploaded/'; // 上传图片文件的通用访问地址
-
-// 订单状态
-// sysConfig.orderStatus = {
-//     1: '已创建',
-//     2: '已完成',
-//     3: '已支付',
-//     4: '支付失败',
-//     5: '保证金释放',
-//     6: '退款失败/入金失败/出金』',
-//     7: '已退款',
-//     8: '审核中',
-//     9: '审核通过',
-//     10: '审核不通过',
-//     11: '待退款',
-//     12: '已合并'
-// };
-
-// 订单类型
-// sysConfig.orderType = {
-//     1: '冻结买方交易保证金',
-//     2: '冻结卖方交易保证金',
-//     3: '市场手续费',
-//     4: '通用余额支付货款',
-//     5: '违约支付',
-//     6: '入金',
-//     601: '入金调账',
-//     7: '出金',
-//     8: '退款订单',
-//     9: '竞价冻结',
-//     10: '竞价释放',
-//     11: '市场交易保证金支付货款',
-//     12: '确认收货',
-//     13: '违约赔偿',
-//     14: '收益转通用余额',
-//     15: '释放买家交易保证金',
-//     16: '释放卖家交易保证金',
-//     100: '冻结保证金',
-//     101: '释放保证金',
-//     102: '部分退款'
-// };
-//endregion
-
 //region 数据格式化函数
 sysCommon.formatters = {};
 
@@ -547,12 +504,6 @@ sysCommon.makeFormatter = function (dict, noneVal) {
         return dict[val] || noneVal;
     };
 };
-
-// 订单状态
-// sysCommon.formatters.orderStatusFormatter = sysCommon.makeFormatter(sysConfig.orderStatus);
-// 订单类型
-// sysCommon.formatters.orderTypeFormatter = sysCommon.makeFormatter(sysConfig.orderType);
-// timestamp to date
 
 sysCommon.formatters.timestampFormatter = function (ts) {
     var date = new Date(ts);

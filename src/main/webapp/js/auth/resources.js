@@ -30,12 +30,12 @@ $(document).ready(
 
         var toolbar = getToolbar(resourceToolbarAll, urls);
 
-        $('#dg4resources').datagrid({
+        $('#dg4resource').datagrid({
             title: '资源列表',
             collapsible: false,//是否可折叠的
             fit: true,//自动大小
             url: 'resource/resources',
-            method: 'post',
+            method: 'get',
             remoteSort: false,
             idField: 'ID',
             singleSelect: true,//是否单选
@@ -50,12 +50,12 @@ $(document).ready(
                 accessDenied();
             },
             onLoadSuccess: function(data){
-                sysCommon.onReloadSuccess();
+                resourceApi.onReloadSuccess();
             }
         });
 
         //设置分页控件
-        paginationConfig($('#dg4resources').datagrid('getPager'));
+        paginationConfig($('#dg4resource').datagrid('getPager'));
 
         $("#levelBox").combobox({
             onChange: function (newValue, oldValue) {
@@ -71,11 +71,11 @@ function loadMenu(level, value) {
     if (level == 1) {
         $("#parentIdComboBox").combobox('disable');
     } else {
-        var row = $('#dg4resources').datagrid('getSelected');
+        var row = $('#dg4resource').datagrid('getSelected');
         $("#parentIdComboBox").combobox({
             disabled: false,
             url: 'resource/menu_by_level?level=' + level,
-            method: 'post',
+            method: 'get',
             valueField: 'id',
             textField: 'name',
             value: value,
@@ -91,10 +91,10 @@ function loadMenu(level, value) {
 
 var url;
 function newResource() {
-    $("#dlg4resources_tips").html('');
-    $('#dlg4resources').dialog('open').dialog('center').dialog('setTitle', '添加资源');
+    $("#dlg4resource_tips").html('');
+    $('#dlg4resource').dialog('open').dialog('center').dialog('setTitle', '添加资源');
 
-    $('#fm4resources').form('clear');
+    $('#fm4resource').form('clear');
     $("#levelBox").combobox({value: 0});
     $("#parentIdComboBox").combobox({
         value: "",
@@ -105,11 +105,11 @@ function newResource() {
 
 function editResource() {
     url = 'resource/edit';
-    $("#dlg4resources_tips").html('');
-    var row = $('#dg4resources').datagrid('getSelected');
+    $("#dlg4resource_tips").html('');
+    var row = $('#dg4resource').datagrid('getSelected');
     if (row) {
-        $('#dlg4resources').dialog('open').dialog('center').dialog('setTitle', '修改资源');
-        $('#fm4resources').form('load', row);
+        $('#dlg4resource').dialog('open').dialog('center').dialog('setTitle', '修改资源');
+        $('#fm4resource').form('load', row);
         $("#oldParentId").val(row["parentId"]);
 
         loadMenu(row["level"], row["parentId"]);
@@ -122,9 +122,9 @@ function editResource() {
 function saveResource() {
     var tips = [];
     var count = 0;
-    var tip1 = checkName($('#resourceName'), 4, 20);
+    var tip1 = checkName($('#resourceName'), 4, 20, ".资源名");
     if (!$.isEmptyObject(tip1)) {
-        tips[count] = (count + 1) + '.资源名' + tip1;
+        tips[count] = (count + 1) + tip1;
         count++;
     }
     if (tips.length != 0) {
@@ -132,28 +132,28 @@ function saveResource() {
         for (var i = 0; i < tips.length; i++) {
             text = text + tips[i] + "<br/>";
         }
-        showError($('#dlg4resources_tips'), text);
+        showError($('#dlg4resource_tips'), text);
         return;
     }
     $.ajax({
         url: url,
-        data: JSON.stringify(form2Json($("#fm4resources"))),
+        data: JSON.stringify(form2Json($("#fm4resource"))),
         contentType: "application/json",
         type: "post",
         success: function () {
-            $('#dlg4resources').dialog('close');        // close the dialog
-            $('#dg4resources').datagrid('reload');    // reload the user data
+            $('#dlg4resource').dialog('close');        // close the dialog
+            $('#dg4resource').datagrid('reload');    // reload the user data
         },
         error: function (data) {
-            errorHandler(data, $("#dlg4resources_tips"));
+            errorHandler(data, $("#dlg4resource_tips"));
             // var error = JSON.parse(data.responseText)
-            // showError($("#dlg4resources_tips"), error["errorMessage"]);
+            // showError($("#dlg4resource_tips"), error["errorMessage"]);
         }
     });
 }
 
 // function deleteResource() {
-//     var row = $('#dg4resources').datagrid('getSelected');
+//     var row = $('#dg4resource').datagrid('getSelected');
 //     if (row) {
 //         $.messager.confirm('操作确认', '确定要删除该资源吗？', function (r) {
 //             if (r) {
@@ -161,7 +161,7 @@ function saveResource() {
 //                     url: "resource/delete?id=" + row['id'],
 //                     type: "post",
 //                     success: function () {
-//                         $("#dg4resources").datagrid('deleteRow', $("#dg4resources").datagrid('getRowIndex', row));
+//                         $("#dg4resource").datagrid('deleteRow', $("#dg4resource").datagrid('getRowIndex', row));
 //                     },
 //                     error: function (data) {
 //                         var error = JSON.parse(data.responseText)
@@ -201,11 +201,11 @@ function resourcesQuery() {
     if (!reg.test(sourse)){
         return showMessage('不能包含特殊字符（下划线、连接符除外）！');
     }else{
-        $('#dg4resources').datagrid({
-            'url': 'resource/get_resources?' + $.param(params),
+        $('#dg4resource').datagrid({
+            'url': 'resource/resources?' + $.param(params),
             pageNumber: 1
         });
-        paginationConfig($('#dg4resources').datagrid('getPager'));
+        paginationConfig($('#dg4resource').datagrid('getPager'));
     }
 }
 
@@ -214,10 +214,10 @@ function resourcesReset() {
     $('#resource_name').textbox('clear');
     $('#resource_details_type').combobox('select', -1);
 
-    // $('#dg4resources').datagrid({
+    // $('#dg4resource').datagrid({
     //     'url': 'resource/resources_load',
     //     pageNumber: 1
     // });
 
-    paginationConfig($('#dg4resources').datagrid('getPager'));
+    paginationConfig($('#dg4resource').datagrid('getPager'));
 }

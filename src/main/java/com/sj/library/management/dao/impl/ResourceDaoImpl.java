@@ -39,18 +39,15 @@ public class ResourceDaoImpl extends GenericDaoImpl<Resource, Long> implements R
      */
     @Override
     public List<ResourceTO> getByLevel(int level) {
-        String sql = "select * from t_resource where is_deleted = false and level = ?";
-        return jdbcTemplate.query(sql,
-                new Object[]{level},
-                new ResourceRowMapper()
-        );
+        String sql = "select * from t_resource where is_deleted = false and level = ? ";
+        return jdbcTemplate.query(sql, new Object[]{level}, new ResourceRowMapper());
     }
 
      @Override
      public List<ResourceTO> getRoleResources(Integer type, String resourceName, PageRequest pr) {
          StringBuilder sql = new StringBuilder("select r.*, r2.resource_name as parentName, r2.id as parentId from t_resource r left join t_resource_mapping rm on r.id = rm.child_id left join t_resource r2 on rm.parent_id = r2.id where r.is_deleted = false ");
          List params = new ArrayList();
-         if (type != null && type != -1) {
+         if (type != null && type > 0) {
              sql.append("and r.level = ? ");
              params.add(type);
          }
@@ -60,7 +57,7 @@ public class ResourceDaoImpl extends GenericDaoImpl<Resource, Long> implements R
              params.add("%" + resourceName + "%");
          }
 
-         sql.append("order by parentName ");
+         sql.append("order by parent_id asc ");
 
          sql.append("limit ?, ?");
 
@@ -125,12 +122,9 @@ public class ResourceDaoImpl extends GenericDaoImpl<Resource, Long> implements R
     }
 
     @Override
-    public void removeResource(long resourceId) {
-        Resource r = load(resourceId);
-        r.setDeleted(true);
-        if (r.getChildren() != null) {
-            r.getChildren().clear();
-        }
+    public void deleteResourceMapping(long resourceId) {
+        String sql = "delete from t_resource_mapping where child_id = ? ";
+        jdbcTemplate.update(sql, resourceId);
     }
 
 }

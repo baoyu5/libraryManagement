@@ -23,5 +23,5 @@ public interface ResourceDao extends GenericDao<Resource, Long> {
 
     int getRoleCountByResourceId(Long resourceId);
 
-    void removeResource(long resourceId);
+    void deleteResourceMapping(long resourceId);
 }

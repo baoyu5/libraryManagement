@@ -1,16 +1,22 @@
 package com.sj.library.management.service.impl;
 
+import com.sj.library.management.common.constant.UserType;
+import com.sj.library.management.common.exception.PasswordNotUpdateException;
 import com.sj.library.management.common.exception.UserExistsException;
+import com.sj.library.management.common.exception.UserNotExistException;
 import com.sj.library.management.common.pagination.PageRequest;
+import com.sj.library.management.dao.RoleDao;
 import com.sj.library.management.dao.UserDao;
 import com.sj.library.management.entity.User;
 import com.sj.library.management.service.UserService;
+import com.sj.library.management.to.RoleTO;
 import com.sj.library.management.to.UserTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
+import javax.persistence.NoResultException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -21,6 +27,8 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserDao userDao;
+    @Autowired
+    private RoleDao roleDao;
 
     @Override
     public long addUser(UserTO to) {
@@ -43,8 +51,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void deleteUser(long id) {
-        User user = userDao.load(id);
+    public void deleteAdmin(long id) {
+        User user = getAdmin(id);
         user.setDeleted(true);
         if (user.getRoles() != null) {
             user.getRoles().clear();
@@ -52,11 +60,41 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void editUser(UserTO to) {
-        User user = userDao.load(to.getId());
+    public void editAdmin(UserTO to) {
+        User user = getAdmin(to.getId());
 
         user.setEmail(to.getEmail());
         user.setPhoneNo(to.getPhoneNo());
+    }
+
+    @Override
+    public void adminPasswordUpdate(long adminId, String password) {
+        User user = getAdmin(adminId);
+
+        if (user.getPassword().equals(password)) {
+            throw new PasswordNotUpdateException();
+        }
+        user.setPassword(password);
+    }
+
+    @Override
+    public void updateRoles(long adminId, List<Long> roleIds) {
+        User user = getAdmin(adminId);
+
+        user.getRoles().clear();
+
+        if (roleIds == null || roleIds.isEmpty()) {
+            return;
+        }
+
+        for(Long roleId: roleIds) {
+            user.getRoles().add(roleDao.load(roleId));
+        }
+    }
+
+    @Override
+    public List<RoleTO> getAdminRoles(long adminId) {
+        return userDao.getAdminRoles(adminId);
     }
 
     @Override
@@ -84,4 +122,28 @@ public class UserServiceImpl implements UserService {
     // public boolean isRoleInUse(long roleId) {
     //     return false;
     // }
+
+    private User getAdmin(long id) {
+        User user = null;
+        try {
+            user = userDao.load(id);
+        } catch (NoResultException e) {
+        }
+        if (user == null || user.getType() != UserType.ADMIN) {
+            throw new UserNotExistException();
+        }
+        return user;
+    }
+
+    private User getUser(long id) {
+        User user = null;
+        try {
+            user = userDao.load(id);
+        } catch (NoResultException e) {
+        }
+        if (user == null || user.getType() != UserType.USER) {
+            throw new UserNotExistException();
+        }
+        return user;
+    }
 }
