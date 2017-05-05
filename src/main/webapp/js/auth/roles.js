@@ -1,4 +1,5 @@
-var rolesApi = new sysCommon.api('roles', {
+var roleApi = new sysCommon.api('role', {
+        'loadUri':'role/roles',
         'createUri': 'role/add',
         'deleteUri': 'role/delete',
         'editUri': 'role/edit',
@@ -10,12 +11,12 @@ $(document).ready(
         var toolbarAll = [{
             text: '添加角色',
             handler: function () {
-                rolesApi.create('添加角色');
+                roleApi.create('添加角色');
             }
         }, {
             text: '修改角色',
             handler: function () {
-                rolesApi.edit('修改角色');
+                roleApi.edit('修改角色');
             }
         }, {
             text: '修改资源',
@@ -25,13 +26,13 @@ $(document).ready(
         }, {
             text: '删除角色',
             handler: function () {
-                rolesApi.delete('确认要删除该角色吗?');
+                roleApi.delete('确认要删除该角色吗?');
             }
         }];
 
-        var urls = ['/role/add', '/role/edit', '/role/role_resources_add', '/role/delete'];
+        var urls = ['/role/add', '/role/edit', '/role/role_resources_update', '/role/delete'];
 
-        $('#dg4roles').datagrid({
+        $('#dg4role').datagrid({
             title: '角色列表',
             collapsible: false,//是否可折叠的
             fit: true,//自动大小
@@ -50,48 +51,48 @@ $(document).ready(
                 accessDenied();
             },
             onLoadSuccess: function() {
-                rolesApi.onReloadSuccess();
+                roleApi.onReloadSuccess();
             }
         });
 
         //设置分页控件
-        paginationConfig($('#dg4roles').datagrid('getPager'));
+        paginationConfig($('#dg4role').datagrid('getPager'));
     }
 );
 
 function saveNewRole(){
-    var tip = checkName($('#newRoleName'),6,20);
+    var tip = checkName($('#newRoleName'), 6, 20);
     if (!$.isEmptyObject(tip)) {
-        showError($('#dlg4_new_roles_tips'),"1.角色名"+tip)
+        showError($('#dlg4_new_role_tips'),"1.角色名"+tip)
         return;
     }
-    rolesApi.save();
+    roleApi.save();
 }
 
 function saveRole(){
-    var tip = checkName($('#roleName'),6,20);
+    var tip = checkName($('#roleName'), 6, 20);
     if (!$.isEmptyObject(tip)) {
-        showError($('#dlg4roles_tips'),"1.角色名"+tip)
+        showError($('#dlg4role_tips'),"1.角色名"+tip)
         return;
     }
-    rolesApi.update();
+    roleApi.update();
 }
 
 function editResources() {
-    url = "role/role_resources_add";
-    var row = $('#dg4roles').datagrid('getSelected');
+    url = "role/role_resources_update";
+    var row = $('#dg4role').datagrid('getSelected');
     if (row) {
-        $("#dlg4roles_resources_tips").html('');
-        var row = $('#dg4roles').datagrid('getSelected');
+        $("#dlg4role_resources_tips").html('');
+        var row = $('#dg4role').datagrid('getSelected');
         if (row){
-            $('#dlg4roles_resources').dialog('open').dialog('center').dialog('setTitle','修改资源');
+            $('#dlg4role_resources').dialog('open').dialog('center').dialog('setTitle','修改资源');
 
             $('#resourcesTree').tree({
                 url: "resource/resources",
                 checkbox: true,
                 onLoadSuccess: function(node, data) {
                     $.ajax({
-                        url: "resource/role_resources?roleId=" + row["id"],
+                        url: "role/role_resources?roleId=" + row["id"],
                         type: "post",
                         success: function (response) {
                             var data = response["data"];
@@ -106,14 +107,15 @@ function editResources() {
                             }
                         },
                         error: function (data) {
-                            try{
-                                var error = JSON.parse(data.responseText)
-                                showError($("#dlg4roles_resources_tips"), error["errorMessage"]);
-                            } catch(e) {
-                                if (data.status == 403) {
-                                    accessDenied();
-                                }
-                            }
+                            errorHandler(data, $("#dlg4role_resources_tips"));
+                            // try{
+                            //     var error = JSON.parse(data.responseText)
+                            //     showError($("#dlg4role_resources_tips"), error["errorMessage"]);
+                            // } catch(e) {
+                            //     if (data.status == 403) {
+                            //         accessDenied();
+                            //     }
+                            // }
                         }
                     });
                 }
@@ -138,17 +140,18 @@ function getChecked(){
 }
 
 function saveResources() {
-    var row = $('#dg4roles').datagrid('getSelected');
+    var row = $('#dg4role').datagrid('getSelected');
     var resourceIds = getChecked();
     $.ajax({
         url: url + "?roleId=" + row['id'] + "&resourceIds=" + resourceIds,
         type: "post",
         success: function () {
-            $('#dlg4roles_resources').dialog('close');        // close the dialog
+            $('#dlg4role_resources').dialog('close');        // close the dialog
         },
         error: function (data) {
-            var error = JSON.parse(data.responseText)
-            showError($("#dlg4roles_resources_tips"), error["errorMessage"]);
+            errorHandler(data, $("#dlg4role_resources_tips"));
+            // var error = JSON.parse(data.responseText)
+            // showError($("#dlg4role_resources_tips"), error["errorMessage"]);
         }
     });
 }

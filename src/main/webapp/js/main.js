@@ -198,9 +198,12 @@ sysCommon.api.prototype = {
     create: function (title) {
         this.ops = 'create';
 
-        console.log('create: ', this.idName, title);
+        // console.log('create: ', this.idName, title);
+        // 清空提示信息
         $('#dlg4_new_' + this.idName + '_tips').html('');
+        // 弹出窗口
         $('#dlg4_new_' + this.idName).dialog('open').dialog('center').dialog('setTitle', title);
+        // 清空表单
         $('#fm4_new_' + this.idName).form('clear');
     },
     // 保存新增数据
@@ -211,13 +214,16 @@ sysCommon.api.prototype = {
             contentType: "application/json",
             type: "post",
             success: function () {
-                console.log(this.idName, ' save success.');
+                // console.log(this.idName, ' save success.');
+                // 关闭窗口
                 $('#dlg4_new_' + this.idName).dialog('close');
+                // 重新加载数据
                 $('#dg4' + this.idName).datagrid('reload');
             }.bind(this),
             error: function (data) {
-                var error = JSON.parse(data.responseText);
-                showError($('#dlg4_new_' + this.idName + '_tips'), error["errorMessage"]);
+                errorHandler(data, $('#dlg4_new_' + this.idName + '_tips'));
+                // var error = JSON.parse(data.responseText);
+                // showError($('#dlg4_new_' + this.idName + '_tips'), error["errorMessage"]);
             }.bind(this)
         });
     },
@@ -246,12 +252,14 @@ sysCommon.api.prototype = {
                         url: this.deleteUri + '?' + this.recordIdName + '=' + (row['id'] ? row['id'] : row[idName]),
                         type: "post",
                         success: function () {
-                            $('#dg4' + this.idName).datagrid('deleteRow',
-                                $('#dg4' + this.idName).datagrid('reload'));
+                            // $('#dg4' + this.idName).datagrid('deleteRow',
+                            //     $('#dg4' + this.idName).datagrid('reload'));
+                            $('#dg4' + this.idName).datagrid('reload');
                         }.bind(this),
                         error: function (data) {
-                            var error = JSON.parse(data.responseText);
-                            showMessage(error["errorMessage"]);
+                            errorHandler2(data);
+                            // var error = JSON.parse(data.responseText);
+                            // showMessage(error["errorMessage"]);
                         }.bind(this)
                     });
 
@@ -267,7 +275,7 @@ sysCommon.api.prototype = {
         var row = this.getSelectedRow();
         this.selectedRowIndex = $('#dg4' + this.idName).datagrid('getRowIndex', row);
         if (row) {
-            console.log(row);
+            // console.log(row);
             $('#dlg4' + this.idName).dialog('open').dialog('center').dialog('setTitle', title);
             $('#fm4' + this.idName).form('load', row);
         }
@@ -305,11 +313,19 @@ sysCommon.api.prototype = {
     },
     // 重新加载数据成功之后
     onReloadSuccess: function () {
+        // if (this.ops == 'create') {
+        //     this.selectedRowIndex = 0;
+        // } else if (this.ops == 'edit') {
+        //     //this.selectedRowIndex
+        // } else if (this.ops == 'delete') {
+        //     this.selectedRowIndex = -1;
+        // }
+
         if (this.ops == 'create') {
             this.selectedRowIndex = 0;
         } else if (this.ops == 'edit') {
             //this.selectedRowIndex
-        } else if (this.ops == 'delete') {
+        } else {
             this.selectedRowIndex = -1;
         }
 

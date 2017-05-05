@@ -1,4 +1,5 @@
 var adminsApi = new sysCommon.api('admin', {
+        'loadUri':'admin/admins',
         'createUri': 'admin/add',
         'deleteUri': 'admin/delete',
         'editUri': 'admin/edit',
@@ -35,7 +36,7 @@ $(document).ready(
             }
         }];
 
-        var urls = ['/admin/add', '/admin/edit', '/admin/admin_roles_update', '/admin/password_update', '/admin/delete'];
+        var urls = ['/admin/add', '/admin/edit', '/admin/admin_roles_update', '/admin/admin_password_update', '/admin/delete'];
 
         $('#dg4admin').datagrid({
             title: '管理员列表',
@@ -138,7 +139,7 @@ function editRoles() {
             collapsible: false,//是否可折叠的
             border: false,
             fit: true,//自动大小
-            url: 'admin/roles',
+            url: 'role/roles',
             method: 'post',
             remoteSort: false,
             idField: 'id',
@@ -186,10 +187,8 @@ function editPassword() {
 function savePassword() {
     var row = $('#dg4admin').datagrid('getSelected');
 
-    // todo 密码判断
     var tips = [];
     var count = 0;
-
     var tip1 = checkPassword($('#adminNewPassword'));
     if (!$.isEmptyObject(tip1)) {
         tips[count++] = count + tip1 + '<br/>';
@@ -208,7 +207,7 @@ function savePassword() {
     var passwordConfirm = $("#adminNewPasswordConfirm").val().trim();
 
     $.ajax({
-        url: "admin/password_update",
+        url: "admin/admin_password_update",
         data:{'adminId':row['id'], 'password':password, 'passwordConfirm':passwordConfirm},
         type: "post",
         success: function () {
@@ -221,7 +220,7 @@ function savePassword() {
 }
 
 function saveRoles(){
-    var operatorRow = $('#dg4admin').datagrid('getSelected');
+    var admin = $('#dg4admin').datagrid('getSelected');
     var row = $('#dg4admin_roles').datagrid('getChecked');
     var roleIds = '';
     for (var i = 0; i < row.length; i++) {
@@ -232,7 +231,7 @@ function saveRoles(){
     }
 
     $.ajax({
-        url: "user/admin_roles_update?operatorId=" + operatorRow['id'] + "&rolesIds=" + roleIds,
+        url: "admin/admin_roles_update?adminId=" + admin['id'] + "&rolesIds=" + roleIds,
         type: "post",
         success: function () {
             $('#dlg4admins_roles').dialog('close');        // close the dialog

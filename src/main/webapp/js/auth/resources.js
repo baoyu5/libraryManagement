@@ -1,33 +1,28 @@
-/**
- * User: Roland
- */
+var resourceApi = new sysCommon.api('resource', {
+        'loadUri':'resource/resources',
+        'createUri': 'resource/add',
+        'deleteUri': 'resource/delete',
+        'editUri': 'resource/edit',
+        'recordIdName': 'id'
+    }
+);
 $(document).ready(
     function () {
         var resourceToolbarAll = [{
             text: '添加资源',
-            //iconCls: 'icon-add',
             handler: function () {
                 newResource();
             }
         }, {
             text: '修改资源',
-            //iconCls: 'icon-add',
             handler: function () {
-                if ($('#rscDiv .datagrid-body .noRst').length) {  //排除无记录
-                    noSelectAlert();
-                }else{
-                    editResource();
-                }
+                editResource();
             }
         }, {
             text: '删除资源',
-            //iconCls: 'icon-edit',
             handler: function () {
-                if ($('#rscDiv .datagrid-body .noRst').length) {  //排除无记录
-                    noSelectAlert();
-                }else{
-                    deleteResource();
-                }
+                // deleteResource();
+                resourceApi.delete('确认要删除该资源吗?');
             }
         }];
 
@@ -39,7 +34,7 @@ $(document).ready(
             title: '资源列表',
             collapsible: false,//是否可折叠的
             fit: true,//自动大小
-            url: 'resource/get_resources',
+            url: 'resource/resources',
             method: 'post',
             remoteSort: false,
             idField: 'ID',
@@ -55,6 +50,7 @@ $(document).ready(
                 accessDenied();
             },
             onLoadSuccess: function(data){
+                sysCommon.onReloadSuccess();
             }
         });
 
@@ -72,7 +68,7 @@ $(document).ready(
 function loadMenu(level, value) {
     $("#parentIdComboBox").combobox('clear');
 
-    if (level == 0) {
+    if (level == 1) {
         $("#parentIdComboBox").combobox('disable');
     } else {
         var row = $('#dg4resources').datagrid('getSelected');
@@ -91,7 +87,6 @@ function loadMenu(level, value) {
             }
         })
     }
-
 }
 
 var url;
@@ -150,36 +145,37 @@ function saveResource() {
             $('#dg4resources').datagrid('reload');    // reload the user data
         },
         error: function (data) {
-            var error = JSON.parse(data.responseText)
-            showError($("#dlg4resources_tips"), error["errorMessage"]);
+            errorHandler(data, $("#dlg4resources_tips"));
+            // var error = JSON.parse(data.responseText)
+            // showError($("#dlg4resources_tips"), error["errorMessage"]);
         }
     });
 }
 
-function deleteResource() {
-    var row = $('#dg4resources').datagrid('getSelected');
-    if (row) {
-        $.messager.confirm('操作确认', '确定要删除该资源吗？', function (r) {
-            if (r) {
-                $.ajax({
-                    url: "resource/delete?id=" + row['id'],
-                    type: "post",
-                    success: function () {
-                        $("#dg4resources").datagrid('deleteRow', $("#dg4resources").datagrid('getRowIndex', row));
-                    },
-                    error: function (data) {
-                        var error = JSON.parse(data.responseText)
-                        showMessage(error["errorMessage"]);
-                    }
-                });
-
-            }
-        });
-    }
-    else {
-        noSelectAlert();
-    }
-}
+// function deleteResource() {
+//     var row = $('#dg4resources').datagrid('getSelected');
+//     if (row) {
+//         $.messager.confirm('操作确认', '确定要删除该资源吗？', function (r) {
+//             if (r) {
+//                 $.ajax({
+//                     url: "resource/delete?id=" + row['id'],
+//                     type: "post",
+//                     success: function () {
+//                         $("#dg4resources").datagrid('deleteRow', $("#dg4resources").datagrid('getRowIndex', row));
+//                     },
+//                     error: function (data) {
+//                         var error = JSON.parse(data.responseText)
+//                         showMessage(error["errorMessage"]);
+//                     }
+//                 });
+//
+//             }
+//         });
+//     }
+//     else {
+//         noSelectAlert();
+//     }
+// }
 
 function showTypeName(val, row) {
     if (val == 1) {

@@ -28,9 +28,9 @@
                         <select id="resource_details_type" class="easyui-combobox" data-options="editable:false"
                                 panelHeight="140px" style="width: 212px;">
                             <option value="-1">所有类型</option>
-                            <option value="0">一级菜单</option>
-                            <option value="1">二级菜单</option>
-                            <option value="2">普通资源</option>
+                            <option value="1">一级菜单</option>
+                            <option value="2">二级菜单</option>
+                            <option value="3">普通资源</option>
                         </select>
                     </td>
                 <tr>
@@ -74,9 +74,9 @@
                         <td style="text-align: right">类型：</td>
                         <td>
                             <select name="level" style="width: 212px;" id="levelBox" data-options="editable:false">
-                                <option value="0">一级菜单</option>
-                                <option value="1">二级菜单</option>
-                                <option value="2">普通资源</option>
+                                <option value="1">一级菜单</option>
+                                <option value="2">二级菜单</option>
+                                <option value="3">普通资源</option>
                             </select>
                         </td>
                     </tr>
@@ -98,12 +98,10 @@
                 </table>
             </form>
         </div>
-
         <div id="dlg-buttons-resources">
             <a href="javascript:void(0)" class="easyui-linkbutton c6" onclick="saveResource()" style="width:80px">提交</a>
             <a href="javascript:void(0)" class="easyui-linkbutton"
                onclick="javascript:$('#dlg4resources').dialog('close')" style="width:80px">取消</a>
         </div>
-
     </div>
 </div>

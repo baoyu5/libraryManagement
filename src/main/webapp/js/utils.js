@@ -112,15 +112,15 @@ function getToolbar(all, urls) {
 function checkName(target, min, max) {
     var name = target.val().trim();
     if ($.isEmptyObject(name)) {
-        return '.用户名不能为空';
+        return '不能为空';
     }
     var reg = /^([0-9a-zA-Z]|[\u4E00-\u9FA5])*$/;
     if (!name.match(reg)) {
-        return ".用户名只能输入中英文或数字";
+        return "只能输入中英文或数字";
     }
     // var newName = name.replace(/[\u4E00-\u9FA5]/g,"aa");
     if (name.length < min || name.length > max) {
-        return ".用户名不能少于"+min+"位，或大于"+max+"位";
+        return "不能少于"+min+"位，或大于"+max+"位";
     }
     return "";
 }
@@ -175,7 +175,7 @@ function checkPassword (target1) {
     var spa = /^\S+$/gi;
 
     if (!reg.test(password1) || !spa.test(password1)) {
-        return ".密码不含空格，长度8-20位,且包含数字,字母,特殊字符";
+        return ".密码不含空格，长度8-20位,且包含数字、字母、特殊字符";
     }
     return "";
 }
@@ -188,20 +188,6 @@ function checkPasswordConfirm(target1,target2) {
         return '.两次密码不一致';
     }
     return '';
-}
-
-function checkLoginPassword(){
-    var pwd = $("input[name = 'newPassword']").val();
-    var reg = new RegExp('(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9]).{8,20}');
-    var spa = /^\S+$/gi;//验证空格
-    //console.log(spa.test(pwd));
-    if(reg.test(pwd) && spa.test(pwd)){
-        return true;
-    };
-    colorIsRed("newPassword_span");
-    $("#newPassword_span").text("密码8-20个字符中必须包含字母、数字、符号（空格除外）！");
-    $("#sub").attr('disabled',true);
-    return false;
 }
 
 function showTips(tips, target) {
