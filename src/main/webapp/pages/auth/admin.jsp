@@ -4,22 +4,20 @@
 <div class="easyui-layout" style="height:100%;">
     <div data-options="region:'north'" style="padding: 5px; height:120px;">
         <div class="easyui-panel" title="查询条件" style="height: 100%;">
-            <form id="#qfm4_admin">
-            <table class="table" style="margin-bottom: 0px; margin-top:5px;width: 900px;">
+            <form id="#qfm4_admin" style="margin-bottom: 5px;">
+            <table class="table" style="margin-bottom: 0px; margin-top:5px;width: 600px;">
                 <tr>
                     <td style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
                         <span>登录名：</span>
                         <input id="qAdminLoginName" name="loginName" class="easyui-textbox"/>
                     </td>
-                </tr>
-                <tr>
                     <td style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
                         <span>姓名：</span>
                         <input id="qAdminRealName" name="realName" class="easyui-textbox"/>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3" style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
+                    <td colspan="2" style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
                         <a href="#" class="easyui-linkbutton" onclick="queryAdmins()"
                            data-options="iconCls:'icon-search'" style="width:80px">查询</a>
                         <a href="#" class="easyui-linkbutton" onclick="ResetQueryAdmins()"

@@ -16,11 +16,12 @@
 <div class="easyui-layout" style="height:100%;">
     <div data-options="region:'north'" style="padding: 5px; height:120px;">
         <div class="easyui-panel" title="查询条件" style="height: 100%;">
-            <table class="table" style="margin-bottom: 0px; margin-top:5px;width: 1200px;">
+            <form id="#qfm4_resource" style="margin-bottom: 5px;">
+            <table class="table" style="margin-bottom: 0px; margin-top:5px;width: 600px;">
                 <tr>
                     <td style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
                         <span>资源名称：</span>
-                        <input id="resource_name" name="resource_name" class="easyui-textbox"/>
+                        <input id="resource_name" name="resourceName" class="easyui-textbox"/>
                     </td>
                     <td style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
                         <span>资源类型：</span>
@@ -33,7 +34,7 @@
                         </select>
                     </td>
                 <tr>
-                    <td colspan="3" style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
+                    <td colspan="2" style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
                         <a href="#" class="easyui-linkbutton" onclick="resourcesQuery()"
                            data-options="iconCls:'icon-search'" style="width:80px">查询</a>
                         <a href="#" class="easyui-linkbutton" onclick="resourcesReset()"
@@ -41,6 +42,7 @@
                     </td>
                 </tr>
             </table>
+            </form>
         </div>
     </div>
     <div data-options="region:'center'" style="padding: 5px;" id="rscDiv">

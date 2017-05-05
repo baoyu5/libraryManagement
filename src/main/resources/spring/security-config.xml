@@ -9,7 +9,7 @@
 
     <http pattern="/css/**" security="none" />
     <http pattern="/images/**" security="none" />
-    <http pattern="/fonts/**" security="none" />
+    <!--<http pattern="/fonts/**" security="none" />-->
     <http pattern="/js/**" security="none" />
     <!--<http pattern="/**/*.html" security="none" />-->
     <http pattern="/uploaded/**" security="none" />

@@ -170,7 +170,7 @@ var sysCommon = {};
  * @returns {*}
  */
 sysCommon.loadFilter = function (data) {
-    if (data && (data.status === 0)) {
+    if (data && (data.status === 0) && data.data) {
         return data.data;
     } else {
         return [];
