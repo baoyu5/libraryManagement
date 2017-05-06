@@ -75,11 +75,8 @@ public class AdminController extends BaseController {
 
     @RequestMapping(value = "/admin_password_update", method = RequestMethod.POST)
     @ResponseBody
-    public void adminPasswordUpdate(@RequestParam long adminId, @RequestParam String password) {
-        if (!StringUtils.hasText(password)) {
-            throw new PasswordNotNullException();
-        }
-        userService.adminPasswordUpdate(adminId, password.trim());
+    public void adminPasswordUpdate(@RequestParam long adminId) {
+        userService.adminPasswordReset(adminId);
     }
 
     @RequestMapping(value = "/admin_roles", method = RequestMethod.GET)

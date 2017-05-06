@@ -62,7 +62,7 @@ $(document).ready(
 );
 
 function saveNewRole(){
-    var tip = checkName($('#newRoleName'), 6, 20, "1.角色名");
+    var tip = checkName($('#newRoleName'), 2, 20, "1.角色名");
     if (!$.isEmptyObject(tip)) {
         showError($('#dlg4_new_role_tips'), tip)
         return;
@@ -71,7 +71,7 @@ function saveNewRole(){
 }
 
 function saveRole(){
-    var tip = checkName($('#roleName'), 6, 20, "1.角色名");
+    var tip = checkName($('#roleName'), 2, 20, "1.角色名");
     if (!$.isEmptyObject(tip)) {
         showError($('#dlg4role_tips'), tip)
         return;

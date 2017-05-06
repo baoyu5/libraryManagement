@@ -10,7 +10,8 @@ public interface UserService {
     void deleteAdmin(long id);
     void editAdmin(UserTO to);
     void updateRoles(long adminId, List<Long> roleIds);
-    void adminPasswordUpdate(long adminId, String password);
+    void userPasswordUpdate(long id, String oldPassword, String newPassword);
+    void adminPasswordReset(long adminId);
     List<RoleTO> getAdminRoles(long adminId);
     List<UserTO> getUsers(String loginName, String realName, int type, long startTime, long endTime, int page, int rows);
     // boolean isRoleInUse(long roleId);

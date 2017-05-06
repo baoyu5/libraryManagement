@@ -86,14 +86,14 @@ function saveNewAdmin(){
     if (!$.isEmptyObject(tip4)) {
         tips[count++] = count + tip4;
     }
-    var tip5 = checkPassword($('#newAdminPassword'));
-    if (!$.isEmptyObject(tip5)) {
-        tips[count++] = count + tip5;
-    }
-    var tip6 = checkPasswordConfirm($('#newAdminPassword'), $('#newAdminPasswordConfirm'));
-    if (!$.isEmptyObject(tip6)) {
-        tips[count++] = count + tip6;
-    }
+    // var tip5 = checkPassword($('#newAdminPassword'));
+    // if (!$.isEmptyObject(tip5)) {
+    //     tips[count++] = count + tip5;
+    // }
+    // var tip6 = checkPasswordConfirm($('#newAdminPassword'), $('#newAdminPasswordConfirm'));
+    // if (!$.isEmptyObject(tip6)) {
+    //     tips[count++] = count + tip6;
+    // }
 
     if (tips.length != 0) {
         showTips(tips, $('#dlg4_new_admin_tips'));
@@ -122,7 +122,7 @@ function saveAdmin(){
         tips[count++] = count + tip4;
     }
     if (tips.length != 0) {
-        showTips(tips, $('#dlg4admins_tips'));
+        showTips(tips, $('#dlg4admin_tips'));
         return;
     }
     adminsApi.update();
@@ -155,10 +155,12 @@ function editRoles() {
                     url: "admin/admin_roles?adminId="+ row['id'],
                     type: "get",
                     success: function (data) {
-                        var roles = data['data'];
-                        for (var i = 0; i < roles.length; i++) {
-                            var rowIndex = $('#dg4admin_roles').datagrid('getRowIndex', roles[i]['id']);
-                            $('#dg4admin_roles').datagrid('checkRow', rowIndex);
+                        if (data && data['data']) {
+                            var roles = data['data'];
+                            for (var i = 0; i < roles.length; i++) {
+                                var rowIndex = $('#dg4admin_roles').datagrid('getRowIndex', roles[i]['id']);
+                                $('#dg4admin_roles').datagrid('checkRow', rowIndex);
+                            }
                         }
                     },
                     error: function (data) {
@@ -176,38 +178,43 @@ function editRoles() {
 function editPassword() {
     var row = $('#dg4admin').datagrid('getSelected');
     if (row) {
-        $('#dlg4admin_password_tips').html('');
-        $('#fm4admin_password').form('clear');
-        $('#dlg4admin_password').dialog('open').dialog('center').dialog('setTitle','修改密码');
+        // $('#dlg4admin_password_tips').html('');
+        // $('#fm4admin_password').form('clear');
+        // $('#dlg4admin_password').dialog('open').dialog('center').dialog('setTitle','修改密码');
+        $.messager.confirm("操作确认", "确认要重置该管理员登录密码吗？", function (r) {
+            if (r) {
+                savePassword();
+            }
+        })
     } else {
         noSelectAlert();
     }
 }
 
 function savePassword() {
-    var row = $('#dg4admin').datagrid('getSelected');
-
-    var tips = [];
-    var count = 0;
-    var tip1 = checkPassword($('#adminNewPassword'));
-    if (!$.isEmptyObject(tip1)) {
-        tips[count++] = count + tip1 + '<br/>';
-    }
-    var tip2 = checkPasswordConfirm($('#adminNewPassword'), $("#adminNewPasswordConfirm"));
-    if (!$.isEmptyObject(tip2)) {
-        tips[count++] = count + tip2 + '<br/>';
-    }
-
-    if (tips.length != 0) {
-        showTips(tips, $('#dlg4admin_password_tips'));
-        return;
-    }
-
-    var password = $('#adminNewPassword').val().trim();
+    // var row = $('#dg4admin').datagrid('getSelected');
+    //
+    // var tips = [];
+    // var count = 0;
+    // var tip1 = checkPassword($('#adminNewPassword'));
+    // if (!$.isEmptyObject(tip1)) {
+    //     tips[count++] = count + tip1 + '<br/>';
+    // }
+    // var tip2 = checkPasswordConfirm($('#adminNewPassword'), $("#adminNewPasswordConfirm"));
+    // if (!$.isEmptyObject(tip2)) {
+    //     tips[count++] = count + tip2 + '<br/>';
+    // }
+    //
+    // if (tips.length != 0) {
+    //     showTips(tips, $('#dlg4admin_password_tips'));
+    //     return;
+    // }
+    //
+    // var password = $('#adminNewPassword').val().trim();
 
     $.ajax({
         url: "admin/admin_password_update",
-        data:{'adminId':row['id'], 'password':password},
+        data:{'adminId':row['id']},
         type: "post",
         success: function () {
             $('#dlg4admin_password').dialog('close');
@@ -233,11 +240,11 @@ function saveRoles(){
         url: "admin/admin_roles_update?adminId=" + admin['id'] + "&rolesIds=" + roleIds,
         type: "post",
         success: function () {
-            $('#dlg4admins_roles').dialog('close');        // close the dialog
+            $('#dlg4admin_roles').dialog('close');        // close the dialog
         },
         error: function (data) {
             var error = JSON.parse(data.responseText)
-            showError($("#dlg4admins_roles_tips"), error["errorMessage"]);
+            showError($("#dlg4admin_roles_tips"), error["errorMessage"]);
         }
     });
 }

@@ -98,12 +98,10 @@ public class ResourceServiceImpl implements ResourceService {
         resource.setUrl(to.getUrl());
 
 
-        if (to.getParentId() != -1 || to.getParentId() != 0) {
-            Resource parent = resourceDao.load(to.getParentId());
-            if (parent != null) {
-                parent.getChildren().add(resource);
-                resource.setLevel(parent.getLevel() + 1);
-            }
+        if (to.getParentId() > 0) {
+            Resource parent = loadResource(to.getParentId());
+            parent.getChildren().add(resource);
+            resource.setLevel(parent.getLevel() + 1);
         } else {
             resource.setLevel(1);
         }
@@ -152,11 +150,14 @@ public class ResourceServiceImpl implements ResourceService {
         }
         r.setDeleted(true);
 
-        // resourceDao.deleteResourceMapping(id);
+        resourceDao.deleteResourceMapping(id);
     }
 
     private Resource loadResource(long id) {
         Resource resource = null;
+        if (id <= 0) {
+            return resource;
+        }
         try {
             resource = resourceDao.load(id);
         } catch (NoResultException e) {

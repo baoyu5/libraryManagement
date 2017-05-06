@@ -76,6 +76,11 @@ public class RoleServiceImpl implements RoleService {
     }
 
     @Override
+    public List<RoleTO> getAllRoles() {
+        return roleDao.getRoles(null);
+    }
+
+    @Override
     public void updateRole(RoleTO to) {
         Role role = getRole(to.getId());
         role.setDescription(to.getDescription());

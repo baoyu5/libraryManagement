@@ -28,9 +28,20 @@ public class RoleController extends BaseController {
 
     @RequestMapping(value = "/roles", method = RequestMethod.GET)
     @ResponseBody
-    public ResponseTO getRoles(@RequestParam int rows, @RequestParam int page) {
-        return success(roleService.getRole(PageRequest.newRequest(rows, page)));
+    public ResponseTO getRoles(@RequestParam(required = false) Integer rows,
+                               @RequestParam(required = false) Integer page) {
+        if (rows != null && page != null) {
+            return success(roleService.getRole(PageRequest.newRequest(rows, page)));
+        } else {
+            return success(roleService.getAllRoles());
+        }
     }
+
+//    @RequestMapping(value = "/all_roles", method = RequestMethod.GET)
+//    @ResponseBody
+//    public ResponseTO getAllRoles() {
+//        return success(roleService.getAllRoles());
+//    }
 
     @RequestMapping(value = "/delete", method = RequestMethod.POST)
     @ResponseBody

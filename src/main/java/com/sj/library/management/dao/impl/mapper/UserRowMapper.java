@@ -20,6 +20,7 @@ public class UserRowMapper implements RowMapper<UserTO> {
         to.setEmail(resultSet.getString("email"));
         to.setType(resultSet.getInt("type"));
         to.setTypeDesc(UserTypeFactory.getType(resultSet.getInt("type")));
+        to.setCode(resultSet.getString("code"));
 
         return to;
     }

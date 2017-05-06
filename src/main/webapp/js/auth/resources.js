@@ -95,11 +95,11 @@ function newResource() {
     $('#dlg4resource').dialog('open').dialog('center').dialog('setTitle', '添加资源');
 
     $('#fm4resource').form('clear');
-    $("#levelBox").combobox({value: 0});
+    $("#levelBox").combobox({value: ''});
     $("#parentIdComboBox").combobox({
         value: "",
         disabled: true
-    })
+    });
     url = 'resource/add';
 }
 

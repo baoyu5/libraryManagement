@@ -14,4 +14,5 @@ public interface RoleService {
     void updateRoleResources(long roleId, List<Long> resourceIds);
     List<ResourceTO> getRoleResources(long roleId);
     PaginationResult getRole(PageRequest pr);
+    List<RoleTO> getAllRoles();
 }

@@ -33,7 +33,7 @@
             <thead>
             <tr>
                 <th field="id" width="10%" hidden="true">ID</th>
-                <%--<th field="code" width="10%">编码</th>--%>
+                <th field="code" width="20%">编码</th>
                 <th field="loginName" width="15%">登录名</th>
                 <th field="realName" width="10%">姓名</th>
                 <th field="phoneNo" width="15%">手机号</th>
@@ -94,20 +94,20 @@
             </tr>
             <tr>
                 <td style="text-align: right">手机号：</td>
-                <td><input name="phoneNo" class="easyui-textbox" id="newAdminPhone"></td>
+                <td><input name="phoneNo" class="easyui-textbox" required="true" id="newAdminPhone"></td>
             </tr>
             <tr>
                 <td style="text-align: right">Email：</td>
-                <td><input name="email" class="easyui-textbox" id="newAdminEmail"></td>
+                <td><input name="email" class="easyui-textbox" required="true" id="newAdminEmail"></td>
             </tr>
-            <tr>
-                <td style="text-align: right">密码：</td>
-                <td><input name="password" class="easyui-textbox" type="password" id="newAdminPassword"></td>
-            </tr>
-            <tr>
-                <td style="text-align: right">确认密码：</td>
-                <td><input name="passwordConfirm" class="easyui-textbox" type="password" id="newAdminPasswordConfirm"></td>
-            </tr>
+            <%--<tr>--%>
+                <%--<td style="text-align: right">密码：</td>--%>
+                <%--<td><input name="password" class="easyui-textbox" type="password" id="newAdminPassword"></td>--%>
+            <%--</tr>--%>
+            <%--<tr>--%>
+                <%--<td style="text-align: right">确认密码：</td>--%>
+                <%--<td><input name="passwordConfirm" class="easyui-textbox" type="password" id="newAdminPasswordConfirm"></td>--%>
+            <%--</tr>--%>
         </table>
     </form>
 </div>

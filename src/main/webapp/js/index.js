@@ -18,11 +18,10 @@ function saveMyselfPassword() {
     } else {
         var oldPassword = $('#oldPassword').val().trim();
         var newPassword = $('#newPassword').val().trim();
-        var newPasswordConfirm = $('#newPasswordConfirm').val().trim();
-        var data = {'oldPassword': oldPassword, 'newPassword': newPassword, 'newPasswordConfirm': newPasswordConfirm};
+        var data = {'oldPassword': oldPassword, 'newPassword': newPassword};
 
         $.ajax({
-            url: "/user/self_password_update",
+            url: "user/self_password_update",
             type: "post",
             data: data,
             success: function (data) {

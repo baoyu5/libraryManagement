@@ -9,34 +9,12 @@
 
     <http pattern="/css/**" security="none" />
     <http pattern="/images/**" security="none" />
-    <!--<http pattern="/fonts/**" security="none" />-->
     <http pattern="/js/**" security="none" />
-    <!--<http pattern="/**/*.html" security="none" />-->
     <http pattern="/uploaded/**" security="none" />
     <http pattern="/favicon.ico" security="none" />
     <http pattern="/login.html" security="none" />
     <http pattern="/user/verification_code_generation" security="none" />
-    <!--<http pattern="/api/generate_report" security="none" />-->
 
-    <!--<http pattern="/api/process_account_frozen_history_request_detail" security="none" />-->
-    <!--<http pattern="/api/process_account_unfrozen_history_request_detail" security="none" />-->
-    <!--<http pattern="/api/process_real_name_authentication_history_request_detail" security="none" />-->
-    <!--<http pattern="/api/process_withdrawal_history_request_detail" security="none" />-->
-    <!--<http pattern="/api/query_new_process_request" security="none" />-->
-
-    <!-- testing only -->
-    <!--<http pattern="/api/account_frozen_request" security="none" />-->
-    <!--<http pattern="/api/processes" security="none" />-->
-    <!--<http pattern="/api/processes_readonly" security="none" />-->
-    <!--<http pattern="/api/process_account_frozen_request_detail" security="none" />-->
-    <!--<http pattern="/api/process_account_frozen_request_check" security="none" />-->
-    <!--<http pattern="/api/account_unfrozen_request" security="none" />-->
-    <!--<http pattern="/api/process_account_unfrozen_request_check" security="none" />-->
-    <!--<http pattern="/api/process_account_unfrozen_request_detail" security="none" />-->
-    <!--<http pattern="/api/markets_name" security="none" />-->
-    <!--<http pattern="/api/transactions" security="none" />-->
-    <!--<http pattern="/api/transaction_detail" security="none" />-->
-    <!-- end testing only-->
 
     <beans:bean id="ajaxAwareLoginUrlAuthenticationEntryPoint"
                 class="com.sj.library.management.security.AjaxAwareLoginUrlAuthenticationEntryPoint"

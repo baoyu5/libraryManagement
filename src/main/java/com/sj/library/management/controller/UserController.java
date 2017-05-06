@@ -1,17 +1,21 @@
 package com.sj.library.management.controller;
 
 import com.sj.library.management.common.constant.AdminConstants;
+import com.sj.library.management.common.exception.PasswordNotNullException;
 import com.sj.library.management.entity.Resource;
 import com.sj.library.management.security.UserDetailsImpl;
 import com.sj.library.management.service.ResourceService;
+import com.sj.library.management.service.UserService;
 import com.sj.library.management.to.ResponseTO;
 import com.sj.library.management.to.UserTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
@@ -23,6 +27,8 @@ public class UserController extends BaseController {
 
     @Autowired
     private ResourceService resourceService;
+    @Autowired
+    private UserService userService;
 
     /**
      * 根据登录用户，加载所属普通资源
@@ -80,5 +86,17 @@ public class UserController extends BaseController {
         }
 
         return resources;
+    }
+
+    @RequestMapping(value = "/self_password_update", method = RequestMethod.POST)
+    @ResponseBody
+    public void userSelfPasswordUpdate(@RequestParam String oldPassword,
+                                       @RequestParam String newPassword,
+                                       UsernamePasswordAuthenticationToken token) {
+        UserDetailsImpl userDetails = (UserDetailsImpl)token.getPrincipal();
+        if (!StringUtils.hasText(oldPassword) || !StringUtils.hasText(newPassword)) {
+            throw new PasswordNotNullException();
+        }
+        userService.userPasswordUpdate(userDetails.getId(), oldPassword, newPassword);
     }
 }

@@ -27,6 +27,10 @@ public class User extends BaseEntity {
     @Column(name = "type", nullable = false)
     private int type;
 
+    // 用户编码
+    @Column(name = "code")
+    private String code;
+
     // 手机号
     @Column(name = "phone_no")
     private String phoneNo;
@@ -98,6 +102,14 @@ public class User extends BaseEntity {
         this.email = email;
     }
 
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -105,6 +117,7 @@ public class User extends BaseEntity {
                 ", realName='" + realName + '\'' +
                 ", password='" + password + '\'' +
                 ", type=" + type +
+                ", code='" + code + '\'' +
                 ", phoneNo='" + phoneNo + '\'' +
                 ", email='" + email + '\'' +
                 ", roles=" + roles +

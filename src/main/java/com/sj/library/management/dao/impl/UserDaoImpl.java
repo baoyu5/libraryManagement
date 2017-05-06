@@ -41,7 +41,7 @@ public class UserDaoImpl extends GenericDaoImpl<User, Long> implements UserDao {
     @Override
     public List<UserTO> getUsers(Map<String, Object> params, PageRequest pr) {
         StringBuilder sql = new StringBuilder("select id, login_name, real_name, phone_no, " +
-                "email, type " +
+                "email, type, code " +
                 "from t_user where is_deleted = false ");
         List paramList = new ArrayList();
         if (params.get("loginName") != null) {
@@ -70,7 +70,7 @@ public class UserDaoImpl extends GenericDaoImpl<User, Long> implements UserDao {
 
     @Override
     public List<RoleTO> getAdminRoles(long adminId) {
-        String sql = "select r.id, r.name, r.description from t_role r, t_user_role tur where tur.user_id = ? and tur.role_id = r.id order by r.id asc";
+        String sql = "select r.id, r.role_name, r.description from t_role r, t_user_role tur where tur.user_id = ? and tur.role_id = r.id order by r.id asc";
         return jdbcTemplate.query(sql, new Object[]{adminId}, new RoleRowMapper());
     }
 
