@@ -81,14 +81,6 @@ public class Resource extends BaseEntity {
         this.level = level;
     }
 
-    public String getState() {
-        return "open";
-    }
-
-    public void setState(String state) {
-//        this.state = state;
-    }
-
     @Transient
     public Map<String, String> getAttributes() {
         Map<String, String> attrMap = new HashMap<String, String>();

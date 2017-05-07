@@ -1,10 +1,10 @@
 package com.sj.library.management.common.util;
 
-import com.sj.library.management.common.exception.DateFormatException;
 import org.springframework.util.StringUtils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class DateUtil {
 
@@ -15,7 +15,7 @@ public class DateUtil {
                 SimpleDateFormat sdf = new SimpleDateFormat(pattern);
                 longTime = sdf.parse(date).getTime();
             } catch (ParseException e) {
-                throw new DateFormatException(e);
+                throw new RuntimeException("日期格式错误");
             }
         }
         return longTime;
@@ -29,9 +29,18 @@ public class DateUtil {
                 sdf.setLenient(false);
                 longTime = sdf.parse(date).getTime();
             } catch (ParseException e) {
-                throw new DateFormatException(e);
+                throw new RuntimeException("日期格式错误");
             }
         }
         return longTime;
+    }
+
+    public static String parseLongToDateStr(Long time, String pattern) {
+        if (time == null || time <= 0) {
+            return "";
+        }
+        Date date = new Date(time);
+        SimpleDateFormat sdf = new SimpleDateFormat(pattern);
+        return sdf.format(date);
     }
 }

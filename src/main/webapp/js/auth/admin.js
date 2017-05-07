@@ -183,7 +183,7 @@ function editPassword() {
         // $('#dlg4admin_password').dialog('open').dialog('center').dialog('setTitle','修改密码');
         $.messager.confirm("操作确认", "确认要重置该管理员登录密码吗？", function (r) {
             if (r) {
-                savePassword();
+                saveAdminPassword();
             }
         })
     } else {
@@ -191,7 +191,7 @@ function editPassword() {
     }
 }
 
-function savePassword() {
+function saveAdminPassword() {
     // var row = $('#dg4admin').datagrid('getSelected');
     //
     // var tips = [];
@@ -213,14 +213,15 @@ function savePassword() {
     // var password = $('#adminNewPassword').val().trim();
 
     $.ajax({
-        url: "admin/admin_password_update",
+        url: "admin/admin_password_reset",
         data:{'adminId':row['id']},
         type: "post",
         success: function () {
-            $('#dlg4admin_password').dialog('close');
+            showMessage("重置成功");
+            // $('#dlg4admin_password').dialog('close');
         },
         error: function (data) {
-            errorHandler(data, $("#dlg4admin_password_tips"));
+            errorHandler2(data);
         }
     });
 }

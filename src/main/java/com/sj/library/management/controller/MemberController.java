@@ -12,12 +12,10 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.ArrayList;
-import java.util.List;
 
 @Controller
-@RequestMapping(value = "/admin")
-public class AdminController extends BaseController {
+@RequestMapping(value = "/member")
+public class MemberController extends BaseController {
 
     @Autowired
     private UserService userService;
@@ -25,23 +23,23 @@ public class AdminController extends BaseController {
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseBody
     public void addAdmin(@Valid @RequestBody UserTO to) {
-        to.setType(UserType.ADMIN);
+        to.setType(UserType.USER);
         userService.addUser(to);
     }
 
     @RequestMapping(value = "/delete", method = RequestMethod.POST)
     @ResponseBody
     public void deleteAdmin(long id) {
-        userService.deleteUser(id, UserType.ADMIN);
+        userService.deleteUser(id, UserType.USER);
     }
 
     @RequestMapping(value = "/edit", method = RequestMethod.POST)
     @ResponseBody
     public void editAdmin(UserTO to) {
-        userService.editUser(to, UserType.ADMIN);
+        userService.editUser(to, UserType.USER);
     }
 
-    @RequestMapping(value = "/admins", method = RequestMethod.GET)
+    @RequestMapping(value = "/members", method = RequestMethod.GET)
     @ResponseBody
     public ResponseTO getAdmins(@RequestParam(required = false) String code,
                                 @RequestParam(required = false) String loginName,
@@ -57,31 +55,13 @@ public class AdminController extends BaseController {
         if (StringUtils.hasText(endTime)) {
             endLongTime = DateUtil.parseDateToLongStrict(endTime, DateConstants.YYYYMMDD_DASH);
         }
-        return success(userService.getUsers(code, loginName, realName, UserType.ADMIN, startLongTime, endLongTime, page, rows));
+        return success(userService.getUsers(code, loginName, realName, UserType.USER, startLongTime, endLongTime, page, rows));
     }
 
-    @RequestMapping(value = "/admin_roles_update", method = RequestMethod.POST)
+    @RequestMapping(value = "/member_password_reset", method = RequestMethod.POST)
     @ResponseBody
-    public void adminRolesUpdate(@RequestParam long adminId, @RequestParam String rolesIds) {
-        List<Long> ids = new ArrayList<Long>();
-        if (!StringUtils.isEmpty(rolesIds)) {
-            String[] roleIdStrs = rolesIds.split(",");
-            for (String s: roleIdStrs) {
-                ids.add(Long.valueOf(s));
-            }
-        }
-        userService.updateRoles(adminId, ids);
+    public void memberPasswordReset(@RequestParam long id) {
+        userService.userPasswordReset(id, UserType.USER);
     }
 
-    @RequestMapping(value = "/admin_password_reset", method = RequestMethod.POST)
-    @ResponseBody
-    public void adminPasswordUpdate(@RequestParam long adminId) {
-        userService.userPasswordReset(adminId, UserType.ADMIN);
-    }
-
-    @RequestMapping(value = "/admin_roles", method = RequestMethod.GET)
-    @ResponseBody
-    public ResponseTO adminRoles(@RequestParam long adminId) {
-        return success(userService.getAdminRoles(adminId));
-    }
 }

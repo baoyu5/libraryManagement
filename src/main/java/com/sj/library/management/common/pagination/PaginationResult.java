@@ -2,11 +2,6 @@ package com.sj.library.management.common.pagination;
 
 import java.util.List;
 
-/**
- * User: Rolandz
- * Date: 7/12/16
- * Time: 8:44 AM
- */
 public class PaginationResult {
     private long total;
     private List<? extends Object> rows;

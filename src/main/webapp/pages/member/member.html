@@ -1,0 +1,112 @@
+<script src="../../js/member/member.js" type="text/javascript"/>
+
+<div class="easyui-layout" style="height:100%;">
+    <div data-options="region:'north'" style="padding: 5px; height:120px;">
+        <div class="easyui-panel" title="查询条件" style="height: 100%;">
+            <form id="#qfm4_member" style="margin-bottom: 5px;">
+                <table class="table" style="margin-bottom: 0px; margin-top:5px;width: 800px;">
+                    <tr>
+                        <td style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
+                            <span>编码：</span>
+                            <input id="qUserCode" name="code" class="easyui-textbox"/>
+                        </td>
+                        <td style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
+                            <span>登录名：</span>
+                            <input id="qUserLoginName" name="loginName" class="easyui-textbox"/>
+                        </td>
+                        <td style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
+                            <span>姓名：</span>
+                            <input id="qUserRealName" name="realName" class="easyui-textbox"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
+                            <a href="#" class="easyui-linkbutton" onclick="queryMembers()"
+                               data-options="iconCls:'icon-search'" style="width:80px">查询</a>
+                            <a href="#" class="easyui-linkbutton" onclick="resetQueryMembers()"
+                               style="width:60px">重置</a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div data-options="region:'center'" style="padding: 5px;" id="optDiv">
+        <table id="dg4member" title="会员列表" >
+            <thead>
+            <tr>
+                <th field="id" width="10%" hidden="true">ID</th>
+                <th field="code" width="20%">编码</th>
+                <th field="loginName" width="15%">登录名</th>
+                <th field="realName" width="10%">姓名</th>
+                <th field="phoneNo" width="15%">手机号</th>
+                <th field="email" width="20%">Email</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="dlg4member" class="easyui-dialog" style="width:500px;height:360px;padding:10px 20px"
+     closed="true" buttons="#dlg-buttons-member" modal="true">
+    <div id="dlg4member_tips">
+        <!--<div class="alert alert-danger" role="alert"></div>-->
+    </div>
+    <form id="fm4member" method="post" novalidate style="margin-bottom: 0px;; margin-top: 10px">
+        <table class="table" style="margin-bottom: 0px;">
+            <tr>
+                <td style="text-align: right">登录名：</td>
+                <td><input name="loginName" class="easyui-textbox" editable="false" id="memberLoginName"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right">姓名：</td>
+                <td><input name="realName" class="easyui-textbox" editable="false" id="memberRealName"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right">手机号：</td>
+                <td><input name="phoneNo" class="easyui-textbox" id="memberPhone"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right">Email：</td>
+                <td><input name="email" class="easyui-textbox" id="memberEmail"><input name="id" hidden></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<div id="dlg-buttons-member">
+    <a href="javascript:void(0)" class="easyui-linkbutton c6" onclick="saveMember()" style="width:80px">提交</a>
+    <a href="javascript:void(0)" class="easyui-linkbutton" onclick="javascript:$('#dlg4member').dialog('close')" style="width:80px">取消</a>
+</div>
+
+<div id="dlg4_new_member" class="easyui-dialog" style="width:500px;height:360px;padding:10px 20px"
+     closed="true" buttons="#dlg-buttons-new-member" modal="true">
+    <div id="dlg4_new_member_tips">
+        <!--<div class="alert alert-danger" role="alert"></div>-->
+    </div>
+    <form id="fm4_new_member" method="post" novalidate style="margin-bottom: 0px;; margin-top: 10px">
+        <table class="table" style="margin-bottom: 0px;">
+            <tr>
+                <td style="text-align: right">登录名：</td>
+                <td><input name="loginName" class="easyui-textbox" required="true" id="newMemberLoginName"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right">姓名：</td>
+                <td><input name="realName" class="easyui-textbox" required="true" id="newMemberRealName"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right">手机号：</td>
+                <td><input name="phoneNo" class="easyui-textbox" required="true" id="newMemberPhone"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right">Email：</td>
+                <td><input name="email" class="easyui-textbox" required="true" id="newMemberEmail"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<div id="dlg-buttons-new-member">
+    <a href="javascript:void(0)" class="easyui-linkbutton c6" onclick="saveNewMember()" style="width:80px">提交</a>
+    <a href="javascript:void(0)" class="easyui-linkbutton" onclick="javascript:$('#dlg4_new_member').dialog('close')" style="width:80px">取消</a>
+</div>

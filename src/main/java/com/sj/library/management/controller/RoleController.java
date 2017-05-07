@@ -37,12 +37,6 @@ public class RoleController extends BaseController {
         }
     }
 
-//    @RequestMapping(value = "/all_roles", method = RequestMethod.GET)
-//    @ResponseBody
-//    public ResponseTO getAllRoles() {
-//        return success(roleService.getAllRoles());
-//    }
-
     @RequestMapping(value = "/delete", method = RequestMethod.POST)
     @ResponseBody
     public void deleteRole(@RequestParam long id) {

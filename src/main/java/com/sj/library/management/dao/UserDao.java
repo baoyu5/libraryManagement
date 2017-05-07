@@ -11,6 +11,8 @@ import java.util.Map;
 public interface UserDao extends GenericDao<User, Long> {
     User loadUserBy(String name);
     List<UserTO> getUsers(Map<String, Object> params, PageRequest pr);
+    long getUsersCount(Map<String, Object> params);
     long getUserCountByRoleId(long roleId);
     List<RoleTO> getAdminRoles(long adminId);
+    User loadUserBy(String code, int type);
 }

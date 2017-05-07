@@ -10,7 +10,7 @@ import java.util.List;
 @Table(name = "t_user")
 public class User extends BaseEntity {
 
-    @Column(name = "login_name", unique = true, nullable = false, length = 12)
+    @Column(name = "login_name", unique = true, nullable = false, length = 20)
     private String loginName;
 
     @Column(name = "real_name")
@@ -28,7 +28,7 @@ public class User extends BaseEntity {
     private int type;
 
     // 用户编码
-    @Column(name = "code")
+    @Column(name = "code", unique = true, nullable = false)
     private String code;
 
     // 手机号

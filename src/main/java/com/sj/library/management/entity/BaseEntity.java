@@ -5,11 +5,6 @@ import com.sj.library.management.dao.listener.GenericEntityListener;
 
 import javax.persistence.*;
 
-/**
- * User: Rolandz
- * Date: 7/10/16
- * Time: 6:23 AM
- */
 @MappedSuperclass
 @EntityListeners(value = {GenericEntityListener.class})
 public abstract class BaseEntity {

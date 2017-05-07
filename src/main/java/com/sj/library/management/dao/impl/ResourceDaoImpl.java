@@ -92,19 +92,6 @@ public class ResourceDaoImpl extends GenericDaoImpl<Resource, Long> implements R
         return jdbcTemplate.query(sql, new Object[]{roleId}, new ResourceRowMapper());
     }
 
-    // /**
-    //  * 针对流程类 资源，别无他用，url 也就是流程编码， description == 'process'
-    //  * url : 1000, 2000, 3000, 4000
-    //  *
-    //  * @param url
-    //  * @return
-    //  */
-    // @Override
-    // public Resource loadResourceByUrl(String url) {
-    //     String ql = "from Resource where deleted = false and url = ? and description = 'process'";
-    //     return query(ql, url).getSingleResult();
-    // }
-
     @Override
     public Resource loadResourceName(String name) {
         String ql = "from Resource where deleted = false and name = ?";

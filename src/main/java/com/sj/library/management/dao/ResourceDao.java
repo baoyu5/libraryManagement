@@ -15,9 +15,7 @@ public interface ResourceDao extends GenericDao<Resource, Long> {
 
     List<ResourceTO> getRoleResources(long roleId);
 
-     long getResourcesCount(Integer type, String resourceName);
-
-    // Resource loadResourceByUrl(String url);
+    long getResourcesCount(Integer type, String resourceName);
 
     Resource loadResourceName(String name);
 

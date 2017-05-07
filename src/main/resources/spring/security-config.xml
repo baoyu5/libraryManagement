@@ -10,7 +10,7 @@
     <http pattern="/css/**" security="none" />
     <http pattern="/images/**" security="none" />
     <http pattern="/js/**" security="none" />
-    <http pattern="/uploaded/**" security="none" />
+    <!--<http pattern="/uploaded/**" security="none" />-->
     <http pattern="/favicon.ico" security="none" />
     <http pattern="/login.html" security="none" />
     <http pattern="/user/verification_code_generation" security="none" />
@@ -29,7 +29,13 @@
 
         <intercept-url pattern="/" access="isAuthenticated" />
         <intercept-url pattern="/user/**" access="isAuthenticated" />
+
         <intercept-url pattern="/admin/**" access="hasPermission" />
+        <intercept-url pattern="/book/**" access="hasPermission" />
+        <intercept-url pattern="/role/**" access="hasPermission" />
+        <intercept-url pattern="/resource/**" access="hasPermission" />
+        <intercept-url pattern="/bookRecord/**" access="hasPermission" />
+        <intercept-url pattern="/member/**" access="hasPermission" />
 
         <form-login login-page="/login.html" login-processing-url="/api/login"
                     authentication-failure-handler-ref="simpleRestfulAuthenticationFailureHandler"

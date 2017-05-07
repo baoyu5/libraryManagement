@@ -28,7 +28,6 @@ public class UserTest {
         to.setPassword("111111");
         to.setType(UserType.ADMIN);
         to.setRealName("by");
-        to.setCardNo("12222");
         to.setPhoneNo("15757575757");
         userService.addUser(to);
     }

@@ -14,11 +14,6 @@ public class UserTO {
     @NotEmpty(message = "真实姓名不能为空")
     private String realName;
 
-//    @NotEmpty(message = "密码不能为空")
-//    @Length(min = 6, max = 12, message = "密码长度6-12")
-    private String password;
-
-    private String passwordConfirm;
     private String phoneNo;
     private String Email;
     private String code;
@@ -26,9 +21,6 @@ public class UserTO {
     private int type;
     private String typeDesc;
 
-    public String getPasswordConfirm() {
-        return passwordConfirm;
-    }
 
     public String getCode() {
         return code;
@@ -36,10 +28,6 @@ public class UserTO {
 
     public void setCode(String code) {
         this.code = code;
-    }
-
-    public void setPasswordConfirm(String passwordConfirm) {
-        this.passwordConfirm = passwordConfirm;
     }
 
     public String getTypeDesc() {
@@ -72,14 +60,6 @@ public class UserTO {
 
     public void setRealName(String realName) {
         this.realName = realName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public String getPhoneNo() {

@@ -39,7 +39,8 @@ public class UserDetailServiceImpl implements UserDetailsService {
 
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        if (AdminConstants.LOGIN_NAME.equals(username)) {
+        // only test
+        /*if (AdminConstants.LOGIN_NAME.equals(username)) {
             UserDetailsImpl details = new UserDetailsImpl();
             details.setPassword(AdminConstants.PASSWORD);
             details.setRealName(AdminConstants.REAL_NAME);
@@ -60,7 +61,7 @@ public class UserDetailServiceImpl implements UserDetailsService {
             details.setGrantedAuthoritySet(authorities);
 
             return details;
-        }
+        }*/
 
         User user;
 
@@ -77,6 +78,7 @@ public class UserDetailServiceImpl implements UserDetailsService {
         details.setUsername(user.getLoginName());
         details.setId(user.getId());
         details.setType(UserTypeFactory.getType(user.getType()));
+        details.setCode(user.getCode());
 
         Set<GrantedAuthority> authorities = new HashSet<GrantedAuthority>();
 

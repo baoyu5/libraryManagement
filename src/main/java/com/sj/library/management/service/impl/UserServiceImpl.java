@@ -6,6 +6,7 @@ import com.sj.library.management.common.exception.PasswordNotUpdateException;
 import com.sj.library.management.common.exception.UserExistsException;
 import com.sj.library.management.common.exception.UserNotExistException;
 import com.sj.library.management.common.pagination.PageRequest;
+import com.sj.library.management.common.pagination.PaginationResult;
 import com.sj.library.management.dao.RoleDao;
 import com.sj.library.management.dao.UserDao;
 import com.sj.library.management.entity.User;
@@ -54,15 +55,19 @@ public class UserServiceImpl implements UserService {
         user.setType(to.getType());
         user.setPassword(userDefaultPassword);
         user.setEmail(to.getEmail());
-        user.setCode(idFactory.getNewID("A"));
+        if (to.getType() == UserType.ADMIN) {
+            user.setCode(idFactory.getNewID("A"));
+        } else {
+            user.setCode(idFactory.getNewID("U"));
+        }
 
         userDao.persist(user);
         return user.getId();
     }
 
     @Override
-    public void deleteAdmin(long id) {
-        User user = getUser(id, UserType.ADMIN);
+    public void deleteUser(long id, int type) {
+        User user = getUser(id, type);
         user.setDeleted(true);
         if (user.getRoles() != null) {
             user.getRoles().clear();
@@ -72,8 +77,8 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    public void editAdmin(UserTO to) {
-        User user = getUser(to.getId(), UserType.ADMIN);
+    public void editUser(UserTO to, int type) {
+        User user = getUser(to.getId(), type);
 
         user.setEmail(to.getEmail());
         user.setPhoneNo(to.getPhoneNo());
@@ -91,8 +96,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void adminPasswordReset(long adminId) {
-        User user = getUser(adminId, UserType.ADMIN);
+    public void userPasswordReset(long adminId, int type) {
+        User user = getUser(adminId, type);
         user.setPassword(userDefaultPassword);
     }
 
@@ -117,8 +122,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<UserTO> getUsers(String loginName, String realName, int type, long startTime, long endTime, int page, int rows) {
+    public PaginationResult getUsers(String code, String loginName, String realName, int type, long startTime, long endTime, int page, int rows) {
         Map<String, Object> params = new HashMap();
+        if (StringUtils.hasText(code)) {
+            params.put("code", code);
+        }
         if (StringUtils.hasText(loginName)) {
             params.put("loginName", loginName);
         }
@@ -134,7 +142,12 @@ public class UserServiceImpl implements UserService {
         }
         PageRequest pr = PageRequest.newRequest(rows, page);
 
-        return userDao.getUsers(params, pr);
+        PaginationResult result = new PaginationResult();
+
+        result.setRows(userDao.getUsers(params, pr));
+        result.setTotal(userDao.getUsersCount(params));
+
+        return result;
     }
 
     private User getUser(long id, Integer type) {

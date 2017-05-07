@@ -49,15 +49,4 @@ public class RoleDaoImpl extends GenericDaoImpl<Role, Long> implements RoleDao {
         return query(ql).getResultList();
     }
 
-// /**
-    //  * 流程角色
-    //  * P10001, P10002, ...
-    //  * @return
-    //  */
-    // @Override
-    // public List<Role> loadRolesForProcess() {
-    //     String ql = "from Role where description like 'P_____'";
-    //     return query(ql).getResultList();
-    // }
-
 }

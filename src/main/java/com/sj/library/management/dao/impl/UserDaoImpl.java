@@ -44,6 +44,10 @@ public class UserDaoImpl extends GenericDaoImpl<User, Long> implements UserDao {
                 "email, type, code " +
                 "from t_user where is_deleted = false ");
         List paramList = new ArrayList();
+        if (params.get("code") != null) {
+            sql.append("and code = ? ");
+            paramList.add(params.get("code"));
+        }
         if (params.get("loginName") != null) {
             sql.append("and login_name like ? ");
             paramList.add("%" + params.get("loginName") + "%");
@@ -60,8 +64,9 @@ public class UserDaoImpl extends GenericDaoImpl<User, Long> implements UserDao {
             sql.append("and create_time < ? ");
             paramList.add(params.get("endTime"));
         }
+        sql.append("order by create_time desc ");
         if (pr != null) {
-            sql.append("order by create_time desc limit ?, ? ");
+            sql.append("limit ?, ? ");
             paramList.add((pr.getPageNumber() - 1) * pr.getPageRows());
             paramList.add(pr.getPageRows());
         }
@@ -69,9 +74,42 @@ public class UserDaoImpl extends GenericDaoImpl<User, Long> implements UserDao {
     }
 
     @Override
+    public long getUsersCount(Map<String, Object> params) {
+        StringBuilder sql = new StringBuilder("select count(1) from t_user where is_deleted = false ");
+        List paramList = new ArrayList();
+        if (params.get("code") != null) {
+            sql.append("and code = ? ");
+            paramList.add(params.get("code"));
+        }
+        if (params.get("loginName") != null) {
+            sql.append("and login_name like ? ");
+            paramList.add("%" + params.get("loginName") + "%");
+        }
+        if (params.get("realName") != null) {
+            sql.append("and real_name like ? ");
+            paramList.add("%" + params.get("realName") + "%");
+        }
+        if (params.get("startTime") != null) {
+            sql.append("and create_time >= ? ");
+            paramList.add(params.get("startTime"));
+        }
+        if (params.get("endTime") != null) {
+            sql.append("and create_time < ? ");
+            paramList.add(params.get("endTime"));
+        }
+        return jdbcTemplate.queryForObject(sql.toString(), paramList.toArray(), Long.class);
+    }
+
+    @Override
     public List<RoleTO> getAdminRoles(long adminId) {
         String sql = "select r.id, r.role_name, r.description from t_role r, t_user_role tur where tur.user_id = ? and tur.role_id = r.id order by r.id asc";
         return jdbcTemplate.query(sql, new Object[]{adminId}, new RoleRowMapper());
+    }
+
+    @Override
+    public User loadUserBy(String code, int type) {
+        String ql = "from User where deleted = false and code = ?1 and type = ?2 ";
+        return query(ql, code, type).getSingleResult();
     }
 
     @Override

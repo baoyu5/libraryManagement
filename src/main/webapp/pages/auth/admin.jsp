@@ -5,8 +5,12 @@
     <div data-options="region:'north'" style="padding: 5px; height:120px;">
         <div class="easyui-panel" title="查询条件" style="height: 100%;">
             <form id="#qfm4_admin" style="margin-bottom: 5px;">
-            <table class="table" style="margin-bottom: 0px; margin-top:5px;width: 600px;">
+            <table class="table" style="margin-bottom: 0px; margin-top:5px;width: 800px;">
                 <tr>
+                    <td style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
+                        <span>编码：</span>
+                        <input id="qAdminCode" name="code" class="easyui-textbox"/>
+                    </td>
                     <td style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
                         <span>登录名：</span>
                         <input id="qAdminLoginName" name="loginName" class="easyui-textbox"/>
@@ -17,7 +21,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2" style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
+                    <td colspan="3" style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
                         <a href="#" class="easyui-linkbutton" onclick="queryAdmins()"
                            data-options="iconCls:'icon-search'" style="width:80px">查询</a>
                         <a href="#" class="easyui-linkbutton" onclick="ResetQueryAdmins()"
@@ -67,7 +71,7 @@
             </tr>
             <tr>
                 <td style="text-align: right">Email：</td>
-                <td><input name="email" class="easyui-textbox" id="adminEmail"></td>
+                <td><input name="email" class="easyui-textbox" id="adminEmail"><input name="id" hidden></td>
             </tr>
         </table>
     </form>
@@ -139,25 +143,25 @@
     <a href="javascript:void(0)" class="easyui-linkbutton" onclick="javascript:$('#dlg4admin_roles').dialog('close')" style="width:80px">取消</a>
 </div>
 
-<div id="dlg4admin_password" class="easyui-dialog" style="width:480px;height:240px;padding:10px 20px"
-     closed="true" buttons="#dlg-buttons-admin-password" modal="true">
-    <div id="dlg4admin_password_tips">
-        <!--<div class="alert alert-danger" role="alert"></div>-->
-    </div>
-    <form id="fm4admin_password" method="post" novalidate style="margin-bottom: 0px;; margin-top: 10px">
-        <table class="table" style="margin-bottom: 0px;">
-            <tr>
-                <td style="text-align: right">新密码：</td>
-                <td><input type="password" name="password" id="adminNewPassword" class="easyui-textbox" required="true"></td>
-            </tr>
-            <tr>
-                <td style="text-align: right">确认新密码：</td>
-                <td><input type="password" name="passwordConfirm" id="adminNewPasswordConfirm" class="easyui-textbox"><input name="id" hidden></td>
-            </tr>
-        </table>
-    </form>
-</div>
-<div id="dlg-buttons-admin-password">
-    <a href="javascript:void(0)" class="easyui-linkbutton c6" onclick="savePassword()" style="width:80px">提交</a>
-    <a href="javascript:void(0)" class="easyui-linkbutton" onclick="javascript:$('#dlg4admin_password').dialog('close')" style="width:80px">取消</a>
-</div>
+<%--<div id="dlg4admin_password" class="easyui-dialog" style="width:480px;height:240px;padding:10px 20px"--%>
+     <%--closed="true" buttons="#dlg-buttons-admin-password" modal="true">--%>
+    <%--<div id="dlg4admin_password_tips">--%>
+        <%--<!--<div class="alert alert-danger" role="alert"></div>-->--%>
+    <%--</div>--%>
+    <%--<form id="fm4admin_password" method="post" novalidate style="margin-bottom: 0px;; margin-top: 10px">--%>
+        <%--<table class="table" style="margin-bottom: 0px;">--%>
+            <%--<tr>--%>
+                <%--<td style="text-align: right">新密码：</td>--%>
+                <%--<td><input type="password" name="password" id="adminNewPassword" class="easyui-textbox" required="true"></td>--%>
+            <%--</tr>--%>
+            <%--<tr>--%>
+                <%--<td style="text-align: right">确认新密码：</td>--%>
+                <%--<td><input type="password" name="passwordConfirm" id="adminNewPasswordConfirm" class="easyui-textbox"><input name="id" hidden></td>--%>
+            <%--</tr>--%>
+        <%--</table>--%>
+    <%--</form>--%>
+<%--</div>--%>
+<%--<div id="dlg-buttons-admin-password">--%>
+    <%--<a href="javascript:void(0)" class="easyui-linkbutton c6" onclick="savePassword()" style="width:80px">提交</a>--%>
+    <%--<a href="javascript:void(0)" class="easyui-linkbutton" onclick="javascript:$('#dlg4admin_password').dialog('close')" style="width:80px">取消</a>--%>
+<%--</div>--%>
