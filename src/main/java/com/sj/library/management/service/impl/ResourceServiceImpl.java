@@ -97,7 +97,6 @@ public class ResourceServiceImpl implements ResourceService {
         resource.setName(to.getName());
         resource.setUrl(to.getUrl());
 
-
         if (to.getParentId() > 0) {
             Resource parent = loadResource(to.getParentId());
             parent.getChildren().add(resource);

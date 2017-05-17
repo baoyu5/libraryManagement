@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <script src="../../js/auth/admin.js" type="text/javascript"/>
 
 <div class="easyui-layout" style="height:100%;">

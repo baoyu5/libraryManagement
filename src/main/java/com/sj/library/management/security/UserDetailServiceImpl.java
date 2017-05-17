@@ -40,7 +40,7 @@ public class UserDetailServiceImpl implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
         // only test
-        /*if (AdminConstants.LOGIN_NAME.equals(username)) {
+        if (AdminConstants.LOGIN_NAME.equals(username)) {
             UserDetailsImpl details = new UserDetailsImpl();
             details.setPassword(AdminConstants.PASSWORD);
             details.setRealName(AdminConstants.REAL_NAME);
@@ -61,10 +61,9 @@ public class UserDetailServiceImpl implements UserDetailsService {
             details.setGrantedAuthoritySet(authorities);
 
             return details;
-        }*/
+        }
 
         User user;
-
         try {
             user = userDao.loadUserBy(username);
             LOG.info("User{} login.", user);

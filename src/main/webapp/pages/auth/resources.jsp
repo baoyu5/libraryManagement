@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <script src="../../js/utils.js" type="text/javascript"/>
 <script src="../../js/auth/resources.js" type="text/javascript"/>
 <style>
