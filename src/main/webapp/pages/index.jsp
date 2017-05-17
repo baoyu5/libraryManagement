@@ -2,7 +2,7 @@
 <%@ page import="com.sj.library.management.security.UserDetailsImpl" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<%--<html>--%>
 <head>
     <meta charset="UTF-8">
     <title>图书馆管理系统</title>

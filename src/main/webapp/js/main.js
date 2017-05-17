@@ -101,39 +101,7 @@ function load() {
         }
     });
 
-
-    // $("#tt").tabs({
-    //     onClose: function (title, index) {
-    //         var dialogs = [];
-    //         if (title == "资源管理") {
-    //             dialogs.push('dlg4resources');
-    //             dialogs.push('dlg4roles_resources');
-    //         }
-    //         if (title == "操作员管理") {
-    //             dialogs.push('dlg4admins_password');
-    //             dialogs.push('dlg4admins_roles');
-    //             dialogs.push('dlg4admins');
-    //         }
-    //         if (title == "角色管理") {
-    //             dialogs.push('dlg4roles');
-    //             dialogs.push('dlg4roles_resources');
-    //         }
-    //
-    //         dialogDestroy(dialogs);
-    //     }
-    // });
 }
-
-// function dialogDestroy(dialogs) {
-//     for (var i = 0; i < dialogs.length; i++) {
-//         try {
-//             $('#' + dialogs[i]).dialog('destroy')
-//         } catch (e) {
-//             console.error(e);
-//         }
-//     }
-// }
-
 
 function collapseAll() {
     $('#menuTree').tree('collapseAll');
@@ -296,6 +264,7 @@ sysCommon.api.prototype = {
     },
     // 保存修改
     update: function (cb) {
+        console.log("dsadas" + this.idName);
         $.ajax({
             url: this.editUri,
             // 为了兼容某些不合规则的接口

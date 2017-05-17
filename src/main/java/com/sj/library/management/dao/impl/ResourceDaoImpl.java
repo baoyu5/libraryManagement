@@ -110,8 +110,8 @@ public class ResourceDaoImpl extends GenericDaoImpl<Resource, Long> implements R
 
     @Override
     public void deleteResourceMapping(long resourceId) {
-        String sql = "delete from t_resource_mapping where child_id = ? ";
-        jdbcTemplate.update(sql, resourceId);
+        String sql = "delete from t_resource_mapping where child_id = ? or parent_id = ? ";
+        jdbcTemplate.update(sql, resourceId, resourceId);
     }
 
 }

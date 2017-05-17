@@ -37,7 +37,7 @@ public class AdminController extends BaseController {
 
     @RequestMapping(value = "/edit", method = RequestMethod.POST)
     @ResponseBody
-    public void editAdmin(UserTO to) {
+    public void editAdmin(@RequestBody UserTO to) {
         userService.editUser(to, UserType.ADMIN);
     }
 

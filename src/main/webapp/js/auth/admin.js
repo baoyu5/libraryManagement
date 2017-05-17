@@ -25,7 +25,7 @@ $(document).ready(
                 editRoles();
             }
         }, {
-            text: '修改管理员密码',
+            text: '重置管理员密码',
             handler: function () {
                 editPassword();
             }
@@ -36,7 +36,7 @@ $(document).ready(
             }
         }];
 
-        var urls = ['/admin/add', '/admin/edit', '/admin/admin_roles_update', '/admin/admin_password_update', '/admin/delete'];
+        var urls = ['/admin/add', '/admin/edit', '/admin/admin_roles_update', '/admin/admin_password_reset', '/admin/delete'];
 
         $('#dg4admin').datagrid({
             title: '管理员列表',
@@ -192,7 +192,7 @@ function editPassword() {
 }
 
 function saveAdminPassword() {
-    // var row = $('#dg4admin').datagrid('getSelected');
+    var row = $('#dg4admin').datagrid('getSelected');
     //
     // var tips = [];
     // var count = 0;
@@ -254,6 +254,6 @@ function queryAdmins(){
     adminsApi.setQueryParams();
 }
 
-function ResetQueryAdmins() {
+function resetQueryAdmins() {
     adminsApi.unsetQueryParams();
 }

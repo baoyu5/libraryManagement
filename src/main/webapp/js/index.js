@@ -65,8 +65,3 @@ $(document).ajaxError(function (event, jqXHR, ajaxSettings, thrownError) {
         return;
     }
 });
-
-$.ajaxSetup({
-    url: "/api/*",
-    global: true,
-});

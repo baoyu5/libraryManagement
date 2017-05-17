@@ -5,7 +5,7 @@
     <div data-options="region:'north'" style="padding: 5px; height:120px;">
         <div class="easyui-panel" title="查询条件" style="height: 100%;">
             <form id="#qfm4_admin" style="margin-bottom: 5px;">
-            <table class="table" style="margin-bottom: 0px; margin-top:5px;width: 800px;">
+            <table class="table" style="margin-bottom: 0px; margin-top:5px;width: 900px;">
                 <tr>
                     <td style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
                         <span>编码：</span>
@@ -24,7 +24,7 @@
                     <td colspan="3" style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
                         <a href="#" class="easyui-linkbutton" onclick="queryAdmins()"
                            data-options="iconCls:'icon-search'" style="width:80px">查询</a>
-                        <a href="#" class="easyui-linkbutton" onclick="ResetQueryAdmins()"
+                        <a href="#" class="easyui-linkbutton" onclick="resetQueryAdmins()"
                            style="width:60px">重置</a>
                     </td>
                 </tr>
