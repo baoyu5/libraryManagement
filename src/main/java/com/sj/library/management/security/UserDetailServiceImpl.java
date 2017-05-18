@@ -65,7 +65,7 @@ public class UserDetailServiceImpl implements UserDetailsService {
         User user;
         try {
             user = userDao.loadUserBy(username);
-            LOG.info("User{} login.", user.getLoginName());
+            LOG.info("User({}) login.", user.getLoginName());
         } catch (NoResultException e) {
             throw new UsernameNotFoundException(e.getMessage());
         }

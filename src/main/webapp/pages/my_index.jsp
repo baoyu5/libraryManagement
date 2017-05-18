@@ -1,7 +1,7 @@
 <%@ page import="org.springframework.security.core.context.SecurityContext" %>
 <%@ page import="com.sj.library.management.security.UserDetailsImpl" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8"%>
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE HTML>
 <html>
 <head>
     <meta charset="UTF-8">
