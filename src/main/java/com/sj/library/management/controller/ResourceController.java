@@ -1,21 +1,15 @@
 package com.sj.library.management.controller;
 
-import com.sj.library.management.common.constant.AdminConstants;
 import com.sj.library.management.common.pagination.PageRequest;
 import com.sj.library.management.entity.Resource;
-import com.sj.library.management.security.UserDetailsImpl;
 import com.sj.library.management.service.ResourceService;
 import com.sj.library.management.to.ResourceTO;
 import com.sj.library.management.to.ResponseTO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.ArrayList;
 import java.util.List;
 
 @Controller
