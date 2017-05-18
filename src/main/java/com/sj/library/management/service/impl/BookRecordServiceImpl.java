@@ -3,9 +3,7 @@ package com.sj.library.management.service.impl;
 import com.sj.library.management.common.constant.BookRecordStatus;
 import com.sj.library.management.common.constant.BookStatus;
 import com.sj.library.management.common.constant.UserType;
-import com.sj.library.management.common.exception.BookNotExistsException;
-import com.sj.library.management.common.exception.BookRecordNotExistsException;
-import com.sj.library.management.common.exception.UserNotExistException;
+import com.sj.library.management.common.exception.*;
 import com.sj.library.management.common.pagination.PageRequest;
 import com.sj.library.management.common.pagination.PaginationResult;
 import com.sj.library.management.dao.BookDao;
@@ -54,6 +52,9 @@ public class BookRecordServiceImpl implements BookRecordService {
         if (book == null) {
             throw new BookNotExistsException();
         }
+        if (book.getStatus() != BookStatus.RETURN) {
+            throw new BookInUsedException();
+        }
 
         BookRecord bookRecord = new BookRecord();
 
@@ -74,6 +75,10 @@ public class BookRecordServiceImpl implements BookRecordService {
     @Override
     public void returnBook(long bookRecordId) {
         BookRecord bookRecord = loadBookRecord(bookRecordId);
+
+        if (bookRecord.getStatus() == BookRecordStatus.RETURN) {
+            throw new BookIsReturnException();
+        }
 
         bookRecord.setStatus(BookRecordStatus.RETURN);
         bookRecord.setReturnTime(System.currentTimeMillis());

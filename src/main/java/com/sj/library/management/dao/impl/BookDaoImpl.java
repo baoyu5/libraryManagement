@@ -26,8 +26,8 @@ public class BookDaoImpl extends GenericDaoImpl<Book, Long> implements BookDao {
 
     @Override
     public List<BookTO> getBooksBy(Map<String, Object> params, PageRequest pr) {
-        StringBuffer sql = new StringBuffer("select id, code, name, auth, position " +
-                "from t_book where id_deleted = false ");
+        StringBuffer sql = new StringBuffer("select id, code, name, auth, position, status " +
+                "from t_book where is_deleted = false ");
         List paramList = new ArrayList();
 
         if (params.get("code") != null) {
@@ -55,7 +55,7 @@ public class BookDaoImpl extends GenericDaoImpl<Book, Long> implements BookDao {
     @Override
     public long getBooksCountBy(Map<String, Object> params) {
         StringBuffer sql = new StringBuffer("select count(1) " +
-                "from t_book where id_deleted = false ");
+                "from t_book where is_deleted = false ");
         List paramList = new ArrayList();
 
         if (params.get("code") != null) {

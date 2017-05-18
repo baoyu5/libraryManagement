@@ -40,8 +40,9 @@
                 <th field="code" width="20%">编码</th>
                 <th field="loginName" width="15%">登录名</th>
                 <th field="realName" width="10%">姓名</th>
-                <th field="phoneNo" width="15%">手机号</th>
+                <th field="phoneNo" width="13%">手机号</th>
                 <th field="email" width="20%">Email</th>
+                <th field="time" width="20%">注册时间</th>
             </tr>
             </thead>
             <tbody>

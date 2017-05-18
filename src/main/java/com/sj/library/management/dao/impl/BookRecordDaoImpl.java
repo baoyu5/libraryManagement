@@ -26,7 +26,7 @@ public class BookRecordDaoImpl extends GenericDaoImpl<BookRecord, Long> implemen
 
     @Override
     public List<BookRecordTO> getBookRecodesBy(Map<String, Object> params, PageRequest pr) {
-        StringBuffer sql = new StringBuffer("select * from t_book_record where id_deleted = false ");
+        StringBuffer sql = new StringBuffer("select * from t_book_record where is_deleted = false ");
         List paramList = new ArrayList();
 
         if (params.get("bookCode") != null) {
@@ -45,7 +45,7 @@ public class BookRecordDaoImpl extends GenericDaoImpl<BookRecord, Long> implemen
             sql.append("and user_name like ? ");
             paramList.add("%" + params.get("userName") + "%");
         }
-        if (params.get("UserRealName") != null) {
+        if (params.get("userRealName") != null) {
             sql.append("and user_real_name like ? ");
             paramList.add("%" + params.get("userRealName") + "");
         }
@@ -70,7 +70,7 @@ public class BookRecordDaoImpl extends GenericDaoImpl<BookRecord, Long> implemen
 
     @Override
     public long getBookRecordsCount(Map<String, Object> params) {
-        StringBuffer sql = new StringBuffer("select count(1) from t_book_record where id_deleted = false ");
+        StringBuffer sql = new StringBuffer("select count(1) from t_book_record where is_deleted = false ");
         List paramList = new ArrayList();
 
         if (params.get("bookCode") != null) {
@@ -89,7 +89,7 @@ public class BookRecordDaoImpl extends GenericDaoImpl<BookRecord, Long> implemen
             sql.append("and user_name like ? ");
             paramList.add("%" + params.get("userName") + "%");
         }
-        if (params.get("UserRealName") != null) {
+        if (params.get("userRealName") != null) {
             sql.append("and user_real_name like ? ");
             paramList.add("%" + params.get("userRealName") + "");
         }

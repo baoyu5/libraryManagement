@@ -94,10 +94,10 @@
 
     <!--超时时间-->
     <session-config>
-        <session-timeout>15</session-timeout>
+        <session-timeout>600</session-timeout>
     </session-config>
 
     <welcome-file-list>
-        <welcome-file>pages/index.jsp</welcome-file>
+        <welcome-file>pages/my_index.jsp</welcome-file>
     </welcome-file-list>
 </web-app>

@@ -20,7 +20,15 @@ public class UserTO {
 
     private int type;
     private String typeDesc;
+    private String time;
 
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
 
     public String getCode() {
         return code;

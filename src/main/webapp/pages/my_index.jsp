@@ -1,8 +1,8 @@
 <%@ page import="org.springframework.security.core.context.SecurityContext" %>
 <%@ page import="com.sj.library.management.security.UserDetailsImpl" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"%>
 <!DOCTYPE html>
-<%--<html>--%>
+<html>
 <head>
     <meta charset="UTF-8">
     <title>图书馆管理系统</title>
@@ -29,8 +29,6 @@
 
     <script>
         loginUser = "<%=details.getUsername()%>";
-        <%--authorities = JSON.stringify(<%=details.getAuthorities()%>);--%>
-        <%--console.log(authorities);--%>
     </script>
 </head>
 <body>
@@ -75,11 +73,10 @@
         </div>
     </div>
     <div data-options="region:'south'" style="height:40px; background-color: #f2f2f2">
-        <div style="padding-top: 10px; padding-left: 10px; text-align: center">@ 2016  ******</div>
+        <div style="padding-top: 10px; padding-left: 10px; text-align: center">@ 2017  ******</div>
     </div>
 </div>
-</body>
-</html>
+
 
 <div id="dlg4_myself_password" class="easyui-dialog" style="width:480px;height:260px;padding:5px 20px 0 20px;"
      closed="true"
@@ -109,3 +106,6 @@
     <a href="javascript:void(0)" class="easyui-linkbutton"
        onclick="javascript:$('#dlg4_myself_password').dialog('close')" style="width:80px">取消</a>
 </div>
+
+</body>
+</html>

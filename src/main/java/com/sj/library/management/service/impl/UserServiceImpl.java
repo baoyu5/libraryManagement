@@ -2,13 +2,13 @@ package com.sj.library.management.service.impl;
 
 import com.sj.library.management.common.constant.UserType;
 import com.sj.library.management.common.exception.OldPasswordErrorException;
-import com.sj.library.management.common.exception.PasswordNotUpdateException;
 import com.sj.library.management.common.exception.UserExistsException;
 import com.sj.library.management.common.exception.UserNotExistException;
 import com.sj.library.management.common.pagination.PageRequest;
 import com.sj.library.management.common.pagination.PaginationResult;
 import com.sj.library.management.dao.RoleDao;
 import com.sj.library.management.dao.UserDao;
+import com.sj.library.management.entity.Role;
 import com.sj.library.management.entity.User;
 import com.sj.library.management.service.UserService;
 import com.sj.library.management.to.RoleTO;
@@ -16,12 +16,12 @@ import com.sj.library.management.to.UserTO;
 import me.anyteam.commons.id.IDFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
 import javax.persistence.NoResultException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -39,6 +39,8 @@ public class UserServiceImpl implements UserService {
 
     @Value("${user.default.password}")
     private String userDefaultPassword;
+    @Value("${user.role.id}")
+    private long userRoleId;
 
     @Override
     public long addUser(UserTO to) {
@@ -61,6 +63,10 @@ public class UserServiceImpl implements UserService {
             user.setCode(idFactory.getNewID("U"));
         }
 
+        List<Role> list = new ArrayList<>();
+        list.add(roleDao.load(userRoleId));
+        user.setRoles(list);
+
         userDao.persist(user);
         return user.getId();
     }
@@ -80,6 +86,8 @@ public class UserServiceImpl implements UserService {
     public void editUser(UserTO to, int type) {
         User user = getUser(to.getId(), type);
 
+        user.setLoginName(to.getLoginName());
+        user.setRealName(to.getRealName());
         user.setEmail(to.getEmail());
         user.setPhoneNo(to.getPhoneNo());
     }

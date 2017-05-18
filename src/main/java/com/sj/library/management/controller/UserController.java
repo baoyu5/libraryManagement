@@ -119,7 +119,7 @@ public class UserController extends BaseController {
         return success(bookService.loadBookBy(code, bookName, auth, PageRequest.newRequest(rows, page)));
     }
 
-    @RequestMapping(value = "/book_records", method = RequestMethod.POST)
+    @RequestMapping(value = "/book_records", method = RequestMethod.GET)
     @ResponseBody
     public ResponseTO getBookRecords(@RequestParam(required = false) String bookCode,
                                      @RequestParam(required = false) String bookName,

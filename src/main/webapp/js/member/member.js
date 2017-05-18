@@ -10,9 +10,9 @@ var membersApi = new sysCommon.api('member', {
 $(document).ready(
     function() {
         var toolbarAll = [{
-            text: '添加会员',
+            text: '注册会员',
             handler: function () {
-                membersApi.create('添加会员');
+                membersApi.create('注册会员');
             }
         }, {
             text: '修改会员',
@@ -145,9 +145,27 @@ function saveMemberPassword() {
 }
 
 function queryMembers(){
-    membersApi.setQueryParams();
+    var params = {};
+
+    var code = $('#qUserCode').val();
+    var loginName = $('#qUserLoginName').val();
+    var realName = $('#qUserRealName').val();
+
+    params.code = code;
+    params.loginName = loginName;
+    params.realName = realName;
+
+    $('#dg4member').datagrid({
+        'url': 'member/members?' + $.param(params),
+        pageNumber: 1
+    });
+    paginationConfig($('#dg4member').datagrid('getPager'));
+    // membersApi.setQueryParams();
 }
 
 function resetQueryMembers() {
-    membersApi.unsetQueryParams();
+    $('#qUserCode').textbox('reset');
+    $('#qUserLoginName').textbox('reset');
+    $('#qUserRealName').textbox('reset');
+    // membersApi.unsetQueryParams();
 }

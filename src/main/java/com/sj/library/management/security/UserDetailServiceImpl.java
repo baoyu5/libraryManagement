@@ -40,33 +40,33 @@ public class UserDetailServiceImpl implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
         // only test
-        if (AdminConstants.LOGIN_NAME.equals(username)) {
-            UserDetailsImpl details = new UserDetailsImpl();
-            details.setPassword(AdminConstants.PASSWORD);
-            details.setRealName(AdminConstants.REAL_NAME);
-            details.setUsername(AdminConstants.LOGIN_NAME);
-            details.setId(0);
-            details.setType(UserTypeFactory.getType(UserType.ADMIN));
-
-            Set<GrantedAuthority> authorities = new HashSet<GrantedAuthority>();
-
-            for (Role r : roleDao.loadRoles()) {
-                for (Resource resource : r.getResources()) {
-                    if (!StringUtils.isEmpty(resource.getUrl())) {
-                        authorities.add(GrantedAuthorityFactory.newAuthority(resource.getUrl()));
-                    }
-                }
-            }
-
-            details.setGrantedAuthoritySet(authorities);
-
-            return details;
-        }
+//        if (AdminConstants.LOGIN_NAME.equals(username)) {
+//            UserDetailsImpl details = new UserDetailsImpl();
+//            details.setPassword(AdminConstants.PASSWORD);
+//            details.setRealName(AdminConstants.REAL_NAME);
+//            details.setUsername(AdminConstants.LOGIN_NAME);
+//            details.setId(0);
+//            details.setType(UserTypeFactory.getType(UserType.ADMIN));
+//
+//            Set<GrantedAuthority> authorities = new HashSet<GrantedAuthority>();
+//
+//            for (Role r : roleDao.loadRoles()) {
+//                for (Resource resource : r.getResources()) {
+//                    if (!StringUtils.isEmpty(resource.getUrl())) {
+//                        authorities.add(GrantedAuthorityFactory.newAuthority(resource.getUrl()));
+//                    }
+//                }
+//            }
+//
+//            details.setGrantedAuthoritySet(authorities);
+//
+//            return details;
+//        }
 
         User user;
         try {
             user = userDao.loadUserBy(username);
-            LOG.info("User{} login.", user);
+            LOG.info("User{} login.", user.getLoginName());
         } catch (NoResultException e) {
             throw new UsernameNotFoundException(e.getMessage());
         }

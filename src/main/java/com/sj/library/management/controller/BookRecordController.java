@@ -8,13 +8,10 @@ import com.sj.library.management.to.ResponseTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping(value = "/bookRecord")
+@RequestMapping(value = "/book_record")
 public class BookRecordController extends BaseController {
 
     @Autowired
@@ -32,7 +29,7 @@ public class BookRecordController extends BaseController {
         bookRecordService.returnBook(bookRecordId);
     }
 
-    @RequestMapping(value = "/book_records", method = RequestMethod.POST)
+    @RequestMapping(value = "/book_records", method = RequestMethod.GET)
     @ResponseBody
     public ResponseTO getBookRecords(@RequestParam(required = false) String bookCode,
                                      @RequestParam(required = false) String bookName,

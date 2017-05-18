@@ -1,0 +1,47 @@
+<script src="../../js/member/member_book_record.js" type="text/javascript"/>
+
+<div class="easyui-layout" style="height:100%;">
+    <div data-options="region:'north'" style="padding: 5px; height:120px;">
+        <div class="easyui-panel" title="查询条件" style="height: 100%;">
+            <form id="#qfm4_memberBookRecord" style="margin-bottom: 5px;">
+                <table class="table" style="margin-bottom: 0px; margin-top:5px;width: 900px;">
+                    <tr>
+                        <td style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
+                            <span>书籍编码：</span>
+                            <input id="qMemberRecordBookCode" name="bookCode" class="easyui-textbox"/>
+                        </td>
+                        <td style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
+                            <span>书名：</span>
+                            <input id="qMemberRecordBookName" name="bookName" class="easyui-textbox"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
+                            <a href="#" class="easyui-linkbutton" onclick="queryMemberBookRecords()"
+                               data-options="iconCls:'icon-search'" style="width:80px">查询</a>
+                            <a href="#" class="easyui-linkbutton" onclick="resetQueryMemberBookRecords()"
+                               style="width:60px">重置</a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div data-options="region:'center'" style="padding: 5px;" id="optDiv">
+        <table id="dg4memberBookRecord" title="借书记录" >
+            <thead>
+            <tr>
+                <th field="id" width="10%" hidden="true">ID</th>
+                <th field="bookCode" width="15%">书籍编码</th>
+                <th field="bookName" width="15%">书名</th>
+                <th field="statusDesc" width="10%">状态</th>
+                <th field="createTime" width="10%">借书时间</th>
+                <th field="returnTime" width="10%">归还时间</th>
+                <th field="status" width="20%" hidden="true">状态</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>

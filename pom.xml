@@ -5,7 +5,7 @@
     <groupId>com.sj</groupId>
     <artifactId>library-management</artifactId>
     <packaging>war</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <name>library-management</name>
     <url>http://maven.apache.org</url>
@@ -197,7 +197,7 @@
                 <configuration>
                     <source>1.7</source>
                     <target>1.7</target>
-                    <encoding>UTF8</encoding>
+                    <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
             <plugin>

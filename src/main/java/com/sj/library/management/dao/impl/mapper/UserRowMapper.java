@@ -1,6 +1,8 @@
 package com.sj.library.management.dao.impl.mapper;
 
+import com.sj.library.management.common.constant.DateConstants;
 import com.sj.library.management.common.constant.UserTypeFactory;
+import com.sj.library.management.common.util.DateUtil;
 import com.sj.library.management.to.UserTO;
 import org.springframework.jdbc.core.RowMapper;
 
@@ -21,6 +23,7 @@ public class UserRowMapper implements RowMapper<UserTO> {
         to.setType(resultSet.getInt("type"));
         to.setTypeDesc(UserTypeFactory.getType(resultSet.getInt("type")));
         to.setCode(resultSet.getString("code"));
+        to.setTime(DateUtil.parseLongToDateStr(resultSet.getLong("create_time"), DateConstants.DETAILED_TIME_DASH));
 
         return to;
     }

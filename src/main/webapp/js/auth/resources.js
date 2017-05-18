@@ -196,17 +196,17 @@ function resourcesQuery() {
     params.type = $('#resource_details_type').combobox('getValue').trim();
 
     //资源查询限制特殊字符的输入li
-    var reg = /^[a-zA-Z0-9\u4e00-\u9fa5]{0,}$/;
-    var sourse = $('#resource_name').val();
-    if (!reg.test(sourse)){
-        return showMessage('不能包含特殊字符（下划线、连接符除外）！');
-    }else{
-        $('#dg4resource').datagrid({
-            'url': 'resource/resources?' + $.param(params),
-            pageNumber: 1
-        });
-        paginationConfig($('#dg4resource').datagrid('getPager'));
-    }
+    // var reg = /^[a-zA-Z0-9\u4e00-\u9fa5]{0,}$/;
+    // var sourse = $('#resource_name').val();
+    // if (!reg.test(sourse)){
+    //     return showMessage('不能包含特殊字符（下划线、连接符除外）！');
+    // }else{
+    $('#dg4resource').datagrid({
+        'url': 'resource/resources?' + $.param(params),
+        pageNumber: 1
+    });
+    paginationConfig($('#dg4resource').datagrid('getPager'));
+    // }
 }
 
 // 重置查询条件

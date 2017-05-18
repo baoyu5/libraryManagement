@@ -41,12 +41,16 @@ public class UserDaoImpl extends GenericDaoImpl<User, Long> implements UserDao {
     @Override
     public List<UserTO> getUsers(Map<String, Object> params, PageRequest pr) {
         StringBuilder sql = new StringBuilder("select id, login_name, real_name, phone_no, " +
-                "email, type, code " +
+                "email, type, code, create_time " +
                 "from t_user where is_deleted = false ");
         List paramList = new ArrayList();
         if (params.get("code") != null) {
             sql.append("and code = ? ");
             paramList.add(params.get("code"));
+        }
+        if (params.get("type") != null) {
+            sql.append("and type = ? ");
+            paramList.add(params.get("type"));
         }
         if (params.get("loginName") != null) {
             sql.append("and login_name like ? ");
@@ -80,6 +84,10 @@ public class UserDaoImpl extends GenericDaoImpl<User, Long> implements UserDao {
         if (params.get("code") != null) {
             sql.append("and code = ? ");
             paramList.add(params.get("code"));
+        }
+        if (params.get("type") != null) {
+            sql.append("and type = ? ");
+            paramList.add(params.get("type"));
         }
         if (params.get("loginName") != null) {
             sql.append("and login_name like ? ");

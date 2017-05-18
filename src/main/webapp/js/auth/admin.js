@@ -251,9 +251,27 @@ function saveRoles(){
 }
 
 function queryAdmins(){
-    adminsApi.setQueryParams();
+    var params = {};
+
+    var code = $('#qAdminCode').val();
+    var loginName = $('#qAdminLoginName').val();
+    var realName = $('#qAdminRealName').val();
+
+    params.code = code;
+    params.loginName = loginName;
+    params.realName = realName;
+
+    $('#dg4admin').datagrid({
+        'url': 'admin/admins?' + $.param(params),
+        pageNumber: 1
+    });
+    paginationConfig($('#dg4admin').datagrid('getPager'));
+    // adminsApi.setQueryParams();
 }
 
 function resetQueryAdmins() {
-    adminsApi.unsetQueryParams();
+    $('#qAdminCode').textbox('reset');
+    $('#qAdminLoginName').textbox('reset');
+    $('#qAdminRealName').textbox('reset');
+    // adminsApi.unsetQueryParams();
 }

@@ -264,7 +264,6 @@ sysCommon.api.prototype = {
     },
     // 保存修改
     update: function (cb) {
-        console.log("dsadas" + this.idName);
         $.ajax({
             url: this.editUri,
             // 为了兼容某些不合规则的接口
@@ -341,6 +340,7 @@ sysCommon.api.prototype = {
     },
     setQueryParams: function () {
         this.query = $(this.getQueryForm()).serialize().trim();
+        console.log($(this.getQueryForm()).serialize());
         $('#dg4' + this.idName).datagrid({
             'url': (-1 == this.loadUri.search(/\?/)) ? (this.loadUri + '?' + this.query) : (this.loadUri + this.query),
             pageNumber: 1

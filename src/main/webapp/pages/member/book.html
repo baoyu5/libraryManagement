@@ -1,0 +1,105 @@
+<script src="../../js/member/book.js" type="text/javascript"/>
+
+<div class="easyui-layout" style="height:100%;">
+    <div data-options="region:'north'" style="padding: 5px; height:120px;">
+        <div class="easyui-panel" title="查询条件" style="height: 100%;">
+            <form id="#qfm4_book" style="margin-bottom: 5px;">
+                <table class="table" style="margin-bottom: 0px; margin-top:5px;width: 900px;">
+                    <tr>
+                        <td style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
+                            <span>编码：</span>
+                            <input id="qBookCode" name="code" class="easyui-textbox"/>
+                        </td>
+                        <td style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
+                            <span>书名：</span>
+                            <input id="qBookName" name="bookName" class="easyui-textbox"/>
+                        </td>
+                        <td style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
+                            <span>作者：</span>
+                            <input id="qBookAuth" name="auth" class="easyui-textbox"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="border-top: 0px;padding-top: 5px;padding-bottom: 5px;">
+                            <a href="#" class="easyui-linkbutton" onclick="queryBooks()"
+                               data-options="iconCls:'icon-search'" style="width:80px">查询</a>
+                            <a href="#" class="easyui-linkbutton" onclick="resetQueryBooks()"
+                               style="width:60px">重置</a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div data-options="region:'center'" style="padding: 5px;" id="optDiv">
+        <table id="dg4book" title="书籍列表" >
+            <thead>
+            <tr>
+                <th field="id" width="10%" hidden="true">ID</th>
+                <th field="code" width="20%">编码</th>
+                <th field="bookName" width="15%">书名</th>
+                <th field="auth" width="10%">作者</th>
+                <th field="position" width="20%">位置</th>
+                <th field="statusDesc" width="10%">状态</th>
+                <th field="status" width="20%" hidden="true">状态</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="dlg4book" class="easyui-dialog" style="width:500px;height:360px;padding:10px 20px"
+     closed="true" buttons="#dlg-buttons-book" modal="true">
+    <div id="dlg4book_tips">
+        <!--<div class="alert alert-danger" role="alert"></div>-->
+    </div>
+    <form id="fm4book" method="post" novalidate style="margin-bottom: 0px;; margin-top: 10px">
+        <table class="table" style="margin-bottom: 0px;">
+            <tr>
+                <td style="text-align: right">书名：</td>
+                <td><input name="bookName" class="easyui-textbox" editable="false" id="bookName"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right">作者：</td>
+                <td><input name="auth" class="easyui-textbox" id="auth"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right">位置：</td>
+                <td><input name="position" class="easyui-textbox" id="position"><input name="id" hidden></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<div id="dlg-buttons-book">
+    <a href="javascript:void(0)" class="easyui-linkbutton c6" onclick="saveBook()" style="width:80px">提交</a>
+    <a href="javascript:void(0)" class="easyui-linkbutton" onclick="javascript:$('#dlg4book').dialog('close')" style="width:80px">取消</a>
+</div>
+
+<div id="dlg4_new_book" class="easyui-dialog" style="width:500px;height:360px;padding:10px 20px"
+     closed="true" buttons="#dlg-buttons-new-book" modal="true">
+    <div id="dlg4_new_book_tips">
+        <!--<div class="alert alert-danger" role="alert"></div>-->
+    </div>
+    <form id="fm4_new_book" method="post" novalidate style="margin-bottom: 0px;; margin-top: 10px">
+        <table class="table" style="margin-bottom: 0px;">
+            <tr>
+                <td style="text-align: right">书名：</td>
+                <td><input name="bookName" class="easyui-textbox" id="newBookName"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right">作者：</td>
+                <td><input name="auth" class="easyui-textbox" id="newBookAuth"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right">位置：</td>
+                <td><input name="position" class="easyui-textbox" id="newBookPosition"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<div id="dlg-buttons-new-book">
+    <a href="javascript:void(0)" class="easyui-linkbutton c6" onclick="saveNewBook()" style="width:80px">提交</a>
+    <a href="javascript:void(0)" class="easyui-linkbutton" onclick="javascript:$('#dlg4_new_book').dialog('close')" style="width:80px">取消</a>
+</div>
