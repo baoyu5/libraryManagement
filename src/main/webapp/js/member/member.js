@@ -130,6 +130,8 @@ function resetMemberPassword() {
 
 function saveMemberPassword() {
 
+    var row = $('#dg4member').datagrid('getSelected');
+
     $.ajax({
         url: "member/member_password_reset",
         data:{'id':row['id']},

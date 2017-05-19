@@ -52,8 +52,8 @@ public class BookRecordServiceImpl implements BookRecordService {
         if (book == null) {
             throw new BookNotExistsException();
         }
-        if (book.getStatus() != BookStatus.RETURN) {
-            throw new BookInUsedException();
+        if (book.getStatus() == BookStatus.LOAN) {
+            throw new BookInLoanException();
         }
 
         BookRecord bookRecord = new BookRecord();

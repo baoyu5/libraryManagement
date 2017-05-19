@@ -1,6 +1,7 @@
 package com.sj.library.management.service.impl;
 
 import com.sj.library.management.common.constant.BookStatus;
+import com.sj.library.management.common.exception.BookInLoanException;
 import com.sj.library.management.common.exception.BookNotExistsException;
 import com.sj.library.management.common.pagination.PageRequest;
 import com.sj.library.management.common.pagination.PaginationResult;
@@ -72,6 +73,11 @@ public class BookServiceImpl implements BookService {
     @Override
     public void deleteBook(long id) {
         Book book = loadBook(id);
+
+        if (book.getStatus() == BookStatus.LOAN) {
+            throw new BookInLoanException();
+        }
+
         book.setDeleted(true);
     }
 
